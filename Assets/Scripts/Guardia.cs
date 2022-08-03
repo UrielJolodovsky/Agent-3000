@@ -45,7 +45,7 @@ public class Guardia : MonoBehaviour {
 		Vector3 dirMirar = (lookTarget - transform.position).normalized;
 		float targetAngle = 90 - Mathf.Atan2 (dirMirar.z, dirMirar.x) * Mathf.Rad2Deg;
 
-		while (Mathf.DeltaAngle(transform.eulerAngles.y, targetAngle) > 0.05f) {
+		while (Mathf.Abs(Mathf.DeltaAngle(transform.eulerAngles.y, targetAngle)) > 0.05f) {
 			float angle = Mathf.MoveTowardsAngle (transform.eulerAngles.y, targetAngle, VelGiro * Time.deltaTime);
 			transform.eulerAngles = Vector3.up * angle;
 			yield return null;
