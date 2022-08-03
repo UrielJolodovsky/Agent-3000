@@ -7,10 +7,19 @@ public class Guardia : MonoBehaviour {
 	public float Vel = 5;
 	public float Espera = .3f;
 	public float VelGiro = 90;
-
 	public Transform Camino;
+	public Light Linterna;
+	public float DistanciaVista;
+	public LayerMask VerMask;
+	float VerAngulo;
+	Transform Jugador;
+	Color LinternaOriginal;
 
 	void Start() {
+		
+		Jugador = GameObject.FindGameObjectWithTag ("Player").transform;
+		VerAngulo = Linterna.spotAngle;
+		LinternaOriginal = Linterna.color;
 
 		Vector3[] Puntos = new Vector3[Camino.childCount];
 		for (int i = 0; i < Puntos.Length; i++) {
@@ -21,21 +30,41 @@ public class Guardia : MonoBehaviour {
 		StartCoroutine (SeguirCamino (Puntos));
 
 	}
+	void Update() {
+		if (VerJugador ()) {
+			Linterna.color = Color.red;
+		} else {
+			Linterna.color = LinternaOriginal;
+		}
+	}
+
+	bool VerJugador() {
+		if (Vector3.Distance(transform.position,Jugador.position) < DistanciaVista) {
+			Vector3 DirAlJugador = (Jugador.position - transform.position).normalized;
+			float AnguloGuardiayJugador = Vector3.Angle (transform.forward, DirAlJugador);
+			if (AnguloGuardiayJugador < VerAngulo / 2f) {
+				if (!Physics.Linecast (transform.position, Jugador.position, VerMask)) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 
 	IEnumerator SeguirCamino(Vector3[] Puntos) {
 		transform.position = Puntos [0];
 
-		int targetWaypointIndex = 1;
-		Vector3 targetWaypoint = Puntos [targetWaypointIndex];
-		transform.LookAt (targetWaypoint);
+		int PuntosObjetivoIndex = 1;
+		Vector3 PuntosObjetivo = Puntos [PuntosObjetivoIndex];
+		transform.LookAt (PuntosObjetivo);
 
 		while (true) {
-			transform.position = Vector3.MoveTowards (transform.position, targetWaypoint, Vel * Time.deltaTime);
-			if (transform.position == targetWaypoint) {
-				targetWaypointIndex = (targetWaypointIndex + 1) % Puntos.Length;
-				targetWaypoint = Puntos [targetWaypointIndex];
+			transform.position = Vector3.MoveTowards (transform.position, PuntosObjetivo, Vel * Time.deltaTime);
+			if (transform.position == PuntosObjetivo) {
+				PuntosObjetivoIndex = (PuntosObjetivoIndex + 1) % Puntos.Length;
+				PuntosObjetivo = Puntos [PuntosObjetivoIndex];
 				yield return new WaitForSeconds (Espera);
-				yield return StartCoroutine (Girarse (targetWaypoint));
+				yield return StartCoroutine (Girarse (PuntosObjetivo));
 			}
 			yield return null;
 		}
@@ -62,6 +91,8 @@ public class Guardia : MonoBehaviour {
 			posFinal = Punto.position;
 		}
 		Gizmos.DrawLine (posFinal, posInicio);
+	
+		Gizmos.color = Color.red;
+		Gizmos.DrawRay (transform.position, transform.forward * DistanciaVista);
 	}
-
 }

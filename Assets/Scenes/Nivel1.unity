@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 130844974}
   m_Layer: 0
   m_Name: Jugador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -197,8 +197,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130844973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3490119, y: -0.45, z: -4.36}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.3490119, y: -0.31, z: -3.49}
+  m_LocalScale: {x: 1.6137, y: 1.6137, z: 1.6137}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 245014348}
   - component: {fileID: 245014349}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Linterna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -327,7 +327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245014347}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.7, y: -0.54, z: 0.11}
+  m_LocalPosition: {x: 0.56, y: -0.26, z: 0.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2086018689}
@@ -343,17 +343,17 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
-  m_Range: 5
-  m_SpotAngle: 57
+  m_Color: {r: 0.9712119, g: 1, b: 0.06132078, a: 1}
+  m_Intensity: 20
+  m_Range: 11
+  m_SpotAngle: 77
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.5
+    m_Bias: 0
     m_NormalBias: 0.4
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
@@ -457,8 +457,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290137867}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.02, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -25.5, y: -1, z: -3.6}
+  m_LocalScale: {x: 9.311771, y: 0.99999976, z: 3.166311}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 1308499025}
   - component: {fileID: 1308499024}
   - component: {fileID: 1308499023}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 2086018686}
   - component: {fileID: 2086018684}
   - component: {fileID: 2086018685}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -797,6 +797,11 @@ MonoBehaviour:
   Espera: 0.3
   VelGiro: 90
   Camino: {fileID: 1446760218}
+  Linterna: {fileID: 245014349}
+  DistanciaVista: 8
+  VerMask:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &2086018685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,12 +881,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2086018683}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.021338936, z: -0, w: 0.99977237}
+  m_LocalPosition: {x: 0, y: -0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1308499022}
   - {fileID: 245014348}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 2.4450002, z: 0}
