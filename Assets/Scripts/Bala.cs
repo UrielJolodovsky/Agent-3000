@@ -2,25 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arma : MonoBehaviour
+public class Bala : MonoBehaviour
 {
-    public GameObject bala;
-    public GameObject armajugador;
     float speed = 2;
     float lifetime = 2;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Destroy(this, lifetime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Instantiate(bala, armajugador.transform.position, armajugador.transform.rotation);
-        }
-        
+        transform.position += transform.forward * speed;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Destroy(this);
     }
 }
