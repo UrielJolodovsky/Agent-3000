@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    float speed = 2;
-    float lifetime = 2;
+    public float speed = 2;
+    public float lifetime = 2;
+    
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(this, lifetime);
+        Destroy(gameObject, lifetime);
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         transform.position += transform.forward * speed;
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Destroy(this);
+       // Destroy(gameObject);
     }
 }

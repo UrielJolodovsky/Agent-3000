@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -303,24 +303,36 @@ Transform:
   m_Father: {fileID: 1446760218}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &231312972 stripped
+--- !u!1 &209996784
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6450069506623904636, guid: e85846ecc84e082469d910a7039cbf33,
-    type: 3}
-  m_PrefabInstance: {fileID: 9209868394288997922}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &231312977
-MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 231312972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e15ac678e962d8c40a4c008ec9c16b3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209996785}
+  m_Layer: 0
+  m_Name: spawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &209996785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209996784}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.831, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 375965122}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &245014347
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +525,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0.636, y: -0.094, z: 0.772}
   m_LocalScale: {x: 1, y: 0.2869184, z: 0.33918992}
-  m_Children: []
+  m_Children:
+  - {fileID: 209996785}
   m_Father: {fileID: 130844977}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -606,6 +619,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bala: {fileID: 6450069506623904636, guid: e85846ecc84e082469d910a7039cbf33, type: 3}
   armajugador: {fileID: 375965121}
+  reloadTime: 0.3
+  inacuracy: 0.1
+  bullet: {fileID: 6450069506623904636, guid: e85846ecc84e082469d910a7039cbf33, type: 3}
+  bulletSpawn: {fileID: 209996785}
 --- !u!1 &573786514
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +728,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -741,6 +762,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+--- !u!114 &591150796 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 591150795}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486366447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1178798956
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61a9ba471c10b6479f0ba84b25ed0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jugador: {fileID: 591150796}
 --- !u!136 &1486366455
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1191,6 +1225,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 231312977, guid: e85846ecc84e082469d910a7039cbf33, type: 3}
+      propertyPath: bulletSpawn
+      value: 
+      objectReference: {fileID: 209996785}
     - target: {fileID: 6450069506623904636, guid: e85846ecc84e082469d910a7039cbf33,
         type: 3}
       propertyPath: m_Name
