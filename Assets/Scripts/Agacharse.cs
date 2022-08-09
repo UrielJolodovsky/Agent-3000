@@ -15,7 +15,8 @@ public class Agacharse : MonoBehaviour
     private bool SlideDebounce;
     private int TimeStamp;
     Rigidbody m_rigidbody;
-    float timetime;
+    public float time;
+    public float ctime;
     // Start is called before the first frame update
 
 
@@ -26,33 +27,21 @@ public class Agacharse : MonoBehaviour
         colision3 = GetComponent<CharacterController>();
         Altura = colision.size.y;
         Altura2 = colision3.height;
-        timetime = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timetime < 0)
-        { }
-        else { timetime -= Time.deltaTime; }
+        ctime -= Time.deltaTime;
         if (Input.GetKey(KeyCode.LeftControl))
             Agachate();
-        else if (Input.GetKey(KeyCode.Z))
+        else if (Input.GetKeyDown(KeyCode.Z))
         {
-            // Deslizate();
-            timetime = 3;
-            colision.size = new Vector3(Altura, AlturaAgachado, Altura);
-            colision3.height = AlturaAgachado2;
-            jugador.m_RunSpeed = 15f;
-            m_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-            
+            Deslizate();
         }
         else if (Input.GetKeyUp(KeyCode.LeftControl))
             Levantate();
-        if (timetime == 0)
-        {
-            Levantate();
-        }
+        
 
     }
    private void Agachate()
@@ -64,7 +53,6 @@ public class Agacharse : MonoBehaviour
     }
     private void Levantate()
     {
-        timetime = 3;
         colision.size = new Vector3 (Altura, Altura, Altura);
         colision3.height = Altura2;
         jugador.m_RunSpeed = 10f;
@@ -73,35 +61,19 @@ public class Agacharse : MonoBehaviour
 
     private void Deslizate()
     {
-        //if (!SlideDebounce)
-        //{
-           // colision.size = new Vector3(Altura, AlturaAgachado, Altura);
-            //colision3.height = AlturaAgachado2;
-            //jugador.m_RunSpeed = 15f;
-            //m_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-            //SlideDebounce = true;
-
-           // TimeStamp = Mathf.FloorToInt(Time.time);
-
-            // InitiateCounter();
-
-        //}
-       
-       // else
-        // {
-           // Levantate();
-        // }        
-    }
-
-    private void InitiateCounter()
-    {
-        if(Mathf.FloorToInt(Time.time) >= TimeStamp + 3)
+        
+        if(ctime > 0)
         {
-            SlideDebounce = false;
-
-            return;
+        colision.size = new Vector3(Altura, AlturaAgachado, Altura);
+        colision3.height = AlturaAgachado2;
+        jugador.m_RunSpeed = 15f;
+        m_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
         }
-
-        InitiateCounter();
+        else if(ctime < 0)
+        {
+            ctime = time;
+            Levantate();
+        }   
+        
     }
 }

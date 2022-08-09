@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    public float speed = 2;
+    public float speed = 0.05f;
     public float lifetime = 2;
     
     // Start is called before the first frame update
@@ -21,6 +21,6 @@ public class Bala : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-       // Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

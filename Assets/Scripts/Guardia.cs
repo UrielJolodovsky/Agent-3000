@@ -95,4 +95,12 @@ public class Guardia : MonoBehaviour {
 		Gizmos.color = Color.red;
 		Gizmos.DrawRay (transform.position, transform.forward * DistanciaVista);
 	}
+	 void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bala")
+		{
+			Destroy(gameObject);
+			Debug.Log("colision");
+		}
+    }
 }
