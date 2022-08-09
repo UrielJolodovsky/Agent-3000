@@ -986,6 +986,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 591150796}
+  time: 1
+  ctime: 0
+  rotationSpeed: 1e+9
 --- !u!136 &1486366455
 CapsuleCollider:
   m_ObjectHideFlags: 0
