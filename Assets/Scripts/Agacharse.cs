@@ -47,6 +47,7 @@ public class Agacharse : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.Z))
         {
+            Levantate();
             ctime = 3;
         }
         else if (Input.GetKeyUp(KeyCode.LeftControl))
