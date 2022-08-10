@@ -36,12 +36,20 @@ public class Agacharse : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftControl))
             Agachate();
+        if (Input.GetKey(KeyCode.Z) && ctime <= 0)
+        {
+            Levantate();
+        }
         else if (Input.GetKey(KeyCode.Z))
         {
             Deslizate();
             ctime -= Time.deltaTime;
         }
-        else if (Input.GetKeyUp(KeyCode.LeftControl) || ctime < 0)
+        else if (Input.GetKeyUp(KeyCode.Z))
+        {
+            ctime = 3;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
         {
             Levantate();
         }
@@ -67,21 +75,11 @@ public class Agacharse : MonoBehaviour
 
     private void Deslizate()
     {
-        
-        if(ctime >= 0)
-        {
         colision.size = new Vector3(Altura, AlturaAgachado, Altura);
         colision3.height = AlturaAgachado2;
         jugador.m_WalkSpeed = 15f;
         jugador.m_MouseLook.XSensitivity = 0;
         jugador.m_MouseLook.YSensitivity = 0;
-            m_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
-        }
-        else if(ctime <= 0)
-        {
-            ctime = time;
-            Levantate();
-        }   
-        
+        m_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
     }
 }
