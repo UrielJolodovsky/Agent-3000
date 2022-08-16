@@ -666,7 +666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -11.08
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -674,7 +674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.26
+      value: 3.33
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -806,7 +806,6 @@ GameObject:
   - component: {fileID: 1032251911}
   - component: {fileID: 1032251910}
   - component: {fileID: 1032251909}
-  - component: {fileID: 1032251908}
   m_Layer: 0
   m_Name: Caja
   m_TagString: Untagged
@@ -814,19 +813,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1032251908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032251907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6c710ac6bae1f54b8edea16cf8c149f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jugador: {fileID: 1486366447}
 --- !u!136 &1032251909
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1093,7 +1079,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1486366454
+--- !u!114 &1486366450
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1102,13 +1088,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1486366447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c61a9ba471c10b6479f0ba84b25ed0e0, type: 3}
+  m_Script: {fileID: 11500000, guid: b6c710ac6bae1f54b8edea16cf8c149f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jugador: {fileID: 591150796}
-  time: 1
-  ctime: 0
-  rotationSpeed: 1e+9
+  jugador: {fileID: 1486366447}
+  jugadorcontroller: {fileID: 591150796}
+  caja: {fileID: 1032251907}
 --- !u!136 &1486366455
 CapsuleCollider:
   m_ObjectHideFlags: 0
