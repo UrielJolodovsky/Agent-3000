@@ -12,18 +12,20 @@ public class EntrarCaja : MonoBehaviour
     [SerializeField] Vector3 posicionjugadorcaja;
     public GameObject camCaja;
     public GameObject camJugador;
-    
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-         controller = GetComponent<CharacterController>();
-         
+        jugador = GameObject.FindWithTag("Player");
+        controller = jugador.GetComponent<CharacterController>();
+
 
     }
 
-// Update is called once per frame
-private void Update()
+    // Update is called once per frame
+    private void Update()
     {
         if (jugador.transform.position != caja.transform.position)
         {
@@ -33,12 +35,12 @@ private void Update()
         {
             jugador.transform.Translate(Vector3.forward * 0.2f);
         }
-            // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller
-        }   
+        // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller
+    }
 
-    void OnTriggerStay(Collision col)
+    void OnTriggerStay()//Collision col)
     {
-        
+
         if (Input.GetKeyDown(KeyCode.E))
         {
 
@@ -48,30 +50,21 @@ private void Update()
             controller.enabled = false;
             jugador.SetActive(false);
             camCaja.SetActive(true);
+
         }
-        else if (Input.GetKeyDown(KeyCode.P))
+        IEnumerator Teleport()
         {
-            //StartCoroutine("Teleport");
-            /*jugador.transform.position = posicionjugadorcaja;
-            //controller.enabled = controller.enabled;
-            controller.stepOffset = 0.3f;*/
-            Debug.Log("P");
+            /*controller.enabled = !controller.enabled;
+            posicionjugadorcaja = new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z);
+            jugador.transform.position = caja.transform.position;
+            yield return new WaitForSeconds(1f);
+            controller.enabled = controller.enabled;*/
             controller.enabled = true;
-            camCaja.SetActive(false);
-            jugador.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            jugador.transform.position = posicionjugadorcaja;
+
         }
-        
-    }
-    IEnumerator Teleport()
-    {
-        /*controller.enabled = !controller.enabled;
-        posicionjugadorcaja = new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z);
-        jugador.transform.position = caja.transform.position;
-        yield return new WaitForSeconds(1f);
-        controller.enabled = controller.enabled;*/
-        controller.enabled = true;
-        yield return new WaitForSeconds(1f);
-        jugador.transform.position = posicionjugadorcaja;
-        
+
     }
 }
+
