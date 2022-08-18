@@ -202,7 +202,7 @@ Transform:
   m_Children:
   - {fileID: 375965122}
   m_Father: {fileID: 1486366448}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -50, z: 0}
 --- !u!1 &156625169
 GameObject:
@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 290137869}
   - component: {fileID: 290137868}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Piso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -838,7 +838,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.14117648, g: 0.6431373, b: 0.77647066, a: 1}
+  m_BackGroundColor: {r: 0.16862746, g: 0.69803923, b: 0.83921576, a: 1}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -877,13 +877,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767494588}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.55, y: 4.59, z: -12.35}
+  m_LocalRotation: {x: 0.7060706, y: 0.03826647, z: 0.038266476, w: 0.7060706}
+  m_LocalPosition: {x: -0.4000001, y: 9.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_Father: {fileID: 1486366448}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 96.20398, y: -90, z: -90}
 --- !u!1 &805754740
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,8 +933,8 @@ MonoBehaviour:
   m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 54ee8e39b634b6d45aae528b6b24e879, type: 2}
-  m_Color: {r: 0.12941177, g: 0.654902, b: 0.8000001, a: 1}
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1707,7 +1707,7 @@ GameObject:
   - component: {fileID: 1813938943}
   - component: {fileID: 1813938942}
   m_Layer: 9
-  m_Name: Cube
+  m_Name: ParedIntro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 2086018684}
   - component: {fileID: 2086018685}
   m_Layer: 9
-  m_Name: Capsule
+  m_Name: '[GUARDIA]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
