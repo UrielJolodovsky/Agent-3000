@@ -15,7 +15,7 @@ public class Agacharse : MonoBehaviour
     private bool SlideDebounce;
     private int TimeStamp;
     Rigidbody m_rigidbody;
-    public float time = 3;
+    public float time = .5f;
     public float ctime;
     public float rotationSpeed = 0;
     // Start is called before the first frame update
@@ -48,7 +48,7 @@ public class Agacharse : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Z))
         {
             Levantate();
-            ctime = 3;
+            ctime = .5f;
         }
         else if (Input.GetKeyUp(KeyCode.LeftControl))
         {

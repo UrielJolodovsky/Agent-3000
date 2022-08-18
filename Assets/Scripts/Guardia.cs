@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Guardia : MonoBehaviour {
 
-	public float Vel = 5;
-	public float Espera = .3f;
-	public float VelGiro = 90;
-	public Transform Camino;
-	public Light Linterna;
-	public float DistanciaVista;
-	public LayerMask VerMask;
-	float VerAngulo;
-	Transform Jugador;
-	Color LinternaOriginal;
+	[SerializeField] public float Vel = 5;
+    [SerializeField]  public float Espera = .3f;
+    [SerializeField]  public float VelGiro = 90;
+    [SerializeField]  public Transform Camino;
+    [SerializeField]  public Light Linterna;
+    [SerializeField]  public float DistanciaVista;
+    [SerializeField]  public LayerMask VerMask;
+    [SerializeField]  float VerAngulo;
+    [SerializeField] Transform Jugador;
+    [SerializeField] Color LinternaOriginal;
 
 	void Start() {
 		
