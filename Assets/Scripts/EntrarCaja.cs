@@ -14,6 +14,7 @@ public class EntrarCaja : MonoBehaviour
     public GameObject camCaja;
     public GameObject camJugador;
     public Text Entrar;
+    public Text Salir;
 
 
 
@@ -23,6 +24,7 @@ public class EntrarCaja : MonoBehaviour
         jugador = GameObject.FindWithTag("Player");
         controller = jugador.GetComponent<CharacterController>();
         Entrar.enabled = false;
+        Salir.enabled = false;
 
     }
 
@@ -52,6 +54,8 @@ public class EntrarCaja : MonoBehaviour
             controller.enabled = false;
             jugador.SetActive(false);
             camCaja.SetActive(true);
+            Entrar.enabled = false;
+            
 
         }
         IEnumerator Teleport()
@@ -67,6 +71,10 @@ public class EntrarCaja : MonoBehaviour
 
         }
 
+    }
+    void OnTriggerExit()
+    {
+        Entrar.enabled = false;
     }
 }
 

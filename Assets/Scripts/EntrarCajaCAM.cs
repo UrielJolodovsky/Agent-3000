@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 public class EntrarCajaCAM : MonoBehaviour
 {
@@ -12,11 +13,13 @@ public class EntrarCajaCAM : MonoBehaviour
     [SerializeField] Vector3 posicionjugadorcaja;
     public GameObject camCaja;
     public GameObject camJugador;
+    public Text Salir;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        Salir.enabled = false;
         CharacterController controller = jugador.GetComponent<CharacterController>();
 
     }
@@ -24,16 +27,17 @@ public class EntrarCajaCAM : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-       /* if (jugador.transform.position != caja.transform.position)
+        if (camCaja.gameObject.activeInHierarchy)
         {
-            jugador.controller.enabled = true;
-        }*/
-        if (camCaja.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.P))
+            Salir.enabled = true;
+        }
+         if (camCaja.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.P))
         {
             camCaja.SetActive(false);
             jugador.SetActive(true);
             controller.enabled = true;
             camJugador.SetActive(true);
+            Salir.enabled = false;
         }
         
         // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller
