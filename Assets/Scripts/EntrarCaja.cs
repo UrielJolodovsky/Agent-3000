@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 public class EntrarCaja : MonoBehaviour
 {
@@ -12,15 +13,16 @@ public class EntrarCaja : MonoBehaviour
     [SerializeField] Vector3 posicionjugadorcaja;
     public GameObject camCaja;
     public GameObject camJugador;
+    public Text Entrar;
 
 
 
     // Start is called before the first frame update
     void Start()
-    {
+    {   
         jugador = GameObject.FindWithTag("Player");
         controller = jugador.GetComponent<CharacterController>();
-
+        Entrar.enabled = false;
 
     }
 
@@ -38,12 +40,12 @@ public class EntrarCaja : MonoBehaviour
         // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller
     }
 
-    void OnTriggerStay()//Collision col)
+    void OnTriggerStay()
     {
-
+        Entrar.enabled = true;
         if (Input.GetKeyDown(KeyCode.E))
         {
-
+            
             /*posicionjugadorcaja = new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z);
             jugador.transform.position = caja.transform.position;
             jugadorcontroller.CollisionFlags = 0;*/
