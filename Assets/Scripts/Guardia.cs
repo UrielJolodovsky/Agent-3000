@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Guardia : MonoBehaviour {
 
@@ -14,14 +16,20 @@ public class Guardia : MonoBehaviour {
     [SerializeField]  float VerAngulo;
     [SerializeField] Transform Jugador;
     [SerializeField] Color LinternaOriginal;
+    [SerializeField] public Text Avistado;
+    public CharacterController controller;
+    public string SandBox;
 
-	void Start() {
-		
+
+    void Start() {
+
+        Avistado.enabled = false;
 		Jugador = GameObject.FindGameObjectWithTag ("Player").transform;
 		VerAngulo = Linterna.spotAngle;
 		LinternaOriginal = Linterna.color;
+        
 
-		Vector3[] Puntos = new Vector3[Camino.childCount];
+        Vector3[] Puntos = new Vector3[Camino.childCount];
 		for (int i = 0; i < Puntos.Length; i++) {
 			Puntos [i] = Camino.GetChild (i).position;
 			Puntos [i] = new Vector3 (Puntos [i].x, transform.position.y, Puntos [i].z);
@@ -33,7 +41,15 @@ public class Guardia : MonoBehaviour {
 	void Update() {
 		if (VerJugador ()) {
 			Linterna.color = Color.red;
-		} else {
+            Avistado.enabled = true;
+            Time.timeScale = 0;
+            controller.enabled = false;
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene("SandBox");
+                Time.timeScale = 1;
+            }
+        } else {
 			Linterna.color = LinternaOriginal;
 		}
 	}
