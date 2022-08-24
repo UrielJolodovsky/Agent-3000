@@ -17,7 +17,7 @@ public class AgarrarTarjeta : MonoBehaviour
     {
         
     }
-    void OnTriggerStay(Collision colision)
+    /*void OnTriggerStay(Collision colision)
     {
         TeclaTarjeta.enabled = true;
 
@@ -25,5 +25,5 @@ public class AgarrarTarjeta : MonoBehaviour
         {
 
         }
-    }
+    }*/
 }

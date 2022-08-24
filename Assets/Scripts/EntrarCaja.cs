@@ -35,24 +35,19 @@ public class EntrarCaja : MonoBehaviour
         {
             controller.enabled = controller.enabled;
         }
-        if (Input.GetKey(KeyCode.I))
-        {
-            jugador.transform.Translate(Vector3.forward * 0.2f);
-        }
-        // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller
     }
 
-    void OntriggerEnter (Collision colision)
+    /*void OntriggerEnter (Collision colision)
     {
         if (colision.gameObject.tag == "Player")
         {
             Entrar.enabled = true;
         }
-    }
-    void OnTriggerStay(Collision colision)
+    }*/
+    void OnTriggerStay()//Collider colision)
     {
-        if (colision.gameObject.tag == "Player")
-        {
+        //if (colision.gameObject.tag == "Player")
+       // {
             if (Input.GetKeyDown(KeyCode.E))
             {
 
@@ -64,7 +59,7 @@ public class EntrarCaja : MonoBehaviour
                 camCaja.SetActive(true);
                 Entrar.enabled = false;
             }
-        }
+       // }
     }
     void OnTriggerExit()
     {
