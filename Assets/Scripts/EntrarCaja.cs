@@ -42,35 +42,29 @@ public class EntrarCaja : MonoBehaviour
         // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller
     }
 
-    void OnTriggerStay()
+    void OntriggerEnter (Collision colision)
     {
-        Entrar.enabled = true;
-        if (Input.GetKeyDown(KeyCode.E))
+        if (colision.gameObject.tag == "Player")
         {
-            
-            /*posicionjugadorcaja = new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z);
-            jugador.transform.position = caja.transform.position;
-            jugadorcontroller.CollisionFlags = 0;*/
-            controller.enabled = false;
-            jugador.SetActive(false);
-            camCaja.SetActive(true);
-            Entrar.enabled = false;
-            
-
+            Entrar.enabled = true;
         }
-        IEnumerator Teleport()
+    }
+    void OnTriggerStay(Collision colision)
+    {
+        if (colision.gameObject.tag == "Player")
         {
-            /*controller.enabled = !controller.enabled;
-            posicionjugadorcaja = new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z);
-            jugador.transform.position = caja.transform.position;
-            yield return new WaitForSeconds(1f);
-            controller.enabled = controller.enabled;*/
-            controller.enabled = true;
-            yield return new WaitForSeconds(1f);
-            jugador.transform.position = posicionjugadorcaja;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
 
+                /*posicionjugadorcaja = new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z);
+                jugador.transform.position = caja.transform.position;
+                jugadorcontroller.CollisionFlags = 0;*/
+                controller.enabled = false;
+                jugador.SetActive(false);
+                camCaja.SetActive(true);
+                Entrar.enabled = false;
+            }
         }
-
     }
     void OnTriggerExit()
     {

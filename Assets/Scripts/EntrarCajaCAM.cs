@@ -13,6 +13,7 @@ public class EntrarCajaCAM : MonoBehaviour
     [SerializeField] Vector3 posicionjugadorcaja;
     public GameObject camCaja;
     public GameObject camJugador;
+    public Text Entrar;
     public Text Salir;
 
 
@@ -38,6 +39,7 @@ public class EntrarCajaCAM : MonoBehaviour
             controller.enabled = true;
             camJugador.SetActive(true);
             Salir.enabled = false;
+            Entrar.enabled = true;
         }
         
         // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller
