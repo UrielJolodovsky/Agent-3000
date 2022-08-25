@@ -37,20 +37,24 @@ public class EntrarCaja : MonoBehaviour
         }
     }
 
-    /*void OntriggerEnter (Collision colision)
+    void OnTriggerEnter (Collision colision)
     {
         if (colision.gameObject.tag == "Player")
         {
-            Entrar.enabled = true;
+            
         }
-    }*/
+    }
     void OnTriggerStay()//Collider colision)
     {
+        if (camCaja.activeInHierarchy == false)
+        {
+            Entrar.enabled = true;
+        }
         //if (colision.gameObject.tag == "Player")
-       // {
-            if (Input.GetKeyDown(KeyCode.E))
+        // {
+        if (Input.GetKeyDown(KeyCode.E))
             {
-
+                
                 /*posicionjugadorcaja = new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z);
                 jugador.transform.position = caja.transform.position;
                 jugadorcontroller.CollisionFlags = 0;*/
