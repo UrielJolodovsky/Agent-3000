@@ -46,6 +46,7 @@ public class EntrarCaja : MonoBehaviour
     }
     void OnTriggerStay()//Collider colision)
     {
+        Debug.Log("colision");
         if (camCaja.activeInHierarchy == false)
         {
             Entrar.enabled = true;
@@ -58,7 +59,7 @@ public class EntrarCaja : MonoBehaviour
                 /*posicionjugadorcaja = new Vector3(jugador.transform.position.x, jugador.transform.position.y, jugador.transform.position.z);
                 jugador.transform.position = caja.transform.position;
                 jugadorcontroller.CollisionFlags = 0;*/
-                controller.enabled = false;
+                //controller.enabled = false;
                 jugador.SetActive(false);
                 camCaja.SetActive(true);
                 Entrar.enabled = false;
