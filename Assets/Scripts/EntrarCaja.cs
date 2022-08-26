@@ -37,16 +37,16 @@ public class EntrarCaja : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter (Collision colision)
+    /*void OnTriggerEnter (Collision colision)
     {
         if (colision.gameObject.tag == "Player")
         {
             
         }
-    }
+    }*/
     void OnTriggerStay()//Collider colision)
     {
-        Debug.Log("colision");
+        // Debug.Log("colision");
         if (camCaja.activeInHierarchy == false)
         {
             Entrar.enabled = true;
