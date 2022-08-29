@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 130844974}
   m_Layer: 0
   m_Name: Jugador
-  m_TagString: Player
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1364,6 +1364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1486366447}
+  jugador2: {fileID: 0}
   jugadorcontroller: {fileID: 591150796}
   caja: {fileID: 1032251907}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}

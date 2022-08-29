@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - Bala
+  - Player2
   layers:
   - Default
   - TransparentFX

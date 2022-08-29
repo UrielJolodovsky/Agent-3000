@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class EntrarCaja : MonoBehaviour
 {
     public GameObject jugador;
+    public GameObject jugador2;
     public FirstPersonController jugadorcontroller;
     CharacterController controller;
     public GameObject caja;
@@ -22,6 +23,7 @@ public class EntrarCaja : MonoBehaviour
     void Start()
     {   
         jugador = GameObject.FindWithTag("Player");
+        jugador2 = GameObject.FindWithTag("Player2");
         controller = jugador.GetComponent<CharacterController>();
         Entrar.enabled = false;
         Salir.enabled = false;
@@ -44,15 +46,15 @@ public class EntrarCaja : MonoBehaviour
             
         }
     }*/
-    void OnTriggerStay()//Collider colision)
+    void OnTriggerStay(Collider colision)//Collider colision)
     {
         // Debug.Log("colision");
         if (camCaja.activeInHierarchy == false)
         {
             Entrar.enabled = true;
         }
-        //if (colision.gameObject.tag == "Player")
-        // {
+        if (colision.gameObject.tag == "Player2" && colision.gameObject.tag != "Bala") ;
+        {
         if (Input.GetKeyDown(KeyCode.E))
             {
                 
@@ -64,7 +66,7 @@ public class EntrarCaja : MonoBehaviour
                 camCaja.SetActive(true);
                 Entrar.enabled = false;
             }
-       // }
+        }
     }
     void OnTriggerExit()
     {
