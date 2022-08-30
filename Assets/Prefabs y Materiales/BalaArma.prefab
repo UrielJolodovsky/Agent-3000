@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 493477425728016618}
   - component: {fileID: 231312978}
   - component: {fileID: 231312977}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BalaArma
   m_TagString: Bala
   m_Icon: {fileID: 0}
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.5
   lifetime: 2
+  bala: {fileID: 6450069506623904636}

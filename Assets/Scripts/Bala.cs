@@ -6,6 +6,7 @@ public class Bala : MonoBehaviour
 {
     public float speed = 0.05f;
     public float lifetime = 2;
+    public GameObject bala;
     
     // Start is called before the first frame update
     void Start()

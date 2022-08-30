@@ -8,11 +8,13 @@ public class AgarrarTarjeta : MonoBehaviour
     public Text TeclaTarjeta;
     public GameObject tarjeta;
     [SerializeField] public bool tarjetaAgarrada;
+    public Text Objetivo;
     // Start is called before the first frame update
     void Start()
     {
         TeclaTarjeta.enabled = false;
         tarjetaAgarrada = false;
+        Objetivo.enabled = true;
     }
 
     // Update is called once per frame
@@ -32,7 +34,8 @@ public class AgarrarTarjeta : MonoBehaviour
                 TeclaTarjeta.enabled = false;
                 tarjeta.SetActive(false);
                 tarjetaAgarrada = true;
-            }
+                Objetivo.enabled = false;
+        }
         //}
     }
     void OnTriggerExit()

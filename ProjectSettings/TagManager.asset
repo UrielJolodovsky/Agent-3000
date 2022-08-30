@@ -7,6 +7,7 @@ TagManager:
   - Fire
   - Bala
   - Player2
+  - Caja
   layers:
   - Default
   - TransparentFX
@@ -18,9 +19,9 @@ TagManager:
   - 
   - PostProcessing
   - Obstaculo
-  - 
-  - 
-  - 
+  - Caja
+  - Bala
+  - Tarjeta
   - 
   - 
   - 
