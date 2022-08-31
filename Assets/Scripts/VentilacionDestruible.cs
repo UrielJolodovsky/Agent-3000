@@ -20,7 +20,7 @@ public class VentilacionDestruible : MonoBehaviour
         }
     }
     void OnCollisionEnter()
-    {
+    {       
         vida -= 1;
         Debug.Log("colision");
     }
