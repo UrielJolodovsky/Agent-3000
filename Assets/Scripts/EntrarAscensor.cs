@@ -55,7 +55,20 @@ public class EntrarAscensor : MonoBehaviour
     }
     void OnTriggerStay()
     {
-        if (tarjetaAgarrada.tarjetaAgarrada == true)
+        if (AscensorAbierto == true)
+        {
+            AbrirAscensor.enabled = false;
+            entrarAscensor.enabled = true;
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                entrarAscensor.enabled = false;
+                isCounting = false;
+                puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
+                Time.timeScale = 0;
+                nivelCompletado.enabled = true;
+            }
+        }
+        if (tarjetaAgarrada.tarjetaAgarrada == true )
         {  
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -67,19 +80,6 @@ public class EntrarAscensor : MonoBehaviour
         else
         {
             Necesita.enabled = true;
-        }
-        if (AscensorAbierto == true)
-        {
-            AbrirAscensor.enabled = false;
-            entrarAscensor.enabled = true;
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                entrarAscensor.enabled = false;
-                isCounting = false;
-                puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
-                Time.timeScale = 0;
-                nivelCompletado.enabled = true;
-            }
         }
     }
     void OnTriggerExit()
