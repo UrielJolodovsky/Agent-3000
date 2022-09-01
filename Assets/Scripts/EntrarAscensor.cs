@@ -11,11 +11,19 @@ public class EntrarAscensor : MonoBehaviour
     public Text nivelCompletado;
     [SerializeField] Text Counter;
     [SerializeField] float rounded;
+    public Text AbrirAscensor;
+    public Text Necesita;
+    public AgarrarTarjeta tarjetaAgarrada;
+    [SerializeField] bool AscensorAbierto;
+    [SerializeField] Text entrarAscensor;
     // Start is called before the first frame update
     void Start()
     {
         nivelCompletado.enabled = false;
         isCounting = true;
+        Necesita.enabled = false;
+        AbrirAscensor.enabled = false;
+        entrarAscensor.enabled = false;
     }
 
     // Update is called once per frame
@@ -30,10 +38,54 @@ public class EntrarAscensor : MonoBehaviour
     }
     void OnTriggerEnter()
     {
-        isCounting = false;
-        puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
-        Time.timeScale = 0;
-        nivelCompletado.enabled = true; 
+        if (tarjetaAgarrada.tarjetaAgarrada == true && AscensorAbierto == false)
+        {
+            AbrirAscensor.enabled = true;
+        }
+        /* if (AscensorAbierto == true)
+         {
+             if (Input.GetKeyDown(KeyCode.E))
+             {
+                 isCounting = false;
+                 puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
+                 Time.timeScale = 0;
+                 nivelCompletado.enabled = true; 
+             }
+         }*/
     }
-
+    void OnTriggerStay()
+    {
+        if (tarjetaAgarrada.tarjetaAgarrada == true)
+        {  
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                
+                Time.timeScale = 1;
+                AscensorAbierto = true;
+            }
+        }
+        else
+        {
+            Necesita.enabled = true;
+        }
+        if (AscensorAbierto == true)
+        {
+            AbrirAscensor.enabled = false;
+            entrarAscensor.enabled = true;
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                entrarAscensor.enabled = false;
+                isCounting = false;
+                puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
+                Time.timeScale = 0;
+                nivelCompletado.enabled = true;
+            }
+        }
+    }
+    void OnTriggerExit()
+    {
+        Necesita.enabled = false;
+        AbrirAscensor.enabled = false;
+        entrarAscensor.enabled = false;
+    }
 }

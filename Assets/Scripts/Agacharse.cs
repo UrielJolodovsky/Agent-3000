@@ -33,7 +33,6 @@ public class Agacharse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKey(KeyCode.LeftControl))
             Agachate();
         if (Input.GetKey(KeyCode.Z) && ctime <= 0)
