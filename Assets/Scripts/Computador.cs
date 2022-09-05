@@ -11,12 +11,13 @@ public class Computador : MonoBehaviour
     [SerializeField] int num;
     public GameObject volver;
     public Text cuentaContraseña;
-    [SerializeField] string[] cuentas = new string[5] {"345 + 749 - 321 x 2", "112 + 90 + 76 - 4 x 5","230 + 89 + 87 + 53 x 3","491 x 2 + 15","545 + 210"};
-    [SerializeField] string [] resultadosCuentas = new string [5]{"452", "258", "565", "997", "755"};
+    [SerializeField] string[] cuentas = new string[] {"345 + 749 - 321 x 2", "112 + 90 + 76 - 4 x 5","230 + 89 + 87 + 53 x 3","491 x 2 + 15","545 + 210"};
+    [SerializeField] string [] resultadosCuentas = new string [] {"452", "258", "565", "997", "755"};
     public GameObject mapaJefe;
     public Text pisoJefe;
     public GameObject Pato;
     public InputField contraseniaPoner;
+    public Text contraseniaEscrita;
     public Text ingresarContrasenia;
     public GameObject enviarContrasenia;
     public GameObject Encriptado;
@@ -84,7 +85,7 @@ public class Computador : MonoBehaviour
     }
     public void VerificarContrasenia()
     {
-        if (contraseniaPoner.text == resultadosCuentas[num])
+        if (contraseniaEscrita.text == resultadosCuentas[num])
         {
             Debug.Log("Contraseña correcta");
             Encriptado.SetActive(false);

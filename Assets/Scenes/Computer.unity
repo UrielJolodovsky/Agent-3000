@@ -764,6 +764,7 @@ MonoBehaviour:
   pisoJefe: {fileID: 0}
   Pato: {fileID: 0}
   contraseniaPoner: {fileID: 0}
+  contraseniaEscrita: {fileID: 0}
   ingresarContrasenia: {fileID: 0}
   enviarContrasenia: {fileID: 0}
   Encriptado: {fileID: 0}
@@ -1626,21 +1627,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cf09ff1b2a5b14ea42cf870584e4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Computadora: {fileID: 0}
+  Computadora: {fileID: 1936255345}
   num: 0
   volver: {fileID: 745852444}
   "cuentaContrase\xF1a": {fileID: 132376338}
   cuentas: []
   resultadosCuentas: []
-  mapaJefe: {fileID: 0}
-  pisoJefe: {fileID: 0}
-  Pato: {fileID: 0}
-  contraseniaPoner: {fileID: 0}
-  ingresarContrasenia: {fileID: 0}
-  enviarContrasenia: {fileID: 0}
-  Encriptado: {fileID: 0}
-  Intentos: {fileID: 0}
-  informacionClasificada: {fileID: 0}
+  mapaJefe: {fileID: 183055163}
+  pisoJefe: {fileID: 700136217}
+  Pato: {fileID: 1292344430}
+  contraseniaPoner: {fileID: 1820225614}
+  contraseniaEscrita: {fileID: 1130584509}
+  ingresarContrasenia: {fileID: 1177181197}
+  enviarContrasenia: {fileID: 1143750482}
+  Encriptado: {fileID: 911379961}
+  Intentos: {fileID: 110817986}
+  informacionClasificada: {fileID: 12275351}
   cantidadIntentos: 0
 --- !u!1 &838203309
 GameObject:
@@ -1763,10 +1765,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cf09ff1b2a5b14ea42cf870584e4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Computadora: {fileID: 0}
+  Computadora: {fileID: 1936255345}
   num: 0
-  volver: {fileID: 0}
-  "cuentaContrase\xF1a": {fileID: 0}
+  volver: {fileID: 745852444}
+  "cuentaContrase\xF1a": {fileID: 132376338}
   cuentas:
   - 345 + 749 - 321 x 2
   - 112 + 90 + 76 - 4 x 5
@@ -1783,11 +1785,12 @@ MonoBehaviour:
   pisoJefe: {fileID: 0}
   Pato: {fileID: 0}
   contraseniaPoner: {fileID: 1820225614}
+  contraseniaEscrita: {fileID: 1130584509}
   ingresarContrasenia: {fileID: 1177181197}
   enviarContrasenia: {fileID: 1143750482}
   Encriptado: {fileID: 911379961}
   Intentos: {fileID: 110817986}
-  informacionClasificada: {fileID: 0}
+  informacionClasificada: {fileID: 12275351}
   cantidadIntentos: 0
 --- !u!1 &927431308
 GameObject:
@@ -3051,6 +3054,7 @@ MonoBehaviour:
   pisoJefe: {fileID: 700136217}
   Pato: {fileID: 1292344430}
   contraseniaPoner: {fileID: 1820225614}
+  contraseniaEscrita: {fileID: 1130584509}
   ingresarContrasenia: {fileID: 1177181197}
   enviarContrasenia: {fileID: 1143750482}
   Encriptado: {fileID: 911379961}
