@@ -771,6 +771,7 @@ MonoBehaviour:
   Encriptado: {fileID: 0}
   Intentos: {fileID: 0}
   informacionClasificada: {fileID: 0}
+  contrasenia: 
   cantidadIntentos: 0
 --- !u!1 &183055163
 GameObject:
@@ -1637,12 +1638,13 @@ MonoBehaviour:
   pisoJefe: {fileID: 700136217}
   Pato: {fileID: 1292344430}
   contraseniaPoner: {fileID: 1820225614}
-  contraseniaEscrita: {fileID: 1130584509}
+  contraseniaEscrita: {fileID: 0}
   ingresarContrasenia: {fileID: 1177181197}
   enviarContrasenia: {fileID: 1143750482}
   Encriptado: {fileID: 911379961}
   Intentos: {fileID: 110817986}
   informacionClasificada: {fileID: 12275351}
+  contrasenia: 
   cantidadIntentos: 0
 --- !u!1 &838203309
 GameObject:
@@ -1769,28 +1771,19 @@ MonoBehaviour:
   num: 0
   volver: {fileID: 745852444}
   "cuentaContrase\xF1a": {fileID: 132376338}
-  cuentas:
-  - 345 + 749 - 321 x 2
-  - 112 + 90 + 76 - 4 x 5
-  - 230 + 89 + 87 + 53 x 3
-  - 491 x 2 + 15
-  - 545 + 210
-  resultadosCuentas:
-  - 
-  - 
-  - 
-  - 
-  - 
-  mapaJefe: {fileID: 0}
-  pisoJefe: {fileID: 0}
-  Pato: {fileID: 0}
+  cuentas: []
+  resultadosCuentas: []
+  mapaJefe: {fileID: 183055163}
+  pisoJefe: {fileID: 700136217}
+  Pato: {fileID: 1292344430}
   contraseniaPoner: {fileID: 1820225614}
-  contraseniaEscrita: {fileID: 1130584509}
+  contraseniaEscrita: {fileID: 1820225614}
   ingresarContrasenia: {fileID: 1177181197}
   enviarContrasenia: {fileID: 1143750482}
   Encriptado: {fileID: 911379961}
   Intentos: {fileID: 110817986}
   informacionClasificada: {fileID: 12275351}
+  contrasenia: 
   cantidadIntentos: 0
 --- !u!1 &927431308
 GameObject:
@@ -3125,12 +3118,13 @@ MonoBehaviour:
   pisoJefe: {fileID: 700136217}
   Pato: {fileID: 1292344430}
   contraseniaPoner: {fileID: 1820225614}
-  contraseniaEscrita: {fileID: 1130584509}
+  contraseniaEscrita: {fileID: 1820225614}
   ingresarContrasenia: {fileID: 1177181197}
   enviarContrasenia: {fileID: 1143750482}
   Encriptado: {fileID: 911379961}
   Intentos: {fileID: 110817986}
-  informacionClasificada: {fileID: 0}
+  informacionClasificada: {fileID: 12275351}
+  contrasenia: 
   cantidadIntentos: 0
 --- !u!1 &1963231645
 GameObject:

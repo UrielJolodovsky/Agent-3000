@@ -11,25 +11,30 @@ public class Computador : MonoBehaviour
     [SerializeField] int num;
     public GameObject volver;
     public Text cuentaContraseña;
-    [SerializeField] string[] cuentas = new string[] {"345 + 749 - 321 x 2", "112 + 90 + 76 - 4 x 5","230 + 89 + 87 + 53 x 3","491 x 2 + 15","545 + 210"};
-    [SerializeField] string [] resultadosCuentas = new string [] {"452", "258", "565", "997", "755"};
+    public string[] cuentas;
+    public string[] resultadosCuentas; 
     public GameObject mapaJefe;
     public Text pisoJefe;
     public GameObject Pato;
     public InputField contraseniaPoner;
-    public Text contraseniaEscrita;
+    public InputField contraseniaEscrita;
     public Text ingresarContrasenia;
     public GameObject enviarContrasenia;
     public GameObject Encriptado;
     public Text Intentos;
     public Text informacionClasificada;
-
+    [SerializeField] string contrasenia;
     [SerializeField] int cantidadIntentos = 0;
+
     // Start is called before the first frame update
     void Start()
     {
-        num = Random.Range(0, 5);
+       cuentas = new string[] { "345 + 749 - 321 x 2", "112 + 90 + 76 - 4 x 5", "230 + 89 + 87 + 53 x 3", "491 x 2 + 15", "545 + 210" };
+       resultadosCuentas = new string[] { "452", "258", "565", "997", "755" };
+        num = Random.Range(0, 4);
         cuentaContraseña.text = cuentas[num];
+        contrasenia = resultadosCuentas[num];
+        Debug.Log(contrasenia);
     }
 
     // Update is called once per frame
@@ -63,6 +68,7 @@ public class Computador : MonoBehaviour
         Encriptado.SetActive(false);
         Intentos.enabled = false;
         informacionClasificada.enabled = false;
+
     }
     public void LocalizacionJefe()
     {
@@ -85,10 +91,10 @@ public class Computador : MonoBehaviour
     }
     public void VerificarContrasenia()
     {
-        if (contraseniaEscrita.text == resultadosCuentas[num])
+        if (contraseniaEscrita.text == contrasenia)
         {
             Debug.Log("Contraseña correcta");
-            Encriptado.SetActive(false);
+            Encriptado.SetActive(false);    
             informacionClasificada.enabled = true;
         }
         else
