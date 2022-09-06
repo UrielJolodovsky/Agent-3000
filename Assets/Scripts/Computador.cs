@@ -8,7 +8,7 @@ public class Computador : MonoBehaviour
 {
     
     public GameObject Computadora;
-    [SerializeField] int num;
+    [SerializeField] int numRandom; 
     public GameObject volver;
     public Text cuentaContraseña;
     public string[] cuentas;
@@ -29,18 +29,18 @@ public class Computador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       cuentas = new string[] { "345 + 749 - 321 x 2", "112 + 90 + 76 - 4 x 5", "230 + 89 + 87 + 53 x 3", "491 x 2 + 15", "545 + 210" };
+        numRandom = RandomNumComputador.num;
+        cuentas = new string[] { "345 + 749 - 321 x 2", "112 + 90 + 76 - 4 x 5", "230 + 89 + 87 + 53 x 3", "491 x 2 + 15", "545 + 210" };
        resultadosCuentas = new string[] { "452", "258", "565", "997", "755" };
-        num = Random.Range(0, 4);
-        cuentaContraseña.text = cuentas[num];
-        contrasenia = resultadosCuentas[num];
+        cuentaContraseña.text = cuentas[numRandom];
+        contrasenia = resultadosCuentas[numRandom];
         Debug.Log(contrasenia);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.U))
         {
             // Application.LoadLevel("SandBox");
             LoadScene("Sandbox");
