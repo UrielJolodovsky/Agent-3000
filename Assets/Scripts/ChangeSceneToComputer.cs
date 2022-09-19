@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class ChangeSceneToComputer : MonoBehaviour
 {
+    public static Vector3 posicionCompu;
     public Text Usar;
+    public static GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class ChangeSceneToComputer : MonoBehaviour
     void OnTriggerStay()
     {
         Usar.enabled = true;
+        posicionCompu = player.transform.position;
         if (Input.GetKeyDown(KeyCode.E))
         {
             LoadScene("Computer");

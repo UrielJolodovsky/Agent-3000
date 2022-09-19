@@ -6,20 +6,18 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Experimental.GlobalIllumination;
 
 public class Guardia : MonoBehaviour {
-    public static event System.Action GuardiaVio;
-
-	
-    [SerializeField] public float Vel = 5;
+    
+	[SerializeField] public float Vel = 5;
     [SerializeField] public float Espera = .3f;
     [SerializeField] public float VelGiro = 90;
-    [SerializeField] public float tiempoParaVer = .5f;
     [SerializeField] float tiempoVisto;
-
+    [SerializeField] public float tiempoParaVer = .5f;
+    
     [SerializeField] public Transform Camino;
     [SerializeField] public Light Linterna;
     [SerializeField] public float DistanciaVista;
     [SerializeField] public LayerMask VerMask;
-[SerializeField] float VerAngulo;
+	[SerializeField] float VerAngulo;
     
     [SerializeField] Transform Jugador;
     [SerializeField] Color LinternaOriginal;

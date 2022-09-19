@@ -2752,6 +2752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Usar: {fileID: 1988038270}
+  player: {fileID: 1486366447}
 --- !u!136 &1792853767
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3978,8 +3979,8 @@ MonoBehaviour:
   Vel: 5
   Espera: 0.3
   VelGiro: 90
-  tiempoParaVer: 0.5
   tiempoVisto: 0
+  tiempoParaVer: 0.5
   Camino: {fileID: 1446760218}
   Linterna: {fileID: 245014349}
   DistanciaVista: 8
@@ -3987,7 +3988,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   VerAngulo: 0
-  Jugador: {fileID: 0}
+  Jugador: {fileID: 1486366448}
   LinternaOriginal: {r: 0, g: 0, b: 0, a: 0}
   Avistado: {fileID: 34322350}
   controller: {fileID: 1486366453}

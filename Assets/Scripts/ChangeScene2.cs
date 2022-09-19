@@ -19,6 +19,7 @@ public class ChangeScene2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             LoadScene("SandBox");
+            ChangeSceneToComputer.player.transform.position = ChangeSceneToComputer.player.transform(posicionCompu);
         }
     }
     public void LoadScene(string SandBox)
