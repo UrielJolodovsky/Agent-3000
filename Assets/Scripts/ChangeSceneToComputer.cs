@@ -1,23 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class ChangeSceneToComputer : MonoBehaviour
 {
-    // usar singleton para destruir nuevo player que cargue
-    // jason weimann?  buenos tutoriales respecto al tema
-    public static Vector3 posicionCompu;
+    public CharacterController controller;
+    public FirstPersonController jugador;
+    public GameObject player;
     public Text Usar;
-    public static GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.None;
-        DontDestroyOnLoad(player);
+        player = GameObject.FindGameObjectWithTag("Player");
+        controller = player.GetComponent<CharacterController>();
+        jugador = player.GetComponent<FirstPersonController>();
     }
 
     // Update is called once per frame
@@ -27,20 +29,17 @@ public class ChangeSceneToComputer : MonoBehaviour
     }
     public void LoadScene(string Computer)
     {
+        controller.enabled = false;
+        jugador.m_MouseLook.XSensitivity = 0;
+        jugador.m_MouseLook.YSensitivity = 0;
         SceneManager.LoadScene(Computer);
     }
-    void OnTriggerStay()
+void OnTriggerStay()
     {
         Usar.enabled = true;
-        posicionCompu = player.transform.position;
-        
         if (Input.GetKeyDown(KeyCode.E))
         {
             LoadScene("Computer");
-            if(player.activeInHierarchy == true)
-            {
-                
-            }
         }
     }
     void OnTriggerExit()
