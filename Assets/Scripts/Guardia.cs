@@ -24,11 +24,14 @@ public class Guardia : MonoBehaviour {
     
     [SerializeField] public Text Avistado;
     public CharacterController controller;
+	public GameObject player;
 
     void Start() {
 
         Avistado.enabled = false;
 		Jugador = GameObject.FindGameObjectWithTag ("Player").transform;
+		player = GameObject.FindGameObjectWithTag("Player");
+		
 		VerAngulo = Linterna.spotAngle;
 		LinternaOriginal = Linterna.color;
         
@@ -43,6 +46,7 @@ public class Guardia : MonoBehaviour {
 
 	}
 	void Update() {
+		controller = player.GetComponent<CharacterController>();
 		if (VerJugador()) 
 		{
             tiempoVisto += Time.deltaTime;
