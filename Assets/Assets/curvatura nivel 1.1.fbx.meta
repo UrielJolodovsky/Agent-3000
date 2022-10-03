@@ -1,15 +1,25 @@
 fileFormatVersion: 2
-guid: 771529a80b6951d4dadd821da8162c34
+guid: 9b356f9a15dee284592424435549e3a7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: PAred nivel 1
+    2100000: Paleta multitasking
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
-  externalObjects: {}
+    4300000: Curva nivel 1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paleta multitasking
+    second: {fileID: 2100000, guid: b35308ff2d03d1749a98b49aef9c2843, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Paleta Normal
+    second: {fileID: 2800000, guid: 08284a5e6f5d8d347993ed01c135cde6, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
