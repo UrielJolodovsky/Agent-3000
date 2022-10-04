@@ -1,25 +1,32 @@
 fileFormatVersion: 2
-guid: 9b356f9a15dee284592424435549e3a7
+guid: a42e115c208ae364aaa0090cdceee6c6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Paleta multitasking
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Curva nivel 1
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Paleta multitasking
-    second: {fileID: 2100000, guid: b35308ff2d03d1749a98b49aef9c2843, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Paleta Normal
-    second: {fileID: 2800000, guid: 08284a5e6f5d8d347993ed01c135cde6, type: 3}
+    100000: Ascensor
+    100002: //RootNode
+    100004: Ascensor.001
+    100006: Ascensor.002
+    400000: Ascensor
+    400002: //RootNode
+    400004: Ascensor.001
+    400006: Ascensor.002
+    2100000: Material.006
+    2300000: Ascensor
+    2300002: Ascensor.001
+    2300004: Ascensor.002
+    3300000: Ascensor
+    3300002: Ascensor.001
+    3300004: Ascensor.002
+    4300000: Ascensor
+    4300002: Ascensor.001
+    4300004: Ascensor.002
+    7400000: Ascensor.001|Ascensor.001Action
+    7400002: Ascensor.001|Ascensor.002Action
+    7400004: Ascensor.002|Ascensor.001Action
+    7400006: Ascensor.002|Ascensor.002Action
+    9500000: //RootNode
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -71,8 +78,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -99,7 +106,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
