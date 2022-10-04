@@ -1,25 +1,15 @@
 fileFormatVersion: 2
-guid: 6986d4123d906f442b54d9667b2553e4
+guid: 08774229cd960354aacdf21c004bbfe2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Paleta multitasking
+    2100000: PAred nivel 1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.004
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Paleta multitasking
-    second: {fileID: 2100000, guid: cf9e9db1d985eae44918feae75be2cff, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Paleta
-    second: {fileID: 2800000, guid: 5c5c37021986c564788f62fa0428b0fd, type: 3}
+    4300000: Ajugero pincipio primer nivel
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

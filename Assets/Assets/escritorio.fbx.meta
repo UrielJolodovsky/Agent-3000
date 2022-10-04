@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: 5967ce5cb80ad2f48b7cdfa2bc5c9765
+guid: a12cacc3f9ea72b4e809699e4bc40f62
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: PAred nivel 1
+    2100000: Paleta multitasking
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Pared con rejilla
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PAred nivel 1
-    second: {fileID: 2100000, guid: 2fb0c2cdcd2eda549aea5c0cfdddcdee, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: pared gris
-    second: {fileID: 2800000, guid: 098e508487455e54f9ee1abd62cbbd6f, type: 3}
+    4300000: 'Escritorio '
+    7400000: Escritorio |ArmatureAction.005
+    7400002: Escritorio |Cube.005Action
+    7400004: Escritorio |CylinderAction
+    9500000: //RootNode
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -71,8 +65,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -99,7 +93,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

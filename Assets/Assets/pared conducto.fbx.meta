@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 5aee08b87b497734ea4a1e50b6a3c8ea
+guid: d9ff3de37f1e16c45b7917b41e84d6c9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Paleta multitasking
+    2100000: PAred nivel 1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cylinder.001
+    4300000: Pared con rejilla
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5aee08b87b497734ea4a1e50b6a3c8ea
+guid: dd0ecfc3bdb9783439b517f585914919
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: Paleta multitasking
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cylinder.001
+    4300000: Cube.001
   externalObjects: {}
   materials:
     importMaterials: 1

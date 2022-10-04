@@ -1,25 +1,15 @@
 fileFormatVersion: 2
-guid: 99a6da52908db3d4783a03a5fa87ec22
+guid: c30dc072068e3cf4686cc6fc8b3cd251
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Paleta Normal
+    2100000: Paleta multitasking.003
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.008
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Paleta Normal
-    second: {fileID: 2100000, guid: c49e30fb913a33944a04e0b322af5568, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: PaletaDeColores
-    second: {fileID: 2800000, guid: b0a38ca47a1f8cd4b9e502802bb64ecc, type: 3}
+    4300000: Cube
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
