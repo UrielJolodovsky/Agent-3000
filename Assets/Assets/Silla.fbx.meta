@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d4402b6d828a484aa061e4fb01c5afa
+guid: 0ef3b28dbbdd7e649b7fa002c27f8489
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,8 +8,18 @@ ModelImporter:
     2100000: Material.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Columna
-  externalObjects: {}
+    4300000: Cube.001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 68606eae57663c049a44514a50f1486b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Paleta Degrade
+    second: {fileID: 2800000, guid: 8068a26da52999940be8de3b47711f19, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
