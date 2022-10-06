@@ -58,7 +58,7 @@ public class Agacharse : MonoBehaviour
     {
         colision.size = new Vector3 (Altura, AlturaAgachado, Altura);
         colision3.height = AlturaAgachado2;
-        jugador.m_WalkSpeed = 5f;
+        jugador.m_WalkSpeed = 2f;
         m_rigidbody.constraints = RigidbodyConstraints.None;
         jugador.m_MouseLook.XSensitivity = 2;
         jugador.m_MouseLook.YSensitivity = 2;
