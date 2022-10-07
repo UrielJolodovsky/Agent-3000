@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 813679079696455159}
   - component: {fileID: 813679079693555159}
   - component: {fileID: 813679079694554903}
+  - component: {fileID: 65135392517553128}
   m_Layer: 0
   m_Name: Piso 2 nivel 1
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &65135392517553128
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813679079696812503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12, y: 0, z: 12}
+  m_Center: {x: -4.500004, y: 0, z: -37.5}
