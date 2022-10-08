@@ -8,7 +8,7 @@ ModelImporter:
     2100000: Material.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Columna
+    4300000: Cube
   externalObjects: {}
   materials:
     importMaterials: 1
