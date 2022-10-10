@@ -1,15 +1,47 @@
 fileFormatVersion: 2
-guid: 442f560ce6df32f4db396d5d31650df4
+guid: 24aafe614cf61cd4d945256bcc77a682
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Paleta degrade
+    2100000: Pared nivel 1
+    2100002: Material Negro
+    2100004: Paleta Degrade
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Caja Peligro
-  externalObjects: {}
+    4300000: Estante
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material Negro
+    second: {fileID: 2100000, guid: 53c9e7d3ba3470a4f959af43e381a31e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paleta Degrade
+    second: {fileID: 2100000, guid: 69c8ed1211ad76e4887d75787ca04003, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pared nivel 1
+    second: {fileID: 2100000, guid: 12f5789818573e1489db6008b06203fd, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BlindajeEstante
+    second: {fileID: 2800000, guid: 78e16c8607d343548a841bcb9c9a49bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Paleta Degrade
+    second: {fileID: 2800000, guid: a22136ea14bc48c49b6e77e2d63c688a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pared gris
+    second: {fileID: 2800000, guid: d3c71997e57fca3428ddcc1cc713821e, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
