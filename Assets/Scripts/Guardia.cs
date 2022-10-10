@@ -12,7 +12,7 @@ public class Guardia : MonoBehaviour {
     [SerializeField] public float VelGiro = 90;
     [SerializeField] float tiempoVisto;
     [SerializeField] public float tiempoParaVer = .5f;
-    
+
     [SerializeField] public Transform Camino;
     [SerializeField] public Light Linterna;
     [SerializeField] public float DistanciaVista;
@@ -25,14 +25,15 @@ public class Guardia : MonoBehaviour {
     [SerializeField] public Text Avistado;
     public CharacterController controller;
 	public GameObject player;
+    [SerializeField] public GameObject Spawnpoint;
 
     void Start() {
 
         Avistado.enabled = false;
 		Jugador = GameObject.FindGameObjectWithTag ("Player").transform;
 		player = GameObject.FindGameObjectWithTag("Player");
-		
-		VerAngulo = Linterna.spotAngle;
+
+        VerAngulo = Linterna.spotAngle;
 		LinternaOriginal = Linterna.color;
         
 
@@ -66,9 +67,11 @@ public class Guardia : MonoBehaviour {
                 controller.enabled = false;
                 if (Input.GetKeyDown(KeyCode.R))
                 {
-                    SceneManager.LoadScene("SandBox");
-                    Time.timeScale = 1;
-                }
+					player.GetComponent<CharacterController>().enabled = true;
+					player.transform.position = new Vector3(Spawnpoint.transform.position.x, Spawnpoint.transform.position.y, Spawnpoint.transform.position.z);
+					SceneManager.LoadScene("SandBox");
+					Time.timeScale = 1;       
+				}
         }
     }
 

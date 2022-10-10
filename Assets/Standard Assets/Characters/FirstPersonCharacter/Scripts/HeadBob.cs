@@ -32,7 +32,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             Vector3 newCameraPosition;
             if (rigidbodyFirstPersonController.Velocity.magnitude > 0 && rigidbodyFirstPersonController.Grounded)
             {
-                Camera.transform.localPosition = motionBob.DoHeadBob(rigidbodyFirstPersonController.Velocity.magnitude*(rigidbodyFirstPersonController.Running ? RunningStrideLengthen : 1f));
+                //Camera.transform.localPosition = motionBob.DoHeadBob(rigidbodyFirstPersonController.Velocity.magnitude*(rigidbodyFirstPersonController.Running ? RunningStrideLengthen : 1f));
                 newCameraPosition = Camera.transform.localPosition;
                 newCameraPosition.y = Camera.transform.localPosition.y - jumpAndLandingBob.Offset();
             }

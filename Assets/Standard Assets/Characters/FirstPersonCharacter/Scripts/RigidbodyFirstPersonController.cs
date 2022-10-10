@@ -44,23 +44,23 @@ namespace UnityStandardAssets.Characters.FirstPerson
 					CurrentTargetSpeed = ForwardSpeed;
 				}
 #if !MOBILE_INPUT
-	            if (Input.GetKey(RunKey))
+	            /*if (Input.GetKey(RunKey))
 	            {
-		            CurrentTargetSpeed *= RunMultiplier;
-		            m_Running = true;
+		            //CurrentTargetSpeed *= RunMultiplier;
+		            //m_Running = false;
 	            }
 	            else
 	            {
 		            m_Running = false;
-	            }
+	            }*/
 #endif
             }
 
 #if !MOBILE_INPUT
-            public bool Running
+            /*public bool Running
             {
                 get { return m_Running; }
-            }
+            }*/
 #endif
         }
 
@@ -105,17 +105,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
             get { return m_Jumping; }
         }
 
-        public bool Running
+        /*public bool Running
         {
             get
             {
- #if !MOBILE_INPUT
-				return movementSettings.Running;
+#if !MOBILE_INPUT
+                return movementSettings.Running;
 #else
 	            return false;
 #endif
             }
-        }
+        }*/
 
 
         private void Start()
