@@ -1,20 +1,16 @@
 fileFormatVersion: 2
-guid: 6e2a50f05f3b59249954f5a4a7450865
+guid: eb99ce1050a5fc449a433d93dc8f66dd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Piso nivel 1
+    2100000: Material
+    2100002: Paleta Degrade
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Piso alfombra
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Piso nivel 1
-    second: {fileID: 2100000, guid: 4982e6bd313a38545b6ff67817cf5911, type: 2}
+    4300000: Tarjeta.001
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
