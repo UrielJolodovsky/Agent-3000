@@ -64,12 +64,14 @@ public class Guardia : MonoBehaviour {
         {
                 Avistado.enabled = true;
                 Time.timeScale = 0;
-                controller.enabled = false;
+                //controller.enabled = false;
                 if (Input.GetKeyDown(KeyCode.R))
                 {
-					player.GetComponent<CharacterController>().enabled = true;
-					player.transform.position = new Vector3(Spawnpoint.transform.position.x, Spawnpoint.transform.position.y, Spawnpoint.transform.position.z);
-					SceneManager.LoadScene("SandBox");
+					//player.GetComponent<CharacterController>().enabled = true;
+                    player.transform.position = Spawnpoint.transform.position;
+                    //player.transform.eulerAngles = new Vector3 (0,0,0);
+                    //player.transform.localRotation = new Quaternion.euler(0,0,0);
+                    SceneManager.LoadScene("Nivel 1");
 					Time.timeScale = 1;       
 				}
         }
