@@ -15,7 +15,7 @@ public class Guardia : MonoBehaviour {
 
     [SerializeField] public Transform Camino;
     [SerializeField] public Light Linterna;
-    [SerializeField] public float DistanciaVista;
+    [SerializeField] float DistanciaVista = 5f;
     [SerializeField] public LayerMask VerMask;
 	[SerializeField] float VerAngulo;
     
