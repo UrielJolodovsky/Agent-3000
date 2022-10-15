@@ -35,7 +35,7 @@ public class Agacharse : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftControl))
             Agachate();
-        if (Input.GetKey(KeyCode.Z) && ctime <= 0)
+        if (Input.GetKey(KeyCode.LeftShift) && ctime <= 0)
         {
             Levantate();
         }
