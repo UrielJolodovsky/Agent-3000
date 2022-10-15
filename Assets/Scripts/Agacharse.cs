@@ -39,12 +39,12 @@ public class Agacharse : MonoBehaviour
         {
             Levantate();
         }
-        else if (Input.GetKey(KeyCode.Z))
+        else if (Input.GetKey(KeyCode.LeftShift))
         {
             Deslizate();
             ctime -= Time.deltaTime;
         }
-        else if (Input.GetKeyUp(KeyCode.Z))
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             Levantate();
             ctime = .5f;
