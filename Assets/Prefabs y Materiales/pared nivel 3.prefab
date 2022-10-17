@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7424234536311694352}
   - component: {fileID: 7424234536315118640}
   - component: {fileID: 7424234536313988848}
+  - component: {fileID: 65818221898825026}
   m_Layer: 0
   m_Name: pared nivel 3
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &65818221898825026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7424234536311732272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5, z: 0.099999994}
+  m_Center: {x: -11.038605, y: 1.4550036, z: 8.109886e-39}
