@@ -11,7 +11,17 @@ ModelImporter:
     3300000: //RootNode
     4300000: Ascensor
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ArtDeco
+    second: {fileID: 2800000, guid: b756a506a867637499adc4a1d63b74b6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Paleta Degrade
+    second: {fileID: 2800000, guid: dbb9af3d02a75d4439fd14cd2c9f36b2, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
