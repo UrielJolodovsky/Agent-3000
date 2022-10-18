@@ -22,6 +22,7 @@ public class AbrirCaja : MonoBehaviour
             this.gameObject.tag = "CajaAbierta";
             this.GetComponent<Animation>().Play("Caja");
             posibilidad = false;
+            cajaAbrir.enabled = false;
         }
     }
     void OnTriggerStay(Collider other)
