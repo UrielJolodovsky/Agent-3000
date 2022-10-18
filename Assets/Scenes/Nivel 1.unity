@@ -843,7 +843,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3060,6 +3060,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dd8b43ca754ad542ac10e755216d07a, type: 3}
+--- !u!1 &302727292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 7dd8b43ca754ad542ac10e755216d07a,
+    type: 3}
+  m_PrefabInstance: {fileID: 302727291}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &302727293
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302727292}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &303378694
 PrefabInstance:
   m_ObjectHideFlags: 0
