@@ -16,11 +16,13 @@ public class EntrarAscensor : MonoBehaviour
     public AgarrarTarjeta tarjetaAgarrada;
     [SerializeField] bool AscensorAbierto;
     [SerializeField] Text entrarAscensor;
+    [SerializeField] bool posibilidadAbrir;
     // Start is called before the first frame update
     void Start()
     {
         nivelCompletado.enabled = false;
         isCounting = true;
+        posibilidadAbrir = false;
         Necesita.enabled = false;
         AbrirAscensor.enabled = false;
         entrarAscensor.enabled = false;
@@ -29,6 +31,22 @@ public class EntrarAscensor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (posibilidadAbrir && Input.GetKeyDown(KeyCode.E))
+        {
+            Time.timeScale = 1;
+            AscensorAbierto = true;
+            posibilidadAbrir = false;
+            this.GetComponent<Animation>().Play("Armature|Abrir");
+        }
+        if (AscensorAbierto && Input.GetKeyDown(KeyCode.O))
+        {
+            entrarAscensor.enabled = false;
+            isCounting = false;
+            puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
+            Time.timeScale = 0;
+            nivelCompletado.enabled = true;
+            this.GetComponent<Animation>().Play("Armature|Cerrar");
+        }
         if (isCounting)
         {
             customTime += Time.deltaTime;
@@ -59,23 +77,10 @@ public class EntrarAscensor : MonoBehaviour
         {
             AbrirAscensor.enabled = false;
             entrarAscensor.enabled = true;
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                entrarAscensor.enabled = false;
-                isCounting = false;
-                puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
-                Time.timeScale = 0;
-                nivelCompletado.enabled = true;
-            }
         }
-        if (tarjetaAgarrada.tarjetaAgarrada == true )
-        {  
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                
-                Time.timeScale = 1;
-                AscensorAbierto = true;
-            }
+        if (tarjetaAgarrada.tarjetaAgarrada == true && AscensorAbierto)
+        {
+            posibilidadAbrir = true;
         }
         else
         {
@@ -87,5 +92,6 @@ public class EntrarAscensor : MonoBehaviour
         Necesita.enabled = false;
         AbrirAscensor.enabled = false;
         entrarAscensor.enabled = false;
+        posibilidadAbrir = false;
     }
 }
