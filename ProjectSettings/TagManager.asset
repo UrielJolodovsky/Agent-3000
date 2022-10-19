@@ -9,6 +9,8 @@ TagManager:
   - Player2
   - Caja
   - CajaAbierta
+  - Ascensor
+  - AscensorAbierto
   layers:
   - Default
   - TransparentFX
