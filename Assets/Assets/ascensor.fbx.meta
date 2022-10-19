@@ -3,22 +3,27 @@ guid: 4cb3303e579f2a24cb44c8a2a09f6e20
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Ascensor
+    100000: Armature
     100002: //RootNode
     100004: Bone
     100006: Bone_end
-    400000: Ascensor
+    100008: ContornoAcensor
+    100010: PurertaAscensor
+    400000: Armature
     400002: //RootNode
     400004: Bone
     400006: Bone_end
+    400008: ContornoAcensor
+    400010: PurertaAscensor
     2100000: Degrade
     2100002: Deco
-    2300000: Ascensor
-    3300000: Ascensor
-    4300000: Ascensor
-    7400000: Armature|ArmatureAction.002
+    2300000: ContornoAcensor
+    3300000: ContornoAcensor
+    4300000: ContornoAcensor
+    4300002: PurertaAscensor
+    7400000: Armature|ArmatureAction
     9500000: //RootNode
-    11100000: //RootNode
+    13700000: PurertaAscensor
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -100,7 +105,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
