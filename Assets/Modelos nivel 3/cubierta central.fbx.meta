@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fe6fbde2363fc654baf3105df1c1bd09
+guid: fa4afb5cd9faa6144bbd7565521268ff
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -10,17 +10,20 @@ ModelImporter:
     3300000: //RootNode
     4300000: Cube.002
     7400000: Cube.002|Abrir
-    7400002: Cube.002|Abrir.002
-    7400004: Cube.002|Armature.001Action
-    7400006: Cube.002|ArmatureAction.003
-    7400008: Cube.002|Cerrar
-    7400010: Cube.002|Cerrar.001
-    7400012: Cube.002|Cube.002Action
+    7400002: Cube.002|Armature.001Action
+    7400004: Cube.002|ArmatureAction.003
+    7400006: Cube.002|Cerrar
+    7400008: Cube.002|Cerrar.001
+    7400010: Cube.002|Cube.002Action
+    7400012: Cube.002|Cube.002Action.001
     7400014: Cube.002|Cube.004Action.001
-    7400016: Cube.002|Cylinder.001Action.002
-    7400018: Cube.002|Cylinder.001Action.004
-    7400020: Cube.002|Cylinder.001Action.005
-    7400022: Cube.002|SphereAction.006
+    7400016: Cube.002|Cube.010Action
+    7400018: Cube.002|Cube.010Action.001
+    7400020: Cube.002|Cube.010Action.002
+    7400022: Cube.002|Cylinder.001Action.002
+    7400024: Cube.002|Cylinder.001Action.004
+    7400026: Cube.002|Cylinder.001Action.005
+    7400028: Cube.002|SphereAction.006
     9500000: //RootNode
   externalObjects: {}
   materials:
