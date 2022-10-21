@@ -24,15 +24,19 @@ public class Guardia : MonoBehaviour {
     
     [SerializeField] public Text Avistado;
     public CharacterController controller;
-	public GameObject player;
+	[SerializeField] GameObject player;
     [SerializeField] public GameObject Spawnpoint;
 
     void Start() {
 
+        Camino = transform.Find("Camino").transform;
+        Linterna = GameObject.Find("Linterna").GetComponent<Light>();
+        Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
         Avistado.enabled = false;
 		Jugador = GameObject.FindGameObjectWithTag ("Player").transform;
 		player = GameObject.FindGameObjectWithTag("Player");
-
+        controller = player.GetComponent<CharacterController>();
+        Spawnpoint = GameObject.FindGameObjectWithTag("SpawnPlayer");
         VerAngulo = Linterna.spotAngle;
 		LinternaOriginal = Linterna.color;
         
@@ -47,7 +51,6 @@ public class Guardia : MonoBehaviour {
 
 	}
 	void Update() {
-		controller = player.GetComponent<CharacterController>();
 		if (VerJugador()) 
 		{
             tiempoVisto += Time.deltaTime;

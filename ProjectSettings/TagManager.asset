@@ -11,6 +11,8 @@ TagManager:
   - CajaAbierta
   - Ascensor
   - AscensorAbierto
+  - SpawnPlayer
+  - Avistado
   layers:
   - Default
   - TransparentFX
