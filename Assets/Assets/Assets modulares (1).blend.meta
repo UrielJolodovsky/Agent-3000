@@ -1,0 +1,236 @@
+fileFormatVersion: 2
+guid: 347f127f5b60c494095ee0ae218eae71
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ajugero pincipio primer nivel
+    100002: Ascensor
+    100004: Ascensor.001
+    100006: Ascensor.002
+    100008: //RootNode
+    100010: Caja de Ticoins
+    100012: Caja Electrica
+    100014: Caja Medica
+    100016: Caja Peligro
+    100018: Cube
+    100020: Cube.001
+    100022: Cube.002
+    100024: Curva nivel 1
+    100026: 'Espacio de Puerta '
+    100028: Pared
+    100030: 'Pared con '
+    100032: Pared con cuadro
+    100034: Pared con rejilla
+    100036: Pared estahnte
+    100038: Pared nivel 1.001
+    100040: Pared nivel 1.002
+    100042: Pared nivel 1.003
+    100044: Paredes nivel 1.001
+    100046: Piso nivel 1
+    100048: Piso nivel 1 oficial.002
+    100050: Piso nivel 1 oficial.003
+    100052: Puerta
+    400000: Ajugero pincipio primer nivel
+    400002: Ascensor
+    400004: Ascensor.001
+    400006: Ascensor.002
+    400008: //RootNode
+    400010: Caja de Ticoins
+    400012: Caja Electrica
+    400014: Caja Medica
+    400016: Caja Peligro
+    400018: Cube
+    400020: Cube.001
+    400022: Cube.002
+    400024: Curva nivel 1
+    400026: 'Espacio de Puerta '
+    400028: Pared
+    400030: 'Pared con '
+    400032: Pared con cuadro
+    400034: Pared con rejilla
+    400036: Pared estahnte
+    400038: Pared nivel 1.001
+    400040: Pared nivel 1.002
+    400042: Pared nivel 1.003
+    400044: Paredes nivel 1.001
+    400046: Piso nivel 1
+    400048: Piso nivel 1 oficial.002
+    400050: Piso nivel 1 oficial.003
+    400052: Puerta
+    2100000: Piso nivel 1
+    2100002: No Name
+    2100004: Material.001
+    2100006: Material.002
+    2100008: Material.003
+    2100010: Material.005
+    2100012: Material.006
+    2100014: PAred nivel 1
+    2100016: Paleta multitasking
+    2100018: Paleta multitasking.003
+    2100020: Paleta multitasking.004
+    2100022: Estante
+    2300000: Ajugero pincipio primer nivel
+    2300002: Ascensor
+    2300004: Ascensor.001
+    2300006: Ascensor.002
+    2300008: Caja de Ticoins
+    2300010: Caja Electrica
+    2300012: Caja Medica
+    2300014: Caja Peligro
+    2300016: Cube
+    2300018: Cube.001
+    2300020: Cube.002
+    2300022: Curva nivel 1
+    2300024: 'Espacio de Puerta '
+    2300026: Pared
+    2300028: 'Pared con '
+    2300030: Pared con cuadro
+    2300032: Pared con rejilla
+    2300034: Pared estahnte
+    2300036: Pared nivel 1.001
+    2300038: Pared nivel 1.002
+    2300040: Pared nivel 1.003
+    2300042: Paredes nivel 1.001
+    2300044: Piso nivel 1
+    2300046: Piso nivel 1 oficial.002
+    2300048: Piso nivel 1 oficial.003
+    2300050: Puerta
+    3300000: Ajugero pincipio primer nivel
+    3300002: Ascensor
+    3300004: Ascensor.001
+    3300006: Ascensor.002
+    3300008: Caja de Ticoins
+    3300010: Caja Electrica
+    3300012: Caja Medica
+    3300014: Caja Peligro
+    3300016: Cube
+    3300018: Cube.001
+    3300020: Cube.002
+    3300022: Curva nivel 1
+    3300024: 'Espacio de Puerta '
+    3300026: Pared
+    3300028: 'Pared con '
+    3300030: Pared con cuadro
+    3300032: Pared con rejilla
+    3300034: Pared estahnte
+    3300036: Pared nivel 1.001
+    3300038: Pared nivel 1.002
+    3300040: Pared nivel 1.003
+    3300042: Paredes nivel 1.001
+    3300044: Piso nivel 1
+    3300046: Piso nivel 1 oficial.002
+    3300048: Piso nivel 1 oficial.003
+    3300050: Puerta
+    4300000: Piso nivel 1
+    4300002: Pared
+    4300004: Puerta
+    4300006: 'Pared con '
+    4300008: Caja de Ticoins
+    4300010: Caja Electrica
+    4300012: Caja Medica
+    4300014: Caja Peligro
+    4300016: Ascensor
+    4300018: 'Espacio de Puerta '
+    4300020: Ajugero pincipio primer nivel
+    4300022: Pared con rejilla
+    4300024: Pared con cuadro
+    4300026: Ascensor.001
+    4300028: Ascensor.002
+    4300030: Curva nivel 1
+    4300032: Piso nivel 1 oficial.002
+    4300034: Piso nivel 1 oficial.003
+    4300036: Pared nivel 1.001
+    4300038: Pared nivel 1.002
+    4300040: Cube.001
+    4300042: Cube
+    4300044: Paredes nivel 1.001
+    4300046: Pared estahnte
+    4300048: Cube.002
+    4300050: Pared nivel 1.003
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
