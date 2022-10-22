@@ -8,13 +8,8 @@ ModelImporter:
     2100000: ParedGris
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Pared.002
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: textura-abstracta-superficie-pared-gris-texto-o-fondo_404461-913
-    second: {fileID: 2800000, guid: 010d2281c2568284395bc33d48c411b7, type: 3}
+    4300000: Pared.003
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
