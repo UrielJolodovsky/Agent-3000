@@ -26,6 +26,7 @@ public class EntrarAscensor : MonoBehaviour
         Necesita.enabled = false;
         AbrirAscensor.enabled = false;
         entrarAscensor.enabled = false;
+        posibilidadAbrir = false;
     }
 
     // Update is called once per frame
@@ -82,7 +83,7 @@ public class EntrarAscensor : MonoBehaviour
         {
             posibilidadAbrir = true;
         }
-        else
+        else if (tarjetaAgarrada.tarjetaAgarrada == false)
         {
             Necesita.enabled = true;
         }
