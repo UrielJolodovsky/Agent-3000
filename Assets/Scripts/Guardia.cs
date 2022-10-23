@@ -30,7 +30,7 @@ public class Guardia : MonoBehaviour {
     void Start() {
 
         Camino = transform.Find("Camino").transform;
-        Linterna = GameObject.Find("Linterna").GetComponent<Light>();
+        //Linterna = GameObject.Find("Linterna").GetComponent<Light>();
         Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
         Avistado.enabled = false;
 		Jugador = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -54,6 +54,7 @@ public class Guardia : MonoBehaviour {
 		if (VerJugador()) 
 		{
             tiempoVisto += Time.deltaTime;
+            //Debug.Log(Linterna.color);
         }
 		else 
 		{
@@ -61,7 +62,8 @@ public class Guardia : MonoBehaviour {
 		}
         
 		tiempoVisto = Mathf.Clamp(tiempoVisto, 0, tiempoParaVer);
-        Linterna.color = Color.Lerp(LinternaOriginal, Color.red, tiempoVisto / tiempoParaVer);
+        Linterna.color = Color.LerpUnclamped(LinternaOriginal, Color.red, tiempoVisto / tiempoParaVer);
+		
         
 		if (tiempoVisto >= tiempoParaVer)
         {
