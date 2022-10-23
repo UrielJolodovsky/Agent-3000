@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1088671030421724780}
   - component: {fileID: 1088671030422723756}
   - component: {fileID: 1088671030415274412}
+  - component: {fileID: 64158436265625156}
   m_Layer: 0
   m_Name: vidriera estante 1
   m_TagString: Untagged
@@ -97,3 +98,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &64158436265625156
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088671030424650348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 86a230ca9cfcdcf479713b4dc009fdc1, type: 3}
