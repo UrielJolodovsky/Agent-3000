@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: eb2a0b4b0ac3e9043af2c5f38130aac9
+guid: 6f55b30f538619b41bdff9e372093d26
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material.001
-    2100002: Sofa
+    2100000: ParedGris
+    2100002: PaletaDegrade
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.001
+    4300000: Pared.005
   externalObjects: {}
   materials:
     importMaterials: 1

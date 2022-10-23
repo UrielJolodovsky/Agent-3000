@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 969645119691203886}
   - component: {fileID: 969645119690433806}
   - component: {fileID: 969645119689435086}
+  - component: {fileID: 65858510027219700}
   m_Layer: 0
   m_Name: Piso4x4 Gris
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &65858510027219700
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969645119691372814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.000006, y: 0, z: 12.000006}
+  m_Center: {x: -0.00000023841858, y: 0, z: 0.00000071525574}
