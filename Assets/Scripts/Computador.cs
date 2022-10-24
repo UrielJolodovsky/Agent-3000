@@ -30,11 +30,13 @@ public class Computador : MonoBehaviour
     void Start()
     {
         numRandom = RandomNumComputador.num;
-        cuentas = new string[] { "345 + 749 - 321 x 2", "112 + 90 + 76 - 4 x 5", "230 + 89 + 87 + 53 x 3", "491 x 2 + 15", "545 + 210" };
-       resultadosCuentas = new string[] { "452", "258", "565", "997", "755" };
+        cuentas = new string[] { "345 + 749 - 321 x 2", "112 + 90 + 76 - 4 x 5", "230 + 89 + 87 + 53 x 3", "125 x 2 + 16", "545 + 367" };
+       resultadosCuentas = new string[] { "452", "258", "565", "266", "912" };
         cuentaContraseña.text = cuentas[numRandom];
         contrasenia = resultadosCuentas[numRandom];
         Debug.Log(contrasenia);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

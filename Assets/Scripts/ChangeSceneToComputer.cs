@@ -34,10 +34,10 @@ public class ChangeSceneToComputer : MonoBehaviour
         jugador.m_MouseLook.YSensitivity = 0;
         SceneManager.LoadScene(Computer);
     }
-void OnTriggerStay()
+void OnTriggerStay(Collider other)
     {
         Usar.enabled = true;
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && other.gameObject.tag == "Player")
         {
             LoadScene("Computer");
         }
