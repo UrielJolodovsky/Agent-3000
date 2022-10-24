@@ -34,9 +34,7 @@ public class Computador : MonoBehaviour
        resultadosCuentas = new string[] { "452", "258", "565", "266", "912" };
         cuentaContraseña.text = cuentas[numRandom];
         contrasenia = resultadosCuentas[numRandom];
-        Debug.Log(contrasenia);
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Locked;
+        Debug.Log(contrasenia);        
     }
 
     // Update is called once per frame

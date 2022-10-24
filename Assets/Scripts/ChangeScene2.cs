@@ -13,8 +13,8 @@ public class ChangeScene2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.Confined;
         player = GameObject.FindGameObjectWithTag("Player");
         controller = player.GetComponent<CharacterController>();
         jugador = player.GetComponent<FirstPersonController>();

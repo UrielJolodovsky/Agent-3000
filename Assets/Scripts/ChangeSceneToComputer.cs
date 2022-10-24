@@ -33,6 +33,8 @@ public class ChangeSceneToComputer : MonoBehaviour
         jugador.m_MouseLook.XSensitivity = 0;
         jugador.m_MouseLook.YSensitivity = 0;
         SceneManager.LoadScene(Computer);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 void OnTriggerStay(Collider other)
     {
