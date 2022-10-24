@@ -1,14 +1,44 @@
 fileFormatVersion: 2
-guid: 68205d01657abd14a9dc4b254e07e178
+guid: d98db6ad2b6259a42896ac9c287f6ee7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Material.001
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Sphere.002
+    100000: Armature
+    100002: Bone
+    100004: Bone_end
+    100006: //RootNode
+    100008: Cube
+    100010: Cube.001
+    100012: Cube.002
+    100014: Cylinder
+    100016: Cylinder.001
+    400000: Armature
+    400002: Bone
+    400004: Bone_end
+    400006: //RootNode
+    400008: Cube
+    400010: Cube.001
+    400012: Cube.002
+    400014: Cylinder
+    400016: Cylinder.001
+    2100000: Material
+    2300000: Cube
+    2300002: Cube.002
+    2300004: Cylinder
+    2300006: Cylinder.001
+    3300000: Cube
+    3300002: Cube.002
+    3300004: Cylinder
+    3300006: Cylinder.001
+    4300000: Cube
+    4300002: Cube.001
+    4300004: Cylinder
+    4300006: Cylinder.001
+    4300008: Cube.002
+    7400000: Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: Cube.001
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -61,8 +91,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -89,7 +119,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
