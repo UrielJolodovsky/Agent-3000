@@ -10,7 +10,7 @@ public class UbicarTarjeta : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        num = Random.Range(0, 11);
+        num = Random.Range(0, 8);
         tarjeta.transform.position = posTarjeta[num].position;
     }
 
