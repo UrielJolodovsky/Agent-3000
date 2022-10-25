@@ -7,7 +7,7 @@ using UnityEngine.Experimental.GlobalIllumination;
 
 public class Guardia : MonoBehaviour {
     
-	[SerializeField] public float Vel = 5;
+	[SerializeField] public float Vel = 1.5f;
     [SerializeField] public float Espera = .3f;
     [SerializeField] public float VelGiro = 90;
     [SerializeField] float tiempoVisto;
@@ -26,6 +26,12 @@ public class Guardia : MonoBehaviour {
     public CharacterController controller;
 	[SerializeField] GameObject player;
     [SerializeField] public GameObject Spawnpoint;
+
+    [SerializeField] public Animator animator;
+    [SerializeField] public GameObject muerte;
+    [SerializeField] public GameObject robotCamina;
+
+    [SerializeField] public bool muerto;
 
     void Start() {
 
@@ -51,6 +57,15 @@ public class Guardia : MonoBehaviour {
 
 	}
 	void Update() {
+        if (muerto)
+        {
+            //Destroy(gameObject);
+            Linterna.enabled = false;
+            muerte.SetActive(true);
+            robotCamina.SetActive(false);
+            Debug.Log("colision");
+            StopAllCoroutines();
+        }
 		if (VerJugador()) 
 		{
             tiempoVisto += Time.deltaTime;
@@ -83,7 +98,7 @@ public class Guardia : MonoBehaviour {
     }
 
 	bool VerJugador() {
-		if (Vector3.Distance(transform.position,Jugador.position) < DistanciaVista) {
+		if (Vector3.Distance(transform.position,Jugador.position) < DistanciaVista && !muerto) {
 			Vector3 DirAlJugador = (Jugador.position - transform.position).normalized;
 			float AnguloGuardiayJugador = Vector3.Angle (transform.forward, DirAlJugador);
 			if (AnguloGuardiayJugador < VerAngulo / 2f) {
@@ -102,13 +117,15 @@ public class Guardia : MonoBehaviour {
 		Vector3 PuntosObjetivo = Puntos [PuntosObjetivoIndex];
 		transform.LookAt (PuntosObjetivo);
 
-		while (true) {
+        while (true) {
 			transform.position = Vector3.MoveTowards (transform.position, PuntosObjetivo, Vel * Time.deltaTime);
 			if (transform.position == PuntosObjetivo) {
 				PuntosObjetivoIndex = (PuntosObjetivoIndex + 1) % Puntos.Length;
 				PuntosObjetivo = Puntos [PuntosObjetivoIndex];
 				yield return new WaitForSeconds (Espera);
-				yield return StartCoroutine (Girarse (PuntosObjetivo));
+                animator.SetBool("Camina", false);
+                yield return StartCoroutine (Girarse (PuntosObjetivo));
+                animator.SetBool("Camina", true);
 			}
 			yield return null;
 		}
@@ -122,6 +139,7 @@ public class Guardia : MonoBehaviour {
 			float angle = Mathf.MoveTowardsAngle (transform.eulerAngles.y, targetAngle, VelGiro * Time.deltaTime);
 			transform.eulerAngles = Vector3.up * angle;
 			yield return null;
+           
 		}
 	}
 
@@ -143,8 +161,7 @@ public class Guardia : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Bala")
 		{
-			Destroy(gameObject);
-			Debug.Log("colision");
-		}
+            muerto = true;
+        }
     }
 }
