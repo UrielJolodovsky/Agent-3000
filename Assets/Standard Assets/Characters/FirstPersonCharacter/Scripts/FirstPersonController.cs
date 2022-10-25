@@ -73,10 +73,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             RotateView();
             if (scene.name == "Computer")
             {
-                m_MouseLook.XSensitivity = 0;
-                m_MouseLook.YSensitivity = 0;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
             }
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
