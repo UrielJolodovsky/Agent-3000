@@ -16,6 +16,8 @@ public class VerificarContraseña : MonoBehaviour
     public int puntosPerdidosNivel2;
     [SerializeField] float rounded;
     [SerializeField] Text Counter;
+    [SerializeField] public Text cerrarpuerta;
+    [SerializeField] int intentos;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class VerificarContraseña : MonoBehaviour
         abrirAscensor = false;
         posibilidad = false;
         estaAscensor = false;
+        intentos = 0;
     }
 
     // Update is called once per frame
@@ -39,6 +42,7 @@ public class VerificarContraseña : MonoBehaviour
             this.GetComponent<Animation>().Play("CerrarPuerta");
             isCounting = false;
             puntosPerdidosNivel2 = Mathf.FloorToInt(customTime * 10f);
+            cerrarpuerta.enabled = false;
             Time.timeScale = 0;
         }
         if (isCounting)
@@ -59,6 +63,10 @@ public class VerificarContraseña : MonoBehaviour
         if (contrasenia.text == num.ToString())
         {
             abrirAscensor = true;
+        }
+        else
+        {
+            intentos++;
         }
     }
 

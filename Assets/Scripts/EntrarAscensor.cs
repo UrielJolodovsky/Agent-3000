@@ -37,7 +37,7 @@ public class EntrarAscensor : MonoBehaviour
             Time.timeScale = 1;
             AscensorAbierto = true;
             posibilidadAbrir = false;
-            this.GetComponent<Animation>().Play("Armature|Abrir");
+            this.GetComponent<Animation>().Play("AbrirPuerta");
         }
         if (AscensorAbierto && Input.GetKeyDown(KeyCode.O))
         {
@@ -46,7 +46,7 @@ public class EntrarAscensor : MonoBehaviour
             puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
             Time.timeScale = 0;
             nivelCompletado.enabled = true;
-            this.GetComponent<Animation>().Play("Armature|Cerrar");
+            this.GetComponent<Animation>().Play("CerrarPuerta");
         }
         if (isCounting)
         {
@@ -72,18 +72,18 @@ public class EntrarAscensor : MonoBehaviour
              }
          }*/
     }
-    void OnTriggerStay()
+    void OnTriggerStay(Collider other)
     {
-        if (AscensorAbierto == true)
+        if (AscensorAbierto == true && other.gameObject.tag == "Player")
         {
             AbrirAscensor.enabled = false;
             entrarAscensor.enabled = true;
         }
-        if (tarjetaAgarrada.tarjetaAgarrada == true && AscensorAbierto)
+        if (tarjetaAgarrada.tarjetaAgarrada == true && AscensorAbierto && other.gameObject.tag == "Player")
         {
             posibilidadAbrir = true;
         }
-        else if (tarjetaAgarrada.tarjetaAgarrada == false)
+        else if (tarjetaAgarrada.tarjetaAgarrada == false && other.gameObject.tag == "Player")
         {
             Necesita.enabled = true;
         }

@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Scenes/AbrirPuerta.anim.meta
-guid: fe8966ecdf603f646ba37085d8ec780e
+guid: c10b6e9de3c2c8547a0569ca8961159c
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 7400000
-========
-guid: 8270e5d64b5936d46bdeae720dc42f69
-NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 2100000
->>>>>>>> 03d4ff3ba5e2775202d0b8365dd33eddb73b7133:Assets/Modelos nivel 3/Materials 3/TSAI.mat.meta
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

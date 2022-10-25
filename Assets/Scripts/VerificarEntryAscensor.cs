@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VerificarEntryAscensor : MonoBehaviour
 {
     [SerializeField] public bool entryAscensor;
     [SerializeField] GameObject ascensor;
+    [SerializeField] public Text cerrarpuerta;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class VerificarEntryAscensor : MonoBehaviour
         if (other.gameObject.tag == "Player" && ascensor.gameObject.tag == "AscensorAbierto")
         {
             entryAscensor = true;
+            cerrarpuerta.enabled = true;
         }
     }
     void OnTriggerExit(Collider other)
@@ -29,6 +32,7 @@ public class VerificarEntryAscensor : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             entryAscensor = false;
+            cerrarpuerta.enabled = false;
         }
     }
 }
