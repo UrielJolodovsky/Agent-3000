@@ -17,6 +17,8 @@ public class EntrarAscensor : MonoBehaviour
     [SerializeField] bool AscensorAbierto;
     [SerializeField] Text entrarAscensor;
     [SerializeField] bool posibilidadAbrir;
+    public GameObject tarjeta;
+    [SerializeField] Animation animacion;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,7 @@ public class EntrarAscensor : MonoBehaviour
         AbrirAscensor.enabled = false;
         entrarAscensor.enabled = false;
         posibilidadAbrir = false;
+        animacion = GetComponent<Animation>();
     }
 
     // Update is called once per frame
@@ -37,7 +40,7 @@ public class EntrarAscensor : MonoBehaviour
             Time.timeScale = 1;
             AscensorAbierto = true;
             posibilidadAbrir = false;
-            this.GetComponent<Animation>().Play("AbrirPuerta");
+            animacion.Play("AbrirPuerta");
         }
         if (AscensorAbierto && Input.GetKeyDown(KeyCode.O))
         {
@@ -57,7 +60,7 @@ public class EntrarAscensor : MonoBehaviour
     }
     void OnTriggerEnter()
     {
-        if (tarjetaAgarrada.tarjetaAgarrada == true && AscensorAbierto == false)
+        if (tarjeta.activeInHierarchy == false && AscensorAbierto == false)
         {
             AbrirAscensor.enabled = true;
         }
@@ -79,11 +82,11 @@ public class EntrarAscensor : MonoBehaviour
             AbrirAscensor.enabled = false;
             entrarAscensor.enabled = true;
         }
-        if (tarjetaAgarrada.tarjetaAgarrada == true && AscensorAbierto && other.gameObject.tag == "Player")
+        if (tarjeta.activeInHierarchy == false && AscensorAbierto && other.gameObject.tag == "Player")
         {
             posibilidadAbrir = true;
         }
-        else if (tarjetaAgarrada.tarjetaAgarrada == false && other.gameObject.tag == "Player")
+        else if (tarjeta.activeInHierarchy && other.gameObject.tag == "Player")
         {
             Necesita.enabled = true;
         }

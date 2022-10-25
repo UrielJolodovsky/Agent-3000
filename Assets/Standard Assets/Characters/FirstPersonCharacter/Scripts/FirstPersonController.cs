@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
+
 
 #pragma warning disable 618, 649
 namespace UnityStandardAssets.Characters.FirstPerson
@@ -43,6 +45,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
         public object controller;
+        public Scene scene;
 
 
 
@@ -59,13 +62,22 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            
         }
 
 
         // Update is called once per frame
         private void Update()
         {
+            Scene scene = SceneManager.GetActiveScene();
             RotateView();
+            if (scene.name == "Computer")
+            {
+                m_MouseLook.XSensitivity = 0;
+                m_MouseLook.YSensitivity = 0;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {

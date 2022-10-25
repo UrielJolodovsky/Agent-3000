@@ -14,7 +14,7 @@ public class ChangeScene2 : MonoBehaviour
     void Start()
     {
         Cursor.visible = true;
-        //Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.None;
         player = GameObject.FindGameObjectWithTag("Player");
         controller = player.GetComponent<CharacterController>();
         jugador = player.GetComponent<FirstPersonController>();
@@ -25,14 +25,14 @@ public class ChangeScene2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            LoadScene("SandBox");
+            LoadScene("Nivel2");
             controller.enabled = true;
             jugador.m_MouseLook.XSensitivity = 2;
             jugador.m_MouseLook.YSensitivity = 2;
         }
     }
-    public void LoadScene(string SandBox)
+    public void LoadScene(string Nivel2)
     {
-        SceneManager.LoadScene(SandBox);
+        SceneManager.LoadScene(Nivel2);
     }
 }

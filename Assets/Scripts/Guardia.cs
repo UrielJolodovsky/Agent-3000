@@ -30,6 +30,8 @@ public class Guardia : MonoBehaviour {
     [SerializeField] public Animator animator;
     [SerializeField] public GameObject muerte;
     [SerializeField] public GameObject robotCamina;
+	[SerializeField] public BoxCollider collider1;
+    [SerializeField] public CapsuleCollider collider2;
 
     [SerializeField] public bool muerto;
 
@@ -45,7 +47,9 @@ public class Guardia : MonoBehaviour {
         Spawnpoint = GameObject.FindGameObjectWithTag("SpawnPlayer");
         VerAngulo = Linterna.spotAngle;
 		LinternaOriginal = Linterna.color;
-        
+        collider1 = GetComponent<BoxCollider>();
+        collider2 = GetComponent<CapsuleCollider>();
+
 
         Vector3[] Puntos = new Vector3[Camino.childCount];
 		for (int i = 0; i < Puntos.Length; i++) {
@@ -63,6 +67,8 @@ public class Guardia : MonoBehaviour {
             Linterna.enabled = false;
             muerte.SetActive(true);
             robotCamina.SetActive(false);
+            collider2.enabled = false;
+            collider1.enabled = false;
             Debug.Log("colision");
             StopAllCoroutines();
         }
