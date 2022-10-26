@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UbicarTarjeta : MonoBehaviour
 {
-    [SerializeField] Transform[] posTarjeta;
+    [SerializeField] public Transform[] posTarjeta;
     [SerializeField] GameObject tarjeta;
     [SerializeField] public int num;
     // Start is called before the first frame update

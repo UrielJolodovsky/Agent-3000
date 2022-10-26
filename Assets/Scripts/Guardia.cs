@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Experimental.GlobalIllumination;
+using UnityEngine.AI;
 
 public class Guardia : MonoBehaviour {
     
@@ -34,9 +35,15 @@ public class Guardia : MonoBehaviour {
     [SerializeField] public CapsuleCollider collider2;
 
     [SerializeField] public bool muerto;
+    NavMeshAgent agent;
+    public bool Chase;
+    [SerializeField] Transform targetTransform;
+    [SerializeField] Coroutine caminito;
 
     void Start() {
 
+        agent = GetComponent<NavMeshAgent>();
+        Chase = false;
         Camino = transform.Find("Camino").transform;
         //Linterna = GameObject.Find("Linterna").GetComponent<Light>();
         Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
@@ -49,6 +56,7 @@ public class Guardia : MonoBehaviour {
 		LinternaOriginal = Linterna.color;
         collider1 = GetComponent<BoxCollider>();
         collider2 = GetComponent<CapsuleCollider>();
+        targetTransform = player.GetComponent<Transform>();
 
 
         Vector3[] Puntos = new Vector3[Camino.childCount];
@@ -57,10 +65,15 @@ public class Guardia : MonoBehaviour {
 			Puntos [i] = new Vector3 (Puntos [i].x, transform.position.y, Puntos [i].z);
 		}
 
-		StartCoroutine (SeguirCamino (Puntos));
+		caminito = StartCoroutine (SeguirCamino (Puntos));
 
 	}
 	void Update() {
+        if (Chase)
+        {
+            StopCoroutine(caminito);
+            agent.destination = targetTransform.position;
+        }
         if (muerto)
         {
             //Destroy(gameObject);
@@ -71,6 +84,7 @@ public class Guardia : MonoBehaviour {
             collider1.enabled = false;
             Debug.Log("colision");
             StopAllCoroutines();
+            agent.enabled = false;
         }
 		if (VerJugador()) 
 		{
@@ -168,6 +182,13 @@ public class Guardia : MonoBehaviour {
         if (collision.gameObject.tag == "Bala")
 		{
             muerto = true;
+        }
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Chase = true;
         }
     }
 }
