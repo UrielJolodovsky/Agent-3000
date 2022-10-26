@@ -110,9 +110,9 @@ public class EntrarAscensor : MonoBehaviour
     }
     public void LoadScene(string Carga1)
     {
-        controller.enabled = false;
+        //controller.enabled = false;
         SceneManager.LoadScene(Carga1);
-        Cursor.visible = true;
+        //Cursor.visible = true;
         //Cursor.lockState = CursorLockMode.Locked;
     }
 }

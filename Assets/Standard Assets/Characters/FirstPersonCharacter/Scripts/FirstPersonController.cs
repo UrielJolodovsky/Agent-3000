@@ -62,7 +62,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
-            
+            if (scene.name == "Nivel2")
+            {
+                this.transform.position = new Vector3(5.221129f, 1.81f, -2.78f);
+            }
+
         }
 
 
@@ -71,7 +75,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             Scene scene = SceneManager.GetActiveScene();
             RotateView();
-            if (scene.name == "Computer")
+            if (scene.name == "Computer" || scene.name == "Carga1" || scene.name == "Carga2")
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;

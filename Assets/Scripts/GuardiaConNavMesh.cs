@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.AI;
 
-public class Guardia : MonoBehaviour {
+public class GuardiaConNavMesh : MonoBehaviour {
     
 	[SerializeField] public float Vel = 1.5f;
     [SerializeField] public float Espera = .3f;
@@ -35,14 +35,14 @@ public class Guardia : MonoBehaviour {
     [SerializeField] public CapsuleCollider collider2;
 
     [SerializeField] public bool muerto;
-    //public NavMeshAgent agent;
+    public NavMeshAgent agent;
     public bool Chase;
     [SerializeField] Transform targetTransform;
     [SerializeField] Coroutine caminito;
 
     void Start() {
 
-        //agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
         Chase = false;
         Camino = transform.Find("Camino").transform;
         //Linterna = GameObject.Find("Linterna").GetComponent<Light>();
@@ -72,7 +72,7 @@ public class Guardia : MonoBehaviour {
         if (Chase)
         {
             StopCoroutine(caminito);
-            //agent.destination = targetTransform.position;
+            agent.destination = targetTransform.position;
         }
         if (muerto)
         {
@@ -82,9 +82,9 @@ public class Guardia : MonoBehaviour {
             robotCamina.SetActive(false);
             collider2.enabled = false;
             collider1.enabled = false;
-            //Debug.Log("colision");
+            Debug.Log("colision");
             StopAllCoroutines();
-            //agent.enabled = false;
+            agent.enabled = false;
         }
 		if (VerJugador()) 
 		{
@@ -111,9 +111,8 @@ public class Guardia : MonoBehaviour {
                     player.transform.position = Spawnpoint.transform.position;
                     //player.transform.eulerAngles = new Vector3 (0,0,0);
                     //player.transform.localRotation = new Quaternion.euler(0,0,0);
-                    //SceneManager.LoadScene("Nivel 1");
+                    SceneManager.LoadScene("Nivel 1");
 					Time.timeScale = 1;
-                    Avistado.enabled = false;
 				}
         }
     }

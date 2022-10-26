@@ -24,6 +24,7 @@ public class Computador : MonoBehaviour
     public Text Intentos;
     public Text informacionClasificada;
     [SerializeField] string contrasenia;
+    public static bool Encontrado;
     [SerializeField] int cantidadIntentos = 0;
 
     // Start is called before the first frame update
@@ -96,6 +97,7 @@ public class Computador : MonoBehaviour
             Debug.Log("Contraseña correcta");
             Encriptado.SetActive(false);    
             informacionClasificada.enabled = true;
+            Encontrado = true;
         }
         else
         {

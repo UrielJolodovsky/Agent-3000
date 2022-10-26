@@ -373,7 +373,7 @@ PrefabInstance:
     - target: {fileID: 4485833227042133791, guid: f75636d697d4fa6499059000200efbf1,
         type: 3}
       propertyPath: m_Name
-      value: '[GUARDIA]'
+      value: '[GUARDIA] Variant'
       objectReference: {fileID: 0}
     - target: {fileID: 4485833227042133989, guid: f75636d697d4fa6499059000200efbf1,
         type: 3}
@@ -444,6 +444,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485833228354131497, guid: f75636d697d4fa6499059000200efbf1,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485833228354131497, guid: f75636d697d4fa6499059000200efbf1,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485833228354131497, guid: f75636d697d4fa6499059000200efbf1,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f75636d697d4fa6499059000200efbf1, type: 3}
