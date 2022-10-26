@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EntrarAscensor : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class EntrarAscensor : MonoBehaviour
     [SerializeField] Animation animacion;
     [SerializeField] VerificarEntryAscensor verificar;
     [SerializeField] bool estaAscensor;
+    public CharacterController controller;
+    [SerializeField] public BoxCollider collider2;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +35,7 @@ public class EntrarAscensor : MonoBehaviour
         entrarAscensor.enabled = false;
         posibilidadAbrir = false;
         animacion = GetComponent<Animation>();
+        collider2 = GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -54,6 +58,8 @@ public class EntrarAscensor : MonoBehaviour
             Time.timeScale = 0;
             nivelCompletado.enabled = true;
             animacion.Play("CerrarPuerta");
+            LoadScene("Carga1");
+            
         }
         if (isCounting)
         {
@@ -64,6 +70,7 @@ public class EntrarAscensor : MonoBehaviour
         if (AscensorAbierto)
         {
             AbrirAscensor.enabled = false;
+            collider2.enabled = false;
         }
     }
     void OnTriggerEnter()
@@ -100,5 +107,12 @@ public class EntrarAscensor : MonoBehaviour
         AbrirAscensor.enabled = false;
         entrarAscensor.enabled = false;
         posibilidadAbrir = false;
+    }
+    public void LoadScene(string Carga1)
+    {
+        controller.enabled = false;
+        SceneManager.LoadScene(Carga1);
+        Cursor.visible = true;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 }

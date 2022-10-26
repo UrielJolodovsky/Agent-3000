@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.56452316, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4177,15 +4177,15 @@ Transform:
   - {fileID: 1392300050}
   - {fileID: 1679951808}
   - {fileID: 302506774}
-  - {fileID: 1753848042}
   - {fileID: 400123515}
-  - {fileID: 1853778468}
+  - {fileID: 1753848042}
   - {fileID: 691913542}
-  - {fileID: 2031953639}
+  - {fileID: 1853778468}
   - {fileID: 1035351234}
+  - {fileID: 2031953639}
+  - {fileID: 2127480602}
   - {fileID: 1224267009}
   - {fileID: 210638476}
-  - {fileID: 2127480602}
   - {fileID: 1462094564}
   - {fileID: 945328054}
   m_Father: {fileID: 0}
@@ -14486,7 +14486,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
