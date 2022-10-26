@@ -19,6 +19,8 @@ public class EntrarAscensor : MonoBehaviour
     [SerializeField] bool posibilidadAbrir;
     public GameObject tarjeta;
     [SerializeField] Animation animacion;
+    [SerializeField] VerificarEntryAscensor verificar;
+    [SerializeField] bool estaAscensor;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,14 +37,16 @@ public class EntrarAscensor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        estaAscensor = verificar.entryAscensor;
         if (posibilidadAbrir && Input.GetKeyDown(KeyCode.E))
         {
-            Time.timeScale = 1;
             AscensorAbierto = true;
+            Time.timeScale = 1;
             posibilidadAbrir = false;
-            animacion.Play("AbrirPuerta");
+            animacion.Play("AbrirPuertaLevel1");
+            this.gameObject.tag = "AscensorAbierto";
         }
-        if (AscensorAbierto && Input.GetKeyDown(KeyCode.O))
+        if (AscensorAbierto && Input.GetKeyDown(KeyCode.O) && estaAscensor)
         {
             entrarAscensor.enabled = false;
             isCounting = false;
@@ -56,6 +60,10 @@ public class EntrarAscensor : MonoBehaviour
             customTime += Time.deltaTime;
             rounded = Mathf.Round(customTime * 100f) / 100f;
             Counter.text = rounded.ToString();
+        }
+        if (AscensorAbierto)
+        {
+            AbrirAscensor.enabled = false;
         }
     }
     void OnTriggerEnter()
@@ -77,12 +85,7 @@ public class EntrarAscensor : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        if (AscensorAbierto == true && other.gameObject.tag == "Player")
-        {
-            AbrirAscensor.enabled = false;
-            entrarAscensor.enabled = true;
-        }
-        if (tarjeta.activeInHierarchy == false && AscensorAbierto && other.gameObject.tag == "Player")
+        if (tarjeta.activeInHierarchy == false && !AscensorAbierto && other.gameObject.tag == "Player")
         {
             posibilidadAbrir = true;
         }
