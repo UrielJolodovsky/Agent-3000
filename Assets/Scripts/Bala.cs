@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bala : MonoBehaviour
 {
-    public float speed = 0.2f;
+    public float speed = 0.5f;
     public float lifetime = 2;
     public GameObject bala;
     

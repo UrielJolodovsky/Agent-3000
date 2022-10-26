@@ -18076,6 +18076,21 @@ MonoBehaviour:
   animacion: {fileID: 539767664312778481}
   verificar: {fileID: 1857951773}
   estaAscensor: 0
+  controller: {fileID: 1547404497}
+  collider2: {fileID: 1730871350}
+--- !u!65 &1730871350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730871348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0675354, y: 4.3368616, z: 2.12603}
+  m_Center: {x: -0.0337677, y: 1.6684308, z: -0.13578415}
 --- !u!65 &1730871352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20948,6 +20963,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EntrarCaja
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362762316669046895, guid: d6938f9ede9e6da4d81b1cc2381071b6,
+        type: 3}
+      propertyPath: m_Text
+      value: presiona E para abrir
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6938f9ede9e6da4d81b1cc2381071b6, type: 3}
