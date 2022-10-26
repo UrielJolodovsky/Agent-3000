@@ -99,8 +99,8 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
-    agentClimb: 0.4
+    agentSlope: 44.6
+    agentClimb: 2
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: b9761a3fd986c1948ad6358a5bae7640, type: 2}
 --- !u!4 &1124059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8365430273317249458, guid: bc73e1029dc3c914a8f6d833d424760c,
@@ -292,6 +292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Escaleras (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737871347883726350, guid: 60ea33daa527a7c4c9780be6c5784c20,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3737871347884214830, guid: 60ea33daa527a7c4c9780be6c5784c20,
         type: 3}
@@ -6042,6 +6047,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: alfombra (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359236675659787423, guid: 06c28cd082b62f94f892396997d369c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c28cd082b62f94f892396997d369c1, type: 3}
 --- !u!1001 &549155644
@@ -6495,6 +6505,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: alfombra (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359236675659787423, guid: 06c28cd082b62f94f892396997d369c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c28cd082b62f94f892396997d369c1, type: 3}
@@ -8829,6 +8844,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: alfombra (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359236675659787423, guid: 06c28cd082b62f94f892396997d369c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c28cd082b62f94f892396997d369c1, type: 3}
 --- !u!1 &810509422
@@ -9081,6 +9101,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: alfombra (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359236675659787423, guid: 06c28cd082b62f94f892396997d369c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c28cd082b62f94f892396997d369c1, type: 3}
@@ -11496,12 +11521,12 @@ NavMeshAgent:
   m_GameObject: {fileID: 1112724026}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 8
+  m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 0.2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -11521,8 +11546,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390bf473c408e48429b9bda119072c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
   Chase: 0
   targetTransform: {fileID: 1547404498}
+--- !u!136 &1112724035
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112724026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 7
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1113089928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: ba434ae01d7216146b123bdf81a59da0,
@@ -11644,6 +11708,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso 2 nivel 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 813679079696812503, guid: 6e0e05f9eaeda1049bde40cbbd17e25f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e0e05f9eaeda1049bde40cbbd17e25f, type: 3}
@@ -12969,6 +13038,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: alfombra (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359236675659787423, guid: 06c28cd082b62f94f892396997d369c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c28cd082b62f94f892396997d369c1, type: 3}
@@ -14460,6 +14534,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: alfombra (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359236675659787423, guid: 06c28cd082b62f94f892396997d369c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c28cd082b62f94f892396997d369c1, type: 3}
 --- !u!1 &1344242819
@@ -15190,6 +15269,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: alfombra (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8359236675659787423, guid: 06c28cd082b62f94f892396997d369c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c28cd082b62f94f892396997d369c1, type: 3}
@@ -16688,6 +16772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piso 2 nivel 1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2e9d9a0d21d3af646aabeb9b2d3b8380, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2e9d9a0d21d3af646aabeb9b2d3b8380, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.95
@@ -17016,6 +17104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Piso 1 nivel 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6953808423974429548, guid: 835b72be79f932743b36732104582a04,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 835b72be79f932743b36732104582a04, type: 3}
@@ -18681,6 +18774,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 743347927, guid: 2286ff489bbbc224f9e6566cd320b1b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325114773, guid: 2286ff489bbbc224f9e6566cd320b1b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662652259, guid: 2286ff489bbbc224f9e6566cd320b1b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662652259, guid: 2286ff489bbbc224f9e6566cd320b1b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.21
+      objectReference: {fileID: 0}
     - target: {fileID: 2705546050117092937, guid: 2286ff489bbbc224f9e6566cd320b1b1,
         type: 3}
       propertyPath: m_Name
@@ -18691,10 +18800,15 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 83f9dbc91a5ffeb4bb64afb6afc1ad57, type: 2}
+    - target: {fileID: 2705546050117092942, guid: 2286ff489bbbc224f9e6566cd320b1b1,
+        type: 3}
+      propertyPath: targetTransform
+      value: 
+      objectReference: {fileID: 1547404498}
     - target: {fileID: 2705546050117093043, guid: 2286ff489bbbc224f9e6566cd320b1b1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.73
+      value: 40.92
       objectReference: {fileID: 0}
     - target: {fileID: 2705546050117093043, guid: 2286ff489bbbc224f9e6566cd320b1b1,
         type: 3}
@@ -18704,7 +18818,7 @@ PrefabInstance:
     - target: {fileID: 2705546050117093043, guid: 2286ff489bbbc224f9e6566cd320b1b1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.89
+      value: 35.09
       objectReference: {fileID: 0}
     - target: {fileID: 2705546050117093043, guid: 2286ff489bbbc224f9e6566cd320b1b1,
         type: 3}
@@ -21281,6 +21395,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: alfombra (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359236675659787423, guid: 06c28cd082b62f94f892396997d369c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c28cd082b62f94f892396997d369c1, type: 3}
 --- !u!95 &2098579823 stripped
@@ -23124,6 +23243,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 5606128040038294444, guid: a1a65550a0779ba43b8ecb6dfc8ae5e2,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1a65550a0779ba43b8ecb6dfc8ae5e2, type: 3}
 --- !u!1001 &5828658930327120125
@@ -23875,6 +23999,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: alfombra (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8359236675659787423, guid: 06c28cd082b62f94f892396997d369c1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06c28cd082b62f94f892396997d369c1, type: 3}
 --- !u!1001 &7688054437192160145
@@ -24263,6 +24392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Escaleras (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737871347883726350, guid: 60ea33daa527a7c4c9780be6c5784c20,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3737871347884214830, guid: 60ea33daa527a7c4c9780be6c5784c20,
         type: 3}
