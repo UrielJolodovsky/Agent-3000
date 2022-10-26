@@ -17962,7 +17962,7 @@ MonoBehaviour:
   entrarAscensor: {fileID: 889227141}
   posibilidadAbrir: 0
   tarjeta: {fileID: 1771827666}
-  animacion: {fileID: 0}
+  animacion: {fileID: 539767664312778481}
 --- !u!65 &1730871352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21782,11 +21782,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6750065917279168098, guid: b12805fdbfeb31441af0f1e66c21d8ca,
         type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750065917279168098, guid: b12805fdbfeb31441af0f1e66c21d8ca,
+        type: 3}
       propertyPath: m_PlayAutomatically
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6750065917279168098, guid: b12805fdbfeb31441af0f1e66c21d8ca,
+        type: 3}
+      propertyPath: m_Animations.Array.data[2]
+      value: 
+      objectReference: {fileID: 7400004, guid: 4cb3303e579f2a24cb44c8a2a09f6e20, type: 3}
+    - target: {fileID: 6750065917279168098, guid: b12805fdbfeb31441af0f1e66c21d8ca,
+        type: 3}
+      propertyPath: m_Animations.Array.data[3]
+      value: 
+      objectReference: {fileID: 7400004, guid: 4cb3303e579f2a24cb44c8a2a09f6e20, type: 3}
+    - target: {fileID: 6750065917279168098, guid: b12805fdbfeb31441af0f1e66c21d8ca,
+        type: 3}
+      propertyPath: m_Animations.Array.data[4]
+      value: 
+      objectReference: {fileID: 7400004, guid: 4cb3303e579f2a24cb44c8a2a09f6e20, type: 3}
+    - target: {fileID: 6750065917279168098, guid: b12805fdbfeb31441af0f1e66c21d8ca,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: fe8966ecdf603f646ba37085d8ec780e, type: 2}
+    - target: {fileID: 6750065917279168098, guid: b12805fdbfeb31441af0f1e66c21d8ca,
+        type: 3}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: 159a2838b61596a49849365ee5f737c3, type: 2}
+    - target: {fileID: 6750065917279168098, guid: b12805fdbfeb31441af0f1e66c21d8ca,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: fe8966ecdf603f646ba37085d8ec780e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b12805fdbfeb31441af0f1e66c21d8ca, type: 3}
+--- !u!111 &539767664312778481 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 6750065917279168098, guid: b12805fdbfeb31441af0f1e66c21d8ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 539767664312778480}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &605209951096556099
 PrefabInstance:
   m_ObjectHideFlags: 0
