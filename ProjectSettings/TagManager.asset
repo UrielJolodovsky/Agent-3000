@@ -13,6 +13,7 @@ TagManager:
   - AscensorAbierto
   - SpawnPlayer
   - Avistado
+  - PosicionesTarjeta
   layers:
   - Default
   - TransparentFX

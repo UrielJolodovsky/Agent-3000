@@ -1058,7 +1058,7 @@ GameObject:
   - component: {fileID: 63120308}
   m_Layer: 0
   m_Name: UbicacionTarjeta5
-  m_TagString: Untagged
+  m_TagString: PosicionesTarjeta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1295,7 +1295,7 @@ GameObject:
   - component: {fileID: 101966218}
   m_Layer: 0
   m_Name: UbicacionTarjeta3
-  m_TagString: Untagged
+  m_TagString: PosicionesTarjeta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2042,7 +2042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152756251}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.78, y: 3.4, z: 4.98}
+  m_LocalPosition: {x: 6.78, y: 3.4, z: 4.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5659,7 +5659,7 @@ GameObject:
   - component: {fileID: 516883068}
   m_Layer: 0
   m_Name: UbicacionTarjeta7
-  m_TagString: Untagged
+  m_TagString: PosicionesTarjeta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7216,6 +7216,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0acda850774b1d4d835099d8a508d67, type: 3}
+--- !u!1 &679609907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 679609909}
+  - component: {fileID: 679609908}
+  m_Layer: 0
+  m_Name: '[UBICARTARJETA]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &679609908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679609907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3586057922bf683439477da48a14fe47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posTarjeta: []
+  tarjeta: {fileID: 0}
+  num: 0
+--- !u!4 &679609909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679609907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 68.5681, y: 3.4518785, z: 43.79427}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &682421830
 GameObject:
   m_ObjectHideFlags: 0
@@ -8862,7 +8908,7 @@ GameObject:
   - component: {fileID: 810509423}
   m_Layer: 0
   m_Name: UbicacionTarjeta4
-  m_TagString: Untagged
+  m_TagString: PosicionesTarjeta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11546,33 +11592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 390bf473c408e48429b9bda119072c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 0}
-  Chase: 0
-  targetTransform: {fileID: 1547404498}
 --- !u!136 &1112724035
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14612,7 +14631,7 @@ GameObject:
   - component: {fileID: 1352644338}
   m_Layer: 0
   m_Name: UbicacionTarjeta2
-  m_TagString: Untagged
+  m_TagString: PosicionesTarjeta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15426,7 +15445,7 @@ GameObject:
   - component: {fileID: 1434192392}
   m_Layer: 0
   m_Name: UbicacionTarjeta9
-  m_TagString: Untagged
+  m_TagString: PosicionesTarjeta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16951,18 +16970,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6920763734982626621}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1547404489 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6920763733441513971, guid: 5e9e851c0e142814dac026a256ba2ac0,
-    type: 3}
-  m_PrefabInstance: {fileID: 6920763734982626621}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547404488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3586057922bf683439477da48a14fe47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!143 &1547404497 stripped
 CharacterController:
   m_CorrespondingSourceObject: {fileID: 6920763733441513964, guid: 5e9e851c0e142814dac026a256ba2ac0,
@@ -18568,7 +18575,7 @@ MonoBehaviour:
   - {fileID: 381308212}
   - {fileID: 1560151778}
   - {fileID: 1124873567}
-  tarjeteando: {fileID: 1547404489}
+  tarjeteando: {fileID: 0}
   num: 0
 --- !u!65 &1771827671
 BoxCollider:
@@ -18600,7 +18607,7 @@ GameObject:
   - component: {fileID: 1775641741}
   m_Layer: 0
   m_Name: UbicacionTarjeta1
-  m_TagString: Untagged
+  m_TagString: PosicionesTarjeta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18805,10 +18812,15 @@ PrefabInstance:
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 1547404498}
+    - target: {fileID: 2705546050117092942, guid: 2286ff489bbbc224f9e6566cd320b1b1,
+        type: 3}
+      propertyPath: muerto
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2705546050117093043, guid: 2286ff489bbbc224f9e6566cd320b1b1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.92
+      value: 40.33
       objectReference: {fileID: 0}
     - target: {fileID: 2705546050117093043, guid: 2286ff489bbbc224f9e6566cd320b1b1,
         type: 3}
@@ -18818,7 +18830,7 @@ PrefabInstance:
     - target: {fileID: 2705546050117093043, guid: 2286ff489bbbc224f9e6566cd320b1b1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 35.09
+      value: 35.78
       objectReference: {fileID: 0}
     - target: {fileID: 2705546050117093043, guid: 2286ff489bbbc224f9e6566cd320b1b1,
         type: 3}
@@ -20060,7 +20072,7 @@ GameObject:
   - component: {fileID: 1948778088}
   m_Layer: 0
   m_Name: UbicacionTarjeta8
-  m_TagString: Untagged
+  m_TagString: PosicionesTarjeta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21696,7 +21708,7 @@ GameObject:
   - component: {fileID: 2130546928}
   m_Layer: 0
   m_Name: UbicacionTarjeta6
-  m_TagString: Untagged
+  m_TagString: PosicionesTarjeta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23919,7 +23931,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d57c7908e69194742baf7b427b08607b, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6920763733441513971, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!4 &7026232346736612571 stripped
 Transform:

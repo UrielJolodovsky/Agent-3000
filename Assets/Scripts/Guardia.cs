@@ -112,7 +112,7 @@ public class Guardia : MonoBehaviour {
                     //player.transform.eulerAngles = new Vector3 (0,0,0);
                     //player.transform.localRotation = new Quaternion.euler(0,0,0);
                     SceneManager.LoadScene("Nivel 1");
-					Time.timeScale = 1;       
+					Time.timeScale = 1;
 				}
         }
     }
