@@ -53,7 +53,7 @@ public class EntrarAscensor : MonoBehaviour
             puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
             Time.timeScale = 0;
             nivelCompletado.enabled = true;
-            this.GetComponent<Animation>().Play("CerrarPuerta");
+            animacion.Play("CerrarPuerta");
         }
         if (isCounting)
         {
