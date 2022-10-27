@@ -35,6 +35,7 @@ public class Guardia : MonoBehaviour {
     [SerializeField] public CapsuleCollider collider2;
 
     [SerializeField] public bool muerto;
+    [SerializeField] public static bool visto;
     //public NavMeshAgent agent;
     public bool Chase;
     [SerializeField] Transform targetTransform;
@@ -105,14 +106,15 @@ public class Guardia : MonoBehaviour {
         {
                 Avistado.enabled = true;
                 Time.timeScale = 0;
-                //controller.enabled = false;
+            //controller.enabled = false;
+            visto = true;
                 if (Input.GetKeyDown(KeyCode.R))
                 {
 					//player.GetComponent<CharacterController>().enabled = true;
                     player.transform.position = Spawnpoint.transform.position;
                     //player.transform.eulerAngles = new Vector3 (0,0,0);
                     //player.transform.localRotation = new Quaternion.euler(0,0,0);
-                    SceneManager.LoadScene("Nivel 1");
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 					Time.timeScale = 1;
                     Avistado.enabled = false;
 				}

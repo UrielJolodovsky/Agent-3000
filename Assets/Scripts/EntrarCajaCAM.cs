@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class EntrarCajaCAM : MonoBehaviour
 {
     public GameObject jugador;
-    public FirstPersonController jugadorcontroller;
+    public FirstPersonController jugadorController;
     public CharacterController controller;
     public GameObject caja;
     [SerializeField] Vector3 posicionjugadorcaja;
@@ -20,7 +20,9 @@ public class EntrarCajaCAM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        jugadorController = jugador.GetComponent<FirstPersonController>();
         Salir.enabled = false;
+        jugador = GameObject.FindGameObjectWithTag("Player");
         CharacterController controller = jugador.GetComponent<CharacterController>();
 
     }

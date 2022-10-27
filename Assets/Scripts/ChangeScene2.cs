@@ -10,6 +10,7 @@ public class ChangeScene2 : MonoBehaviour
     public FirstPersonController jugador;
     public CharacterController controller;
     [SerializeField] GameObject player;
+    public static int counterScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class ChangeScene2 : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         controller = player.GetComponent<CharacterController>();
         jugador = player.GetComponent<FirstPersonController>();
+        counterScene++;
     }
 
     // Update is called once per frame

@@ -9,8 +9,16 @@ public class PosicionPlayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         jugador = GameObject.FindGameObjectWithTag("Player");
-        jugador.transform.position = new Vector3(spawnpoint.transform.position.x, spawnpoint.transform.position.y, spawnpoint.transform.position.z);
+        if (ChangeScene2.counterScene >= 1)
+        {
+
+        }
+        else
+        {
+            jugador.transform.position = new Vector3(spawnpoint.transform.position.x, spawnpoint.transform.position.y, spawnpoint.transform.position.z);
+        }
     }
 
     // Update is called once per frame

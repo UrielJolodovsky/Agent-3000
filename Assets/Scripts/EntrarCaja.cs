@@ -8,8 +8,8 @@ public class EntrarCaja : MonoBehaviour
 {
     public GameObject jugador;
     public GameObject jugador2;
-    public FirstPersonController jugadorcontroller;
-    CharacterController controller;
+    public FirstPersonController jugadorController;
+    public CharacterController controller;
     public GameObject caja;
     [SerializeField] Vector3 posicionjugadorcaja;
     public GameObject camCaja;
@@ -23,8 +23,10 @@ public class EntrarCaja : MonoBehaviour
     void Start()
     {   
         jugador = GameObject.FindWithTag("Player");
-        jugador2 = GameObject.FindWithTag("Player2");
-        controller = jugador.GetComponent<CharacterController>();
+        jugador2 = GameObject.FindWithTag("Player");
+        controller = jugador2.GetComponent<CharacterController>();
+        camJugador = GameObject.FindWithTag("MainCamera");
+        jugadorController = jugador.GetComponent<FirstPersonController>();
         Entrar.enabled = false;
         Salir.enabled = false;
 
@@ -53,7 +55,7 @@ public class EntrarCaja : MonoBehaviour
         {
             Entrar.enabled = true;
         }
-        if (colision.gameObject.tag == "Player2" && colision.gameObject.tag != "Bala") ;
+        if (colision.gameObject.tag == "Player" && colision.gameObject.tag != "Bala") ;
         {
         if (Input.GetKeyDown(KeyCode.E))
             {
