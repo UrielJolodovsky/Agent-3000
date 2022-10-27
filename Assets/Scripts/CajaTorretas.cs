@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AbrirPuertaLevel3 : MonoBehaviour
+public class CajaTorretas : MonoBehaviour
 {
     [SerializeField] bool posibilidad;
     // Start is called before the first frame update
@@ -16,11 +16,21 @@ public class AbrirPuertaLevel3 : MonoBehaviour
     {
         if (posibilidad && Input.GetKeyDown(KeyCode.E))
         {
-            this.GetComponent<Animation>().Play("PuertaLvl3");
+            this.GetComponent<Animation>().Play("AbrirCajaTorretas");
         }
     }
     void OnTriggerStay(Collider other)
     {
-        posibilidad = true;
+        if (other.gameObject.tag == "Player")
+        {
+            posibilidad = true;
+        }
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            posibilidad = false;
+        }
     }
 }
