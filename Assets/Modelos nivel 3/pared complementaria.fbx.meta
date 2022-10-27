@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: c56b9ac21a919e147a94815d838e945c
+guid: 52ae499caab794c4fafbc56399dc85e7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material Techo Gris
+    2100000: Material.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Techo Nivel 1.001
+    4300000: Cube.015
   externalObjects: {}
   materials:
     importMaterials: 1

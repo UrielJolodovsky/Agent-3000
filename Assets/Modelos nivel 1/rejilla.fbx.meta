@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9ff3de37f1e16c45b7917b41e84d6c9
+guid: 9ef32de8bc50f374ea9581acde99bbb4
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: PAred nivel 1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Pared con rejilla
+    4300000: Pared con rejilla.001
   externalObjects: {}
   materials:
     importMaterials: 1
