@@ -165,6 +165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Swagger Walk@Swagger Walk
       objectReference: {fileID: 0}
+    - target: {fileID: 100084, guid: 1adf7eba8c7eef44585bf3a083e68ed4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 1adf7eba8c7eef44585bf3a083e68ed4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -240,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100084, guid: 63771e77ed104514e90a531e4b9996e4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 63771e77ed104514e90a531e4b9996e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -458,6 +462,11 @@ PrefabInstance:
     - target: {fileID: 4485833228354131497, guid: f75636d697d4fa6499059000200efbf1,
         type: 3}
       propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485833228354131497, guid: f75636d697d4fa6499059000200efbf1,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
