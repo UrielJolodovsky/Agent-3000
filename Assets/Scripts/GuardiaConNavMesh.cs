@@ -24,6 +24,7 @@ public class GuardiaConNavMesh : MonoBehaviour {
     [SerializeField] Color LinternaOriginal;
     
     [SerializeField] public Text Avistado;
+    [SerializeField] public GameObject textos;
     public CharacterController controller;
 	[SerializeField] GameObject player;
     [SerializeField] public GameObject Spawnpoint;
@@ -104,6 +105,7 @@ public class GuardiaConNavMesh : MonoBehaviour {
         {
                 Avistado.enabled = true;
                 Time.timeScale = 0;
+                textos.SetActive(false);
                 //controller.enabled = false;
                 if (Input.GetKeyDown(KeyCode.R))
                 {

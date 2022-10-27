@@ -46,7 +46,7 @@ public class Guardia : MonoBehaviour {
         Chase = false;
         muerto = false;
         Camino = transform.Find("Camino").transform;
-        Linterna = GameObject.Find("Linterna").GetComponent<Light>();
+        //Linterna = GameObject.Find("Linterna").GetComponent<Light>();
         Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
         Avistado.enabled = false;
 		Jugador = GameObject.FindGameObjectWithTag ("Player").transform;

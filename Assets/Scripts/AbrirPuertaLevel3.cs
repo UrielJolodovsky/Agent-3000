@@ -16,7 +16,7 @@ public class AbrirPuertaLevel3 : MonoBehaviour
     {
         if (posibilidad && Input.GetKeyDown(KeyCode.E))
         {
-            this.GetComponent<Animation>().Play()|;
+            this.GetComponent<Animation>().Play();
         }
     }
     void OnTriggerStay(Collider other)
