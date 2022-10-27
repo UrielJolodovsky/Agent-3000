@@ -44,8 +44,9 @@ public class Guardia : MonoBehaviour {
 
         //agent = GetComponent<NavMeshAgent>();
         Chase = false;
+        muerto = false;
         Camino = transform.Find("Camino").transform;
-        //Linterna = GameObject.Find("Linterna").GetComponent<Light>();
+        Linterna = GameObject.Find("Linterna").GetComponent<Light>();
         Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
         Avistado.enabled = false;
 		Jugador = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -111,7 +112,7 @@ public class Guardia : MonoBehaviour {
                     player.transform.position = Spawnpoint.transform.position;
                     //player.transform.eulerAngles = new Vector3 (0,0,0);
                     //player.transform.localRotation = new Quaternion.euler(0,0,0);
-                    //SceneManager.LoadScene("Nivel 1");
+                    SceneManager.LoadScene("Nivel 1");
 					Time.timeScale = 1;
                     Avistado.enabled = false;
 				}
