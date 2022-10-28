@@ -186,7 +186,7 @@ public class GuardiaConNavMesh : MonoBehaviour {
             muerto = true;
         }
     }
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {

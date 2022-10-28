@@ -18,6 +18,7 @@ public class Agacharse : MonoBehaviour
     public float time = .5f;
     public float ctime;
     public float rotationSpeed = 0;
+    [SerializeField] float deslizarsetime;
     // Start is called before the first frame update
 
 
@@ -28,21 +29,28 @@ public class Agacharse : MonoBehaviour
         colision3 = GetComponent<CharacterController>();
         Altura = colision.size.y;
         Altura2 = colision3.height;
+        deslizarsetime = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        deslizarsetime -= Time.deltaTime;
         if (Input.GetKey(KeyCode.LeftControl))
             Agachate();
         if (Input.GetKey(KeyCode.LeftShift) && ctime <= 0)
         {
             Levantate();
         }
-        else if (Input.GetKey(KeyCode.LeftShift))
+        else if (Input.GetKey(KeyCode.LeftShift) && deslizarsetime <= 0)
         {
             Deslizate();
             ctime -= Time.deltaTime;
+            deslizarsetime = 10;
+        }
+        else if (Input.GetKey(KeyCode.LeftShift) && deslizarsetime > 0)
+        {
+            Debug.Log("Esperá");
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {

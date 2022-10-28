@@ -5,10 +5,12 @@ using UnityEngine;
 public class CajaTorretas : MonoBehaviour
 {
     [SerializeField] bool posibilidad;
+    [SerializeField] public bool torretasDeshabilitadas;
     // Start is called before the first frame update
     void Start()
     {
         posibilidad = false;
+        torretasDeshabilitadas = false;
     }
 
     // Update is called once per frame
@@ -17,6 +19,10 @@ public class CajaTorretas : MonoBehaviour
         if (posibilidad && Input.GetKeyDown(KeyCode.E))
         {
             this.GetComponent<Animation>().Play("AbrirCajaTorretas");
+        }
+        if (this.gameObject.tag == "CajaAbierta" && Input.GetKeyDown(KeyCode.Q))
+        {
+            torretasDeshabilitadas = true;
         }
     }
     void OnTriggerStay(Collider other)

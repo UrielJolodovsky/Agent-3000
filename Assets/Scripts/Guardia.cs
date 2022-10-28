@@ -36,7 +36,7 @@ public class Guardia : MonoBehaviour {
 
     [SerializeField] public bool muerto;
     [SerializeField] public static bool visto;
-    //public NavMeshAgent agent;
+    //NavMeshAgent agent;
     public bool Chase;
     [SerializeField] Transform targetTransform;
     [SerializeField] Coroutine caminito;
