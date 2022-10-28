@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44363907, g: 0.4929664, b: 0.57252896, a: 1}
+  m_IndirectSpecularColor: {r: 0.4436394, g: 0.49296677, b: 0.57252944, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13669,7 +13669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posibilidad: 0
-  torretasDeshabilitadas: 0
+  torretas: {fileID: 0}
 --- !u!136 &580648610
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16609,6 +16609,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451a86d02ee9bb943ade6ae771e60606, type: 3}
+--- !u!1 &1086886188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2427820831587912781, guid: 1687bcbcc293953498f3fa66f319bab0,
+    type: 3}
+  m_PrefabInstance: {fileID: 897539579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1086886192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086886188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d255e3534714fe4d90c1c0d18006de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  posJugador: {x: 0, y: 0, z: 0}
+  abrirPuerta: {fileID: 1108386012}
+  puertaAbierta: 0
+  activadas: 0
 --- !u!1 &1088403482 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2985146928365408925, guid: 327816ff31b908f41862ad4bbc56eef1,
@@ -16675,6 +16698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posibilidad: 0
+  puertaAbierta: 0
 --- !u!1 &1172535057
 GameObject:
   m_ObjectHideFlags: 0
@@ -23414,6 +23438,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 68205d01657abd14a9dc4b254e07e178, type: 3}
+--- !u!1 &1509586275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2427820831587912781, guid: 1687bcbcc293953498f3fa66f319bab0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5855733875576456252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1509586279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509586275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d255e3534714fe4d90c1c0d18006de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  posJugador: {x: 0, y: 0, z: 0}
+  abrirPuerta: {fileID: 1108386012}
+  puertaAbierta: 0
+  activadas: 0
 --- !u!1001 &1513096067
 PrefabInstance:
   m_ObjectHideFlags: 0
