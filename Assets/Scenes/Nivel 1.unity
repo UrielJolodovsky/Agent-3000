@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5895,6 +5895,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 158dc69951a66e745869491b2742f962, type: 3}
+--- !u!1 &551346494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 249808590914650550, guid: 264c4b3099c2bae4995a523a34ede7d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1046478951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &551346496 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 249808590924050978, guid: 264c4b3099c2bae4995a523a34ede7d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1046478951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &552290149 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 08774229cd960354aacdf21c004bbfe2,
@@ -11276,9 +11288,9 @@ MonoBehaviour:
   controller: {fileID: 0}
   player: {fileID: 0}
   Spawnpoint: {fileID: 0}
-  animator: {fileID: 0}
-  muerte: {fileID: 0}
-  robotCamina: {fileID: 0}
+  animator: {fileID: 551346496}
+  muerte: {fileID: 1306277646}
+  robotCamina: {fileID: 551346494}
   collider1: {fileID: 0}
   collider2: {fileID: 0}
   muerto: 0
@@ -14710,6 +14722,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2141cbeafe154b342a995528241551e3, type: 3}
+--- !u!1 &1306277646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 249808590970408937, guid: 264c4b3099c2bae4995a523a34ede7d9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1046478951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1306443883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6339866636488874039, guid: bb351b72c2cb3db4b94b89282cd851fe,

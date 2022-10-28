@@ -9,12 +9,16 @@ public class TorretaDispara : MonoBehaviour
     [SerializeField] AbrirPuertaLevel3 abrirPuerta;
     [SerializeField] public bool puertaAbierta;
     [SerializeField] public bool activadas;
+    [SerializeField] GameObject Bala1;
+    [SerializeField] GameObject Bala2;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         puertaAbierta = false;
         abrirPuerta = GetComponent<AbrirPuertaLevel3>();
+        Bala1 = this.transform.Find("SalidaBala1").gameObject;
+        Bala2 = this.transform.Find("SalidaBala2").gameObject;
     }
 
     // Update is called once per frame
@@ -30,6 +34,7 @@ public class TorretaDispara : MonoBehaviour
         {
             // Funcionamiento de las torretas
             this.transform.LookAt(posJugador);
+
         }
     }
 }
