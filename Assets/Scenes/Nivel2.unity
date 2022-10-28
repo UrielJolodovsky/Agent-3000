@@ -1331,12 +1331,17 @@ PrefabInstance:
     - target: {fileID: 6920763734477968403, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 3}
       propertyPath: m_Radius
-      value: 0.47518778
+      value: 0.40972415
       objectReference: {fileID: 0}
     - target: {fileID: 6920763734477968403, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 3}
       propertyPath: m_Center.x
-      value: -0.28326362
+      value: -0.21779996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920763734477968403, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.9082689
       objectReference: {fileID: 0}
     - target: {fileID: 6920763734873647776, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 3}
