@@ -51,11 +51,11 @@ public class EntrarCaja : MonoBehaviour
     void OnTriggerStay(Collider colision)//Collider colision)
     {
         // Debug.Log("colision");
-        if (camCaja.activeInHierarchy == false)
+        if (camCaja.activeInHierarchy == false && colision.gameObject.tag != "Bala")
         {
             Entrar.enabled = true;
         }
-        if (colision.gameObject.tag == "Player" && colision.gameObject.tag != "Bala") ;
+        if (colision.gameObject.tag == "Player" && colision.gameObject.tag != "Bala") 
         {
         if (Input.GetKeyDown(KeyCode.E))
             {
