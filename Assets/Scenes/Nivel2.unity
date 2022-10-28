@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.56452316, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1081,13 +1081,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116446017}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e1fc42e9c876e408e4ee6551820cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
   controller: {fileID: 1814739422}
   caja: {fileID: 116446017}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
@@ -1108,6 +1108,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.048266, y: 2, z: 2.7000003}
   m_Center: {x: -1.0150313, y: 0.11619723, z: -0.0020219139}
+--- !u!114 &116446020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116446017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c710ac6bae1f54b8edea16cf8c149f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 1814739420}
+  jugador2: {fileID: 1814739420}
+  jugadorController: {fileID: 0}
+  controller: {fileID: 0}
+  caja: {fileID: 116446017}
+  posicionjugadorcaja: {x: 0, y: 0, z: 0}
+  camCaja: {fileID: 692630448}
+  camJugador: {fileID: 1814739420}
+  Entrar: {fileID: 20905682}
+  Salir: {fileID: 176584751}
 --- !u!1001 &121502499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1271,6 +1293,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FPSController
       objectReference: {fileID: 0}
+    - target: {fileID: 6920763733502636648, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Bala
+      objectReference: {fileID: 0}
     - target: {fileID: 6920763733569814106, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 3}
       propertyPath: m_BackGroundColor.r
@@ -1300,6 +1327,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920763734477968403, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.47518778
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920763734477968403, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.28326362
       objectReference: {fileID: 0}
     - target: {fileID: 6920763734873647776, guid: 5e9e851c0e142814dac026a256ba2ac0,
         type: 3}
@@ -2818,13 +2855,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201181778}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e1fc42e9c876e408e4ee6551820cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
   controller: {fileID: 1814739422}
   caja: {fileID: 201181778}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
@@ -2845,6 +2882,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.048266, y: 2, z: 2.7000003}
   m_Center: {x: -1.0150313, y: 0.11619723, z: -0.0020219139}
+--- !u!114 &201181784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201181778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c710ac6bae1f54b8edea16cf8c149f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 1814739420}
+  jugador2: {fileID: 1814739420}
+  jugadorController: {fileID: 0}
+  controller: {fileID: 0}
+  caja: {fileID: 201181778}
+  posicionjugadorcaja: {x: 0, y: 0, z: 0}
+  camCaja: {fileID: 2146230355}
+  camJugador: {fileID: 1814739420}
+  Entrar: {fileID: 20905682}
+  Salir: {fileID: 176584751}
 --- !u!1001 &202749651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8827,7 +8886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &692630449
 Transform:
   m_ObjectHideFlags: 0
@@ -8868,7 +8927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
   controller: {fileID: 1814739422}
   caja: {fileID: 116446017}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
@@ -8959,7 +9018,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &700007164
 Transform:
   m_ObjectHideFlags: 0
@@ -9000,7 +9059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
   controller: {fileID: 1814739422}
   caja: {fileID: 1012523813}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
@@ -9822,7 +9881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &769328815
 Transform:
   m_ObjectHideFlags: 0
@@ -9863,7 +9922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
   controller: {fileID: 1814739422}
   caja: {fileID: 1012523813}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
@@ -15540,7 +15599,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1228249423
 Transform:
   m_ObjectHideFlags: 0
@@ -15581,7 +15640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
   controller: {fileID: 1814739422}
   caja: {fileID: 1278994382}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
@@ -16171,7 +16230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
   jugador2: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
+  controller: {fileID: 0}
   caja: {fileID: 1263735115}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
   camCaja: {fileID: 769328814}
@@ -16456,13 +16516,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278994382}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e1fc42e9c876e408e4ee6551820cbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
   controller: {fileID: 1814739422}
   caja: {fileID: 1278994382}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
@@ -16483,6 +16543,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.048266, y: 2, z: 2.7000003}
   m_Center: {x: -1.0150313, y: 0.11619723, z: -0.0020219139}
+--- !u!114 &1278994388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278994382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6c710ac6bae1f54b8edea16cf8c149f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jugador: {fileID: 1814739420}
+  jugador2: {fileID: 1814739420}
+  jugadorController: {fileID: 0}
+  controller: {fileID: 0}
+  caja: {fileID: 1263735115}
+  posicionjugadorcaja: {x: 0, y: 0, z: 0}
+  camCaja: {fileID: 1228249422}
+  camJugador: {fileID: 1814739420}
+  Entrar: {fileID: 20905682}
+  Salir: {fileID: 176584751}
 --- !u!1001 &1281351764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18991,7 +19073,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
   jugador2: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
+  controller: {fileID: 0}
   caja: {fileID: 1523613011}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
   camCaja: {fileID: 700007163}
@@ -21260,7 +21343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1678632663
 Transform:
   m_ObjectHideFlags: 0
@@ -21301,7 +21384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
   controller: {fileID: 1814739422}
   caja: {fileID: 9089479770409888496}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
@@ -22585,18 +22668,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 134484693}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1814739424 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6920763733441513965, guid: 5e9e851c0e142814dac026a256ba2ac0,
-    type: 3}
-  m_PrefabInstance: {fileID: 134484693}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814739420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1817409031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26673,7 +26744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2146230356
 Transform:
   m_ObjectHideFlags: 0
@@ -26714,7 +26785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
   controller: {fileID: 1814739422}
   caja: {fileID: 201181778}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
@@ -27924,7 +27995,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jugador: {fileID: 1814739420}
   jugador2: {fileID: 1814739420}
-  jugadorcontroller: {fileID: 1814739424}
+  jugadorController: {fileID: 0}
+  controller: {fileID: 0}
   caja: {fileID: 9089479770409888496}
   posicionjugadorcaja: {x: 0, y: 0, z: 0}
   camCaja: {fileID: 1678632662}
