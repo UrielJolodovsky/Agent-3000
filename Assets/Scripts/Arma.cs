@@ -30,6 +30,7 @@ public class Arma : MonoBehaviour
         if (Input.GetMouseButton(0) && currReloadTime <= 0)
         {
             var b = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
+            b.tag = "Bala";
             b.transform.eulerAngles += new Vector3(Random.Range(-inacuracy, inacuracy), Random.Range(-inacuracy, inacuracy), Random.Range(-inacuracy, inacuracy));
             currReloadTime = reloadTime;
         }

@@ -24,7 +24,7 @@ public class EntrarCajaCAM : MonoBehaviour
         Salir.enabled = false;
         jugador = GameObject.FindGameObjectWithTag("Player");
         CharacterController controller = jugador.GetComponent<CharacterController>();
-
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
