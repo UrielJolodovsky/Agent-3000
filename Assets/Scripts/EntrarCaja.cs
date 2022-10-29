@@ -16,6 +16,9 @@ public class EntrarCaja : MonoBehaviour
     public GameObject camJugador;
     public Text Entrar;
     public Text Salir;
+    public Text interferencia;
+    public RawImage interferencia2;
+    public RawImage interferencia3;
 
 
 
@@ -29,6 +32,7 @@ public class EntrarCaja : MonoBehaviour
         jugadorController = jugador.GetComponent<FirstPersonController>();
         Entrar.enabled = false;
         Salir.enabled = false;
+        
 
     }
 
@@ -41,21 +45,16 @@ public class EntrarCaja : MonoBehaviour
         }
     }
 
-    /*void OnTriggerEnter (Collision colision)
+    void OnTriggerEnter (Collider colision)
     {
-        if (colision.gameObject.tag == "Player")
-        {
-            
-        }
-    }*/
-    void OnTriggerStay(Collider colision)//Collider colision)
-    {
-        // Debug.Log("colision");
-        if (camCaja.activeInHierarchy == false && colision.gameObject.tag != "Bala")
+        if (colision.gameObject.tag == "Player" && colision.gameObject.tag != "Bala")
         {
             Entrar.enabled = true;
         }
-        if (colision.gameObject.tag == "Player" && colision.gameObject.tag != "Bala") 
+    }
+    void OnTriggerStay(Collider colision)//Collider colision)
+    {
+        // Debug.Log("colision");
         {
         if (Input.GetKeyDown(KeyCode.E))
             {
@@ -65,14 +64,20 @@ public class EntrarCaja : MonoBehaviour
                 jugadorcontroller.CollisionFlags = 0;*/
                 //controller.enabled = false;
                 jugador.SetActive(false);
+                interferencia.enabled = true;
+                interferencia2.enabled = true;
+                interferencia3.enabled = true;
                 camCaja.SetActive(true);
                 Entrar.enabled = false;
             }
         }
     }
-    void OnTriggerExit()
+    void OnTriggerExit(Collider colision)
     {
-        Entrar.enabled = false;
+        if (colision.gameObject.tag == "Player" && colision.gameObject.tag != "Bala")
+        {
+            Entrar.enabled = false;
+        }
     }
 }
 
