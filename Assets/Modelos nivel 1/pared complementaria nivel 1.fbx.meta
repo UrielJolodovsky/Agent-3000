@@ -1,31 +1,14 @@
 fileFormatVersion: 2
-guid: 182191aa140c3764a80bb04ea562792e
+guid: 497419fc6a6309d4ebe0aaf87fe47c78
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material
+    2100000: PAred nivel 1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.017
-    7400000: Cube.017|Abrir
-    7400002: Cube.017|Armature.001Action
-    7400004: Cube.017|Armature.002Action
-    7400006: Cube.017|ArmatureAction
-    7400008: Cube.017|Cerrar
-    7400010: Cube.017|Cerrar.001
-    7400012: Cube.017|Cube.002Action
-    7400014: Cube.017|Cube.003Action
-    7400016: Cube.017|Cube.004Action.001
-    7400018: Cube.017|Cube.010Action.001
-    7400020: Cube.017|Cube.010Action.002
-    7400022: Cube.017|Cube.017Action
-    7400024: Cube.017|Cylinder.001Action.002
-    7400026: Cube.017|Cylinder.001Action.004
-    7400028: Cube.017|Cylinder.001Action.005
-    7400030: Cube.017|SphereAction.006
-    9500000: //RootNode
+    4300000: Ajugero pincipio primer nivel.001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -78,8 +61,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -106,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
