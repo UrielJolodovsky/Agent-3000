@@ -6,29 +6,26 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: Material.001
-    2100002: PUERTA
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.001
-    7400000: Cube.001|Abrir
-    7400002: Cube.001|Abrir.001
-    7400004: Cube.001|Abrir.002
-    7400006: Cube.001|Armature.001Action
-    7400008: Cube.001|ArmatureAction
-    7400010: Cube.001|ArmatureAction.001
-    7400012: Cube.001|ArmatureAction.002
-    7400014: Cube.001|ArmatureAction.003
-    7400016: Cube.001|Cerrar
-    7400018: Cube.001|Cerrar.001
-    7400020: Cube.001|Cube.001Action
-    7400022: Cube.001|Cube.002Action
-    7400024: Cube.001|Cube.002Action.001
-    7400026: Cube.001|Cube.004Action.001
-    7400028: Cube.001|Cube.008Action
-    7400030: Cube.001|Cylinder.001Action.002
-    7400032: Cube.001|Cylinder.001Action.004
-    7400034: Cube.001|Cylinder.001Action.005
-    7400036: Cube.001|SphereAction.006
+    4300000: Cube.009
+    7400000: Cube.009|Abrir
+    7400002: Cube.009|Armature.001Action
+    7400004: Cube.009|Armature.002Action
+    7400006: Cube.009|ArmatureAction.003
+    7400008: Cube.009|Cerrar
+    7400010: Cube.009|Cerrar.001
+    7400012: Cube.009|Cube.002Action
+    7400014: Cube.009|Cube.003Action
+    7400016: Cube.009|Cube.004Action.001
+    7400018: Cube.009|Cube.009Action
+    7400020: Cube.009|Cube.010Action.001
+    7400022: Cube.009|Cube.010Action.002
+    7400024: Cube.009|Cube.017Action
+    7400026: Cube.009|Cylinder.001Action.002
+    7400028: Cube.009|Cylinder.001Action.004
+    7400030: Cube.009|Cylinder.001Action.005
+    7400032: Cube.009|SphereAction.006
     9500000: //RootNode
   externalObjects: {}
   materials:

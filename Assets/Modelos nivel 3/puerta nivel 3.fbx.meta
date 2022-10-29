@@ -1,14 +1,40 @@
 fileFormatVersion: 2
-guid: 6537e77b314bd804c9af4f54f3838d4e
+guid: 182191aa140c3764a80bb04ea562792e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Material.001
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube.016
+    100000: Armature.002
+    100002: Bone
+    100004: Bone_end
+    100006: Cube.017
+    100008: //RootNode
+    400000: Armature.002
+    400002: Bone
+    400004: Bone_end
+    400006: Cube.017
+    400008: //RootNode
+    2100000: Material
+    4300000: Cube.017
+    7400000: Armature.002|Abrir
+    7400002: Armature.002|Armature.001Action
+    7400004: Armature.002|Armature.002Action
+    7400006: Armature.002|ArmatureAction.003
+    7400008: Armature.002|Cerrar
+    7400010: Armature.002|Cerrar.001
+    7400012: Armature.002|Cube.002Action
+    7400014: Armature.002|Cube.003Action
+    7400016: Armature.002|Cube.004Action.001
+    7400018: Armature.002|Cube.009Action
+    7400020: Armature.002|Cube.010Action.001
+    7400022: Armature.002|Cube.010Action.002
+    7400024: Armature.002|Cube.017Action
+    7400026: Armature.002|Cylinder.001Action.002
+    7400028: Armature.002|Cylinder.001Action.004
+    7400030: Armature.002|Cylinder.001Action.005
+    7400032: Armature.002|SphereAction.006
+    9500000: //RootNode
+    13700000: Cube.017
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -61,8 +87,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -89,7 +115,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
