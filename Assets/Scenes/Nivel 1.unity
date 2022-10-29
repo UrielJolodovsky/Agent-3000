@@ -1206,7 +1206,7 @@ MonoBehaviour:
   Jugador: {fileID: 0}
   LinternaOriginal: {r: 0, g: 0, b: 0, a: 0}
   Avistado: {fileID: 0}
-  textos: {fileID: 0}
+  textos: {fileID: 54051117}
   controller: {fileID: 0}
   player: {fileID: 0}
   Spawnpoint: {fileID: 0}
