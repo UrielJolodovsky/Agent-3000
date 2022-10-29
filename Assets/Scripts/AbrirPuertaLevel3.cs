@@ -26,4 +26,8 @@ public class AbrirPuertaLevel3 : MonoBehaviour
     {
         posibilidad = true;
     }
+    void OnTriggerExit(Collider other)
+    {
+        posibilidad = false;
+    }
 }
