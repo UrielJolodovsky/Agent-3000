@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Arma : MonoBehaviour
 {
     public GameObject bala;
@@ -23,11 +23,12 @@ public class Arma : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Scene scene = SceneManager.GetActiveScene();
         if (currReloadTime > 0)
         {
             currReloadTime -= Time.deltaTime;
         }
-        if (Input.GetMouseButton(0) && currReloadTime <= 0)
+        if (Input.GetMouseButton(0) && currReloadTime <= 0 && scene.name != "Computer")
         {
             var b = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
             b.tag = "Bala";

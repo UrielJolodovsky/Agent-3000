@@ -38,10 +38,13 @@ public class ChangeSceneToComputer : MonoBehaviour
     }
 void OnTriggerStay(Collider other)
     {
-        Usar.enabled = true;
-        if (Input.GetKeyDown(KeyCode.E) && other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            LoadScene("Computer");
+            Usar.enabled = true;
+            if (Input.GetKeyDown(KeyCode.E) && other.gameObject.tag == "Player")
+            {
+                LoadScene("Computer");
+            }
         }
     }
     void OnTriggerExit()
