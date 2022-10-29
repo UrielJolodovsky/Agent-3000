@@ -1,32 +1,32 @@
 fileFormatVersion: 2
-guid: 3a73a2b37b36de24489b5fcf2237418a
+guid: e16446633751ac84bbda1df04640f126
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Material.001
-    2100002: Material
+    2100000: Material.002
+    2100002: Material.001
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Circle
+    4300000: Circle.002
     2186277476908879412: ImportLogs
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 3516f9ccb9ba85b4f95ef1a1689584a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: ab4507336a3b0ed4a9b7e66567ba1710, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Paleta Degrade
-    second: {fileID: 2800000, guid: 18858e79b2b28d54fb812f838d6ba29a, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: asdfghjkl
-    second: {fileID: 2800000, guid: 3e949539f7b9d3b46a12ec85a48c00bb, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: textura-piedra-gris_245047-80
-    second: {fileID: 2800000, guid: fefcff0e1ee4df344b1c086f22f3ec35, type: 3}
+    second: {fileID: 2800000, guid: 131b5099696eab04c934ebe732fa3deb, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
