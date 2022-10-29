@@ -41,7 +41,6 @@ public class Agacharse : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && ctime <= 0)
         {
             Levantate();
-            deslizarsetime = 10;
         }
         else if (Input.GetKey(KeyCode.LeftShift) && deslizarsetime <= 0)
         {
@@ -56,6 +55,7 @@ public class Agacharse : MonoBehaviour
         {
             Levantate();
             ctime = .5f;
+            deslizarsetime = 10;
         }
         else if (Input.GetKeyUp(KeyCode.LeftControl))
         {

@@ -34,7 +34,7 @@ public class EntrarCajaCAM : MonoBehaviour
         {
             Salir.enabled = true;
         }
-         if (camCaja.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.P))
+         if (camCaja.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.Q))
         {
             camCaja.SetActive(false);
             jugador.SetActive(true);
