@@ -15,7 +15,9 @@ public class EntrarCajaCAM : MonoBehaviour
     public GameObject camJugador;
     public Text Entrar;
     public Text Salir;
-
+    public Text interferencia;
+    public RawImage interferencia2;
+    public RawImage interferencia3;
 
     // Start is called before the first frame update
     void Start()
@@ -30,18 +32,21 @@ public class EntrarCajaCAM : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (camCaja.gameObject.activeInHierarchy)
+        if (gameObject.activeInHierarchy)
         {
             Salir.enabled = true;
         }
          if (camCaja.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.Q))
         {
+            Salir.enabled = false;
+            interferencia.enabled = false;
+            interferencia2.enabled = false;
+            interferencia3.enabled = false;
             camCaja.SetActive(false);
             jugador.SetActive(true);
             controller.enabled = true;
             camJugador.SetActive(true);
-            Salir.enabled = false;
-            Entrar.enabled = true;
+            //Entrar.enabled = true;
         }
         
         // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller

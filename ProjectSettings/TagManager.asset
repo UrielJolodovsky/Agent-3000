@@ -17,6 +17,9 @@ TagManager:
   - Spawn
   - Torreta1
   - Torreta2
+  - Minimapa
+  - Minimapa2
+  - camCaja
   layers:
   - Default
   - TransparentFX
