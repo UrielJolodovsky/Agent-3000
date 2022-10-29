@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class AbrirPuertaLevel3 : MonoBehaviour
 {
     [SerializeField] bool posibilidad;
-    [SerializeField] public bool puertaAbierta;
+    [SerializeField] static public bool puertaAbierta;
+    [SerializeField] public Text abrir;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,10 +25,18 @@ public class AbrirPuertaLevel3 : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        posibilidad = true;
+        if (other.tag == "Player")
+        {
+            posibilidad = true;
+            abrir.enabled = true;
+        }
     }
     void OnTriggerExit(Collider other)
     {
-        posibilidad = false;
+        if(other.tag == "Player")
+        {
+            posibilidad = false;
+            abrir.enabled = false;
+        }
     }
 }
