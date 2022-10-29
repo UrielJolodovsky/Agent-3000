@@ -51,7 +51,7 @@ public class Agacharse : MonoBehaviour
         {
             Debug.Log("Esperá");
         }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        else if (Input.GetKeyUp(KeyCode.LeftShift) && deslizarsetime <= 0)
         {
             Levantate();
             ctime = .5f;

@@ -36,14 +36,14 @@ public class GuardiaConNavMesh : MonoBehaviour {
     [SerializeField] public CapsuleCollider collider2;
 
     [SerializeField] public bool muerto;
-    public NavMeshAgent agent;
+    [SerializeField] NavMeshAgent agent;
     public bool Chase;
     [SerializeField] Transform targetTransform;
     [SerializeField] Coroutine caminito;
 
     void Start() {
 
-        agent = GetComponent<NavMeshAgent>();
+        muerto = false;
         Chase = false;
         Camino = transform.Find("Camino").transform;
         //Linterna = GameObject.Find("Linterna").GetComponent<Light>();
@@ -58,23 +58,16 @@ public class GuardiaConNavMesh : MonoBehaviour {
         collider1 = GetComponent<BoxCollider>();
         collider2 = GetComponent<CapsuleCollider>();
         targetTransform = player.GetComponent<Transform>();
-
-
-        Vector3[] Puntos = new Vector3[Camino.childCount];
-		for (int i = 0; i < Puntos.Length; i++) {
-			Puntos [i] = Camino.GetChild (i).position;
-			Puntos [i] = new Vector3 (Puntos [i].x, transform.position.y, Puntos [i].z);
-		}
-
-		caminito = StartCoroutine (SeguirCamino (Puntos));
-
+        animator.SetBool("Camina", false);
 	}
 	void Update() {
         if (Chase)
         {
-            StopCoroutine(caminito);
+            agent = GetComponent<NavMeshAgent>();
             agent.destination = targetTransform.position;
+            animator.SetBool("Camina", true);
         }
+
         if (muerto)
         {
             //Destroy(gameObject);
@@ -85,7 +78,7 @@ public class GuardiaConNavMesh : MonoBehaviour {
             collider1.enabled = false;
             Debug.Log("colision");
             StopAllCoroutines();
-            agent.enabled = false;
+            Chase = false;
         }
 		if (VerJugador()) 
 		{
@@ -131,54 +124,6 @@ public class GuardiaConNavMesh : MonoBehaviour {
 		}
 		return false;
 	}
-
-	IEnumerator SeguirCamino(Vector3[] Puntos) {
-		transform.position = Puntos [0];
-
-		int PuntosObjetivoIndex = 1;
-		Vector3 PuntosObjetivo = Puntos [PuntosObjetivoIndex];
-		transform.LookAt (PuntosObjetivo);
-
-        while (true) {
-			transform.position = Vector3.MoveTowards (transform.position, PuntosObjetivo, Vel * Time.deltaTime);
-			if (transform.position == PuntosObjetivo) {
-				PuntosObjetivoIndex = (PuntosObjetivoIndex + 1) % Puntos.Length;
-				PuntosObjetivo = Puntos [PuntosObjetivoIndex];
-				yield return new WaitForSeconds (Espera);
-                animator.SetBool("Camina", false);
-                yield return StartCoroutine (Girarse (PuntosObjetivo));
-                animator.SetBool("Camina", true);
-			}
-			yield return null;
-		}
-	}
-
-	IEnumerator Girarse(Vector3 lookTarget) {
-		Vector3 dirMirar = (lookTarget - transform.position).normalized;
-		float targetAngle = 90 - Mathf.Atan2 (dirMirar.z, dirMirar.x) * Mathf.Rad2Deg;
-
-		while (Mathf.Abs(Mathf.DeltaAngle(transform.eulerAngles.y, targetAngle)) > 0.05f) {
-			float angle = Mathf.MoveTowardsAngle (transform.eulerAngles.y, targetAngle, VelGiro * Time.deltaTime);
-			transform.eulerAngles = Vector3.up * angle;
-			yield return null;
-           
-		}
-	}
-
-	void OnDrawGizmos() {
-		Vector3 posInicio = Camino.GetChild (0).position;
-		Vector3 posFinal = posInicio;
-
-		foreach (Transform Punto in Camino) {
-			Gizmos.DrawSphere (Punto.position, .3f);
-			Gizmos.DrawLine (posFinal, Punto.position);
-			posFinal = Punto.position;
-		}
-		Gizmos.DrawLine (posFinal, posInicio);
-	
-		Gizmos.color = Color.red;
-		Gizmos.DrawRay (transform.position, transform.forward * DistanciaVista);
-	}
 	 void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Bala")
@@ -190,7 +135,11 @@ public class GuardiaConNavMesh : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Chase = true;
+            if (!muerto)
+            {
+                Chase = true;
+            }
+
         }
     }
 }
