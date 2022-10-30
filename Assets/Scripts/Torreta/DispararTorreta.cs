@@ -18,9 +18,10 @@ public class DispararTorreta : MonoBehaviour
     void Update()
     {
         ctime -= Time.deltaTime;
-        if (ctime <= 0)
+        if (ctime <= 0 && disparar)
         {
             // Dispara
+            Debug.Log("Disparo");
             Disparar();
             ctime = 10;
         }
