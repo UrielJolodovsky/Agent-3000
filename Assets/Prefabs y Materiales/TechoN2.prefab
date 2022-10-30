@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5785958571984752843}
   - component: {fileID: 5785958571987652843}
   - component: {fileID: 5785958571986522667}
+  - component: {fileID: 64100933093651292}
   m_Layer: 0
   m_Name: TechoN2
   m_TagString: Untagged
@@ -77,3 +78,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &64100933093651292
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785958571984325867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: edf333eb8a8cd0141974b327f1207f8c, type: 3}
