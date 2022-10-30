@@ -6,31 +6,21 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: Material.001
-    2100002: Material.003
+    2100002: Material.004
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.005
+    4300000: Cube.003
   externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 265538665af7ddf41a2b1ebfda680810, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.003
-    second: {fileID: 2100000, guid: 2927edd7713f24c4b85c70e422b899a5, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: 180301143756-burj-khalifa-dubai-guide-21
-    second: {fileID: 2800000, guid: cedad44a68b1637488bf1200ff06b7b8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Paleta Degrade
-    second: {fileID: 2800000, guid: 2b1cc19fef1b6ef44ab31dcb08a22852, type: 3}
+    second: {fileID: 2800000, guid: 60d62e20c651ff14cac572cf9cd0013f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: burj-al-arab-interior-3
+    second: {fileID: 2800000, guid: b240a378f3b213a4eaea1f49da0b1741, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
