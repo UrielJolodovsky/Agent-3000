@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DispararTorreta : MonoBehaviour
 {
-    [SerializeField] int counter;
+    [SerializeField] float counter;
     public bool disparar;
     public GameObject bala;
     [SerializeField] float ctime;
