@@ -11,16 +11,12 @@ public class PuntosTotales : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        TotalPuntos = Puntos1 + Puntos2 + Puntos3 + Arma.balasDisparadas*10;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Puntos1 > 0 && Puntos2 > 0 && Puntos3 > 0)
-        {
-            TotalPuntos = Puntos1 + Puntos2 + Puntos3;
-            Debug.Log(TotalPuntos);
-        }
+        
     }
 }
