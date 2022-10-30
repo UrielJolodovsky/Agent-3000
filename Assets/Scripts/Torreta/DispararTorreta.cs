@@ -21,6 +21,7 @@ public class DispararTorreta : MonoBehaviour
         if (ctime <= 0)
         {
             // Dispara
+            Disparar();
             ctime = 10;
         }
         
@@ -30,10 +31,10 @@ public class DispararTorreta : MonoBehaviour
         
         
         
-        if(disparar)
+        /*if(disparar)
         {
             InvokeRepeating("Disparar", 0f, 10f);
-        }
+        }*/
     }
     void OnTriggerEnter(Collider collider)
     {
