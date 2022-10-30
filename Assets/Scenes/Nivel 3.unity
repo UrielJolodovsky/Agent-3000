@@ -219,7 +219,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 68d9f8e62fa29c7418d7768b783b936d, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!114 &8226125
@@ -1195,6 +1195,7 @@ MonoBehaviour:
   counter: 0
   disparar: 0
   bala: {fileID: 6293311439309561327, guid: 4b128f9cc2ee0164ca5c579bd12aa4c8, type: 3}
+  ctime: 0
 --- !u!65 &177079200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2090,6 +2091,7 @@ MonoBehaviour:
   counter: 0
   disparar: 0
   bala: {fileID: 6293311439309561327, guid: 4b128f9cc2ee0164ca5c579bd12aa4c8, type: 3}
+  ctime: 0
 --- !u!65 &330993988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13741,6 +13743,7 @@ MonoBehaviour:
   counter: 0
   disparar: 0
   bala: {fileID: 6293311439309561327, guid: 4b128f9cc2ee0164ca5c579bd12aa4c8, type: 3}
+  ctime: 0
 --- !u!65 &564413320
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24308,6 +24311,7 @@ MonoBehaviour:
   counter: 0
   disparar: 0
   bala: {fileID: 6293311439309561327, guid: 4b128f9cc2ee0164ca5c579bd12aa4c8, type: 3}
+  ctime: 0
 --- !u!65 &1629681170
 BoxCollider:
   m_ObjectHideFlags: 0

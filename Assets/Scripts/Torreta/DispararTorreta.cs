@@ -7,14 +7,29 @@ public class DispararTorreta : MonoBehaviour
     [SerializeField] int counter;
     public bool disparar;
     public GameObject bala;
+    [SerializeField] float ctime;
     // Start is called before the first frame update
     void Start()
     {
+        ctime = 5;
     }
 
     // Update is called once per frame
     void Update()
     {
+        ctime -= Time.deltaTime;
+        if (ctime <= 0)
+        {
+            // Dispara
+            ctime = 10;
+        }
+        
+        
+        
+        
+        
+        
+        
         if(disparar)
         {
             InvokeRepeating("Disparar", 0f, 10f);
