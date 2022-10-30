@@ -26,7 +26,7 @@ public class Jefe : MonoBehaviour
         {
             customTime += Time.deltaTime;
             rounded = Mathf.Round(customTime * 100f) / 100f;
-            Counter.text = rounded.ToString();
+            // Counter.text = rounded.ToString();
         }
     }
    public void OnTriggerEnter(Collider other)
