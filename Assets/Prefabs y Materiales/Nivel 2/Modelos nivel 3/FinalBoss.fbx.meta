@@ -1,20 +1,66 @@
 fileFormatVersion: 2
-guid: edf333eb8a8cd0141974b327f1207f8c
+guid: 633fae2dfc1c82740830d9142ef661c6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: TechoBlanco
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Plane
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: TechoBlanco
-    second: {fileID: 2800000, guid: b71d89eeb6f13ff4587f63942424dee1, type: 3}
+    100000: Armature
+    100002: Cabeza
+    100004: Cabeza_end
+    100006: Cube.001
+    100008: Cuello
+    100010: Cuello_end
+    100012: //RootNode
+    100014: L.BrazoInferior
+    100016: L.BrazoSuperior
+    100018: L.Mano
+    100020: L.Mano_end
+    100022: L.PiernaInferior
+    100024: L.PiernaInferior_end
+    100026: L.Pulgar
+    100028: L.Pulgar_end
+    100030: L.Rodilla
+    100032: R.BrazoInferior
+    100034: R.BrazoSuperior
+    100036: R.Mano
+    100038: R.Mano_end
+    100040: R.PiernaInferior
+    100042: R.PiernaInferior_end
+    100044: R.Pulgar
+    100046: R.Pulgar_end
+    100048: R.Rodilla
+    100050: Torso
+    400000: Armature
+    400002: Cabeza
+    400004: Cabeza_end
+    400006: Cube.001
+    400008: Cuello
+    400010: Cuello_end
+    400012: //RootNode
+    400014: L.BrazoInferior
+    400016: L.BrazoSuperior
+    400018: L.Mano
+    400020: L.Mano_end
+    400022: L.PiernaInferior
+    400024: L.PiernaInferior_end
+    400026: L.Pulgar
+    400028: L.Pulgar_end
+    400030: L.Rodilla
+    400032: R.BrazoInferior
+    400034: R.BrazoSuperior
+    400036: R.Mano
+    400038: R.Mano_end
+    400040: R.PiernaInferior
+    400042: R.PiernaInferior_end
+    400044: R.Pulgar
+    400046: R.Pulgar_end
+    400048: R.Rodilla
+    400050: Torso
+    2100000: PaletaDegrade.002
+    4300000: Cube.001
+    7400000: Armature|DisparoBoss
+    9500000: //RootNode
+    13700000: Cube.001
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -66,8 +112,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -94,7 +140,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

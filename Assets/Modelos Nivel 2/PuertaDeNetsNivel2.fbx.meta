@@ -1,15 +1,22 @@
 fileFormatVersion: 2
-guid: 6f55b30f538619b41bdff9e372093d26
+guid: cfc3260f22ee62f4aba4949fb73588e9
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Cube.008
+    100002: Cube.009
+    100004: //RootNode
+    400000: Cube.008
+    400002: Cube.009
+    400004: //RootNode
     2100000: ParedGris
     2100002: PaletaDegrade
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Pared.005
+    2300000: Cube.008
+    2300002: Cube.009
+    3300000: Cube.008
+    3300002: Cube.009
+    4300000: Cube.008
+    4300002: Cube.009
   externalObjects: {}
   materials:
     importMaterials: 1
