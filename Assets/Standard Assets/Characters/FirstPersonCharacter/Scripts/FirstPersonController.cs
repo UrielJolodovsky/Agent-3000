@@ -4,6 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
 using UnityEngine.SceneManagement;
+using UnityEditor.Android;
 
 
 #pragma warning disable 618, 649
@@ -81,6 +82,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
+            }
+            if (scene.name == "Final")
+            {
+                gameObject.SetActive(false);
             }
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
