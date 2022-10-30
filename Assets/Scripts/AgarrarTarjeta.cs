@@ -36,6 +36,7 @@ public class AgarrarTarjeta : MonoBehaviour
             tarjetaAgarrada = true;
             Objetivo.enabled = false;
             tarjetaPNG.enabled = true;
+            this.GetComponent<AudioSource>().Play();
         }
     }
     void OnTriggerStay(Collider other)//Collision colision)

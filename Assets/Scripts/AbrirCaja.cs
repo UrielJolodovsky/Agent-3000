@@ -21,6 +21,7 @@ public class AbrirCaja : MonoBehaviour
 
             this.gameObject.tag = "CajaAbierta";
             this.GetComponent<Animation>().Play("Caja");
+            this.GetComponent<AudioSource>().Play();
             posibilidad = false;
             cajaAbrir.enabled = false;
         }

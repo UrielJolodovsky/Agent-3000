@@ -50,6 +50,7 @@ public class EntrarAscensor : MonoBehaviour
             posibilidadAbrir = false;
             animacion.Play("AbrirPuertaLevel1");
             this.gameObject.tag = "AscensorAbierto";
+            this.GetComponent<AudioSource>().Play();
         }
         if (AscensorAbierto && Input.GetKeyDown(KeyCode.O) && estaAscensor)
         {
@@ -61,7 +62,7 @@ public class EntrarAscensor : MonoBehaviour
             nivelCompletado.enabled = true;
             animacion.Play("CerrarPuerta");
             LoadScene("Carga1");
-            
+            this.GetComponent<AudioSource>().Play();
         }
         if (isCounting)
         {

@@ -116,6 +116,8 @@ public class Guardia : MonoBehaviour {
                     //player.transform.localRotation = new Quaternion.euler(0,0,0);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 					Time.timeScale = 1;
+                    Agacharse.ctime = 0.5f;
+                    Agacharse.deslizarsetime = 0;
                     Avistado.enabled = false;
 				}
         }
