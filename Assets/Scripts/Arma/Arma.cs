@@ -37,6 +37,7 @@ public class Arma : MonoBehaviour
             b.transform.eulerAngles += new Vector3(Random.Range(-inacuracy, inacuracy), Random.Range(-inacuracy, inacuracy), Random.Range(-inacuracy, inacuracy));
             currReloadTime = reloadTime;
             balasDisparadas++;
+            this.GetComponent<AudioSource>().Play();
         }
         
     }

@@ -16,9 +16,9 @@ public class Agacharse : MonoBehaviour
     private int TimeStamp;
     Rigidbody m_rigidbody;
     public float time = .5f;
-    public float ctime;
+    public static float ctime;
     public float rotationSpeed = 0;
-    [SerializeField] float deslizarsetime;
+    [SerializeField] public static float deslizarsetime;
     // Start is called before the first frame update
 
 
