@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class EntrarAscensor : MonoBehaviour
 {
     [SerializeField] float customTime;
-    [SerializeField] bool isCounting;
+    [SerializeField] public bool isCounting;
     public int puntosPerdidosNivel1;
     public Text nivelCompletado;
     [SerializeField] Text Counter;
@@ -24,6 +24,7 @@ public class EntrarAscensor : MonoBehaviour
     [SerializeField] bool estaAscensor;
     public CharacterController controller;
     [SerializeField] public BoxCollider collider2;
+    [SerializeField] PuntosTotales puntos;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +56,7 @@ public class EntrarAscensor : MonoBehaviour
             entrarAscensor.enabled = false;
             isCounting = false;
             puntosPerdidosNivel1 = Mathf.FloorToInt(customTime * 10f);
+            puntos.Puntos1 = puntosPerdidosNivel1;
             Time.timeScale = 0;
             nivelCompletado.enabled = true;
             animacion.Play("CerrarPuerta");

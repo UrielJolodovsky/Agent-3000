@@ -2,21 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Jefe : MonoBehaviour
 {
     public GameObject puertaJefe;
-    
+    [SerializeField] public bool isCounting;
+    [SerializeField] Text Counter;
+    [SerializeField] float rounded;
+    [SerializeField] float customTime;
+    [SerializeField] int puntosPerdidosNivel3;
+    [SerializeField] PuntosTotales puntos;
     // Start is called before the first frame update
     void Start()
     {
-        
+        isCounting = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (isCounting)
+        {
+            customTime += Time.deltaTime;
+            rounded = Mathf.Round(customTime * 100f) / 100f;
+            Counter.text = rounded.ToString();
+        }
     }
    public void OnTriggerEnter(Collider other)
     { 
@@ -29,6 +40,9 @@ public class Jefe : MonoBehaviour
     {
         if(other.gameObject.tag == "Bala")
         {
+            isCounting = false;
+            puntosPerdidosNivel3 = Mathf.FloorToInt(customTime * 10f);
+            puntos.Puntos3 += puntosPerdidosNivel3;
             LoadScene("Final");
         }
     }
