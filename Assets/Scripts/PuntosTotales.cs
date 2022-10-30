@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PuntosTotales : MonoBehaviour
 {
-    [SerializeField] public int Puntos1;
-    [SerializeField] public int Puntos2;
-    [SerializeField] public int Puntos3;
-    [SerializeField] int TotalPuntos;
+    [SerializeField] public static int Puntos1;
+    [SerializeField] public static int Puntos2;
+    [SerializeField] public static int Puntos3;
+    [SerializeField] public static int TotalPuntos;
     // Start is called before the first frame update
     void Start()
     {

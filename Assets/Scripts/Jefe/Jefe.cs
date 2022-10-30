@@ -12,7 +12,6 @@ public class Jefe : MonoBehaviour
     [SerializeField] float rounded;
     [SerializeField] float customTime;
     [SerializeField] int puntosPerdidosNivel3;
-    [SerializeField] PuntosTotales puntos;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +41,7 @@ public class Jefe : MonoBehaviour
         {
             isCounting = false;
             puntosPerdidosNivel3 = Mathf.FloorToInt(customTime * 10f);
-            puntos.Puntos3 += puntosPerdidosNivel3;
+            PuntosTotales.Puntos3 += puntosPerdidosNivel3;
             LoadScene("Final");
         }
     }
