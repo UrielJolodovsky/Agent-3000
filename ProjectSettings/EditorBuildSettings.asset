@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Computer.unity
     guid: 2c61e955fcf322947b56bd412c4b570f
   - enabled: 1
+    path: Assets/Scenes/Nivel 1.unity
+    guid: 60441aebb46fd0247895afaf8a33c2ea
+  - enabled: 1
     path: Assets/Scenes/Carga1.unity
     guid: e133ff07e986bf84b997ff0425395eb7
   - enabled: 1
@@ -27,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel 3.unity
     guid: 18d2396486a64ba4eb30d90857d85e47
   - enabled: 1
-    path: Assets/Scenes/Nivel 1.unity
-    guid: 60441aebb46fd0247895afaf8a33c2ea
+    path: Assets/Scenes/Final.unity
+    guid: a97fd5e9cad46874a97c3e3cc7498f51
+  - enabled: 1
+    path: Assets/Scenes/Carga2.unity
+    guid: 9b76d0c891dded44597003be2cd362e2
   m_configObjects: {}
