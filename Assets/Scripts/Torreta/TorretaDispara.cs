@@ -32,7 +32,7 @@ public class TorretaDispara : MonoBehaviour
         {
             Bala1.SetActive(true);
             Bala2.SetActive(true);
-            gameObject.transform.LookAt(player.transform);
+            //gameObject.transform.LookAt(player.transform);
             // Funcionamiento de las torretas
             //var b = Instantiate(Bala1, Bala1.transform.position, Bala1.transform.rotation);
             //var c = Instantiate(Bala2, Bala2.transform.position, Bala2.transform.rotation);

@@ -7,7 +7,7 @@ using Vector3 = UnityEngine.Vector3;
 public class BalaTorreta : MonoBehaviour
 {
     public float speed = 0.00000000005f;
-    public float lifetime = 2;
+    public float lifetime = 1;
     public GameObject player;
 
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class BalaTorreta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed);
+        transform.position = Vector3.MoveTowards(transform.position, Vector3.forward, speed);
     }
    
 }
