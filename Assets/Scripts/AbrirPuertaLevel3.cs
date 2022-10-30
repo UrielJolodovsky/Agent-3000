@@ -19,8 +19,11 @@ public class AbrirPuertaLevel3 : MonoBehaviour
     {
         if (posibilidad && Input.GetKeyDown(KeyCode.E))
         {
-            this.GetComponent<Animation>().Play("PuertaLvl3");
             puertaAbierta = true;
+        }
+        if (puertaAbierta)
+        {
+            gameObject.transform.position += new Vector3(0, 0, 0.08f);
         }
     }
     void OnTriggerStay(Collider other)

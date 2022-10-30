@@ -30,6 +30,7 @@ public class Agacharse : MonoBehaviour
         Altura = colision.size.y;
         Altura2 = colision3.height;
         deslizarsetime = 0;
+        ctime = .5f;
     }
 
     // Update is called once per frame
