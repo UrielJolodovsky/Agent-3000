@@ -16,7 +16,7 @@ public class RandomNumComputador : MonoBehaviour
     void Update()
     {
         Scene scene = SceneManager.GetActiveScene();
-        if (scene.name == "Final")
+        if (scene.name == "Final" || scene.name == "Derrota")
         {
             Destroy(gameObject);
         }

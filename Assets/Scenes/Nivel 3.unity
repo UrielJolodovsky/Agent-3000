@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2968,6 +2968,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 82710246596024268, guid: 264c4b3099c2bae4995a523a34ede7d9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1782187224235652103, guid: 264c4b3099c2bae4995a523a34ede7d9,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -17556,6 +17561,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 82710246596024268, guid: 264c4b3099c2bae4995a523a34ede7d9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1782187224235652103, guid: 264c4b3099c2bae4995a523a34ede7d9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19656,7 +19666,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193933161}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -27672,6 +27682,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 82710246596024268, guid: 264c4b3099c2bae4995a523a34ede7d9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1782187224235652103, guid: 264c4b3099c2bae4995a523a34ede7d9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29061,6 +29076,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 82710246596024268, guid: 264c4b3099c2bae4995a523a34ede7d9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1782187224235652103, guid: 264c4b3099c2bae4995a523a34ede7d9,
         type: 3}
       propertyPath: m_LocalPosition.x

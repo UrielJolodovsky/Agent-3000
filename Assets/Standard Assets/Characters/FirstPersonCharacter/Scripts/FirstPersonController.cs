@@ -73,7 +73,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             Scene scene = SceneManager.GetActiveScene();
             RotateView();
-            if (scene.name == "Computer" || scene.name == "Carga1" || scene.name == "Carga2" || scene.name == "Final" || scene.name == "Ranking")
+            if (scene.name == "Computer" || scene.name == "Carga1" || scene.name == "Carga2" || scene.name == "Final" || scene.name == "Ranking" || scene.name == "Derrota")
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
@@ -83,7 +83,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
             }
-            if (scene.name == "Final")
+            if (scene.name == "Final" || scene.name == "Derrota")
             {
                 Destroy(gameObject);
             }

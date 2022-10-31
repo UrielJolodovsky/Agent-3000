@@ -27,7 +27,7 @@ public class VidasJuego : MonoBehaviour
         vida4 = GameObject.FindGameObjectWithTag("Vida4").GetComponent<RawImage>();
         vida5 = GameObject.FindGameObjectWithTag("Vida5").GetComponent<RawImage>();
         Scene scene = SceneManager.GetActiveScene();
-        if (scene.name == "Final")
+        if (scene.name == "Final" || scene.name == "Derrota")
         {
             Destroy(gameObject);
         }
