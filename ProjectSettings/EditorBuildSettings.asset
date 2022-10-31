@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final.unity
     guid: a97fd5e9cad46874a97c3e3cc7498f51
+  - enabled: 1
+    path: Assets/Scenes/Ranking.unity
+    guid: 9e0949696aa25104081121c75c31267c
   - enabled: 0
     path: Assets/__DELETED_GUID_Trash/9b76d0c891dded44597003be2cd362e2
     guid: 9b76d0c891dded44597003be2cd362e2
