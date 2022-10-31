@@ -35,6 +35,7 @@ public class Guardia : MonoBehaviour {
     [SerializeField] public CapsuleCollider collider2;
 
     [SerializeField] public bool muerto;
+    [SerializeField] public bool muerto1;
     [SerializeField] public static bool visto;
     //NavMeshAgent agent;
     public bool Chase;
@@ -46,6 +47,7 @@ public class Guardia : MonoBehaviour {
         //agent = GetComponent<NavMeshAgent>();
         Chase = false;
         muerto = false;
+        muerto1 = false;
         Camino = transform.Find("Camino").transform;
         //Linterna = GameObject.Find("Linterna").GetComponent<Light>();
         Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
@@ -87,9 +89,23 @@ public class Guardia : MonoBehaviour {
             //Debug.Log("colision");
             StopAllCoroutines();
             //agent.enabled = false;
-            
+            muerto1 = true;
+            muerto = false;
+            GuardiasMuertos.guardiasMuertos++;
         }
-		if (VerJugador()) 
+        if (muerto1)
+        {
+            //Destroy(gameObject);
+            Linterna.enabled = false;
+            muerte.SetActive(true);
+            robotCamina.SetActive(false);
+            collider2.enabled = false;
+            collider1.enabled = false;
+            //Debug.Log("colision");
+            StopAllCoroutines();
+            //agent.enabled = false;
+        }
+        if (VerJugador()) 
 		{
             tiempoVisto += Time.deltaTime;
             //Debug.Log(Linterna.color);
@@ -207,7 +223,6 @@ public class Guardia : MonoBehaviour {
         if (collision.gameObject.tag == "Bala")
 		{
             muerto = true;
-            GuardiasMuertos.guardiasMuertos++;
         }
     }
     void OnTriggerEnter(Collider other)

@@ -36,6 +36,7 @@ public class GuardiaConNavMesh : MonoBehaviour {
     [SerializeField] public CapsuleCollider collider2;
 
     [SerializeField] public bool muerto;
+    [SerializeField] public bool muerto1;
     [SerializeField] NavMeshAgent agent;
     public bool Chase;
     [SerializeField] Transform targetTransform;
@@ -79,7 +80,21 @@ public class GuardiaConNavMesh : MonoBehaviour {
             Debug.Log("colision");
             StopAllCoroutines();
             Chase = false;
-            
+            muerto = false;
+            muerto1 = true;
+            GuardiasMuertos.guardiasMuertos++;
+        }
+        if (muerto1)
+        {
+            //Destroy(gameObject);
+            Linterna.enabled = false;
+            muerte.SetActive(true);
+            robotCamina.SetActive(false);
+            collider2.enabled = false;
+            collider1.enabled = false;
+            Debug.Log("colision");
+            StopAllCoroutines();
+            Chase = false;
         }
 		if (VerJugador()) 
 		{
@@ -152,7 +167,6 @@ public class GuardiaConNavMesh : MonoBehaviour {
         if (collision.gameObject.tag == "Bala")
 		{
             muerto = true;
-            GuardiasMuertos.guardiasMuertos++;
         }
     }
     void OnTriggerStay(Collider other)
