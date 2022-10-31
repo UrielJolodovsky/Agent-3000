@@ -20,6 +20,7 @@ public class AbrirPuertaLevel3 : MonoBehaviour
         if (posibilidad && Input.GetKeyDown(KeyCode.E))
         {
             puertaAbierta = true;
+            this.GetComponent<AudioSource>().Play();
         }
         if (puertaAbierta)
         {
