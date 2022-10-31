@@ -1379,6 +1379,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26e2bf1eb5d7b442afb13b1a0c5c9cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Puntos: 
+  Name: []
+  Puntos5: 
+  Name1: []
+  index: 0
+  name1: {fileID: 1551807112}
+  name2: {fileID: 361579636}
+  name3: {fileID: 1422761851}
+  name4: {fileID: 1151712432}
+  name5: {fileID: 693597280}
+  puntos1: {fileID: 1581857467}
+  puntos2: {fileID: 821486629}
+  puntos3: {fileID: 2103165849}
+  puntos4: {fileID: 1739574168}
+  puntos5: {fileID: 689602886}
 --- !u!1 &1739574166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,8 +1505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0050411, y: 0.000053406}
-  m_SizeDelta: {x: 849.99, y: 478.00012}
+  m_AnchoredPosition: {x: -0.000013351, y: 2.1653}
+  m_SizeDelta: {x: 800, y: 454.09583}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914853608
 MonoBehaviour:
@@ -1651,7 +1666,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
