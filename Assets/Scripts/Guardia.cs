@@ -87,6 +87,7 @@ public class Guardia : MonoBehaviour {
             //Debug.Log("colision");
             StopAllCoroutines();
             //agent.enabled = false;
+            GuardiasMuertos.guardiasMuertos++;
         }
 		if (VerJugador()) 
 		{

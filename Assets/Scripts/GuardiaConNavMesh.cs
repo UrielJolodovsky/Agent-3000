@@ -79,6 +79,7 @@ public class GuardiaConNavMesh : MonoBehaviour {
             Debug.Log("colision");
             StopAllCoroutines();
             Chase = false;
+            GuardiasMuertos.guardiasMuertos++;
         }
 		if (VerJugador()) 
 		{
