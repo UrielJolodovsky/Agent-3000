@@ -112,16 +112,31 @@ public class Guardia : MonoBehaviour {
                 {
 					//player.GetComponent<CharacterController>().enabled = true;
                     player.transform.position = Spawnpoint.transform.position;
-                    //player.transform.eulerAngles = new Vector3 (0,0,0);
-                    //player.transform.localRotation = new Quaternion.euler(0,0,0);
+                //player.transform.eulerAngles = new Vector3 (0,0,0);
+                //player.transform.localRotation = new Quaternion.euler(0,0,0);
+                    VidasJuego.cantidadVidas -= 1;
+                if (VidasJuego.cantidadVidas > 0)
+                {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-					Time.timeScale = 1;
+                    Time.timeScale = 1;
                     Agacharse.ctime = 0.5f;
                     Agacharse.deslizarsetime = 0;
                     Avistado.enabled = false;
                     AbrirPuertaNets.abriendoPuerta = false;
                     Counter.customtiempo = 0;
                     DispararTorreta.golpeado = 0;
+                }
+                else
+                {
+                    SceneManager.LoadScene("Derrota");
+                    Time.timeScale = 1;
+                    Agacharse.ctime = 0.5f;
+                    Agacharse.deslizarsetime = 0;
+                    Avistado.enabled = false;
+                    AbrirPuertaNets.abriendoPuerta = false;
+                    Counter.customtiempo = 0;
+                    DispararTorreta.golpeado = 0;
+                }
 				}
         }
     }
@@ -170,6 +185,7 @@ public class Guardia : MonoBehaviour {
 			yield return null;
            
 		}
+        this.GetComponent<AudioSource>().Play();
 	}
 
 	void OnDrawGizmos() {

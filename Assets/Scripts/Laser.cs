@@ -58,13 +58,28 @@ public class Laser : MonoBehaviour
                 player.transform.position = spawnpoint.transform.position;
                 //player.transform.eulerAngles = new Vector3 (0,0,0);
                 //player.transform.localRotation = new Quaternion.euler(0,0,0);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                Time.timeScale = 1;
-                Agacharse.ctime = 0.5f;
-                Agacharse.deslizarsetime = 0;
-                Avistado.enabled = false;
-                AbrirPuertaNets.abriendoPuerta = false;
-                Counter.customtiempo = 0;
+                VidasJuego.cantidadVidas -= 1;
+                if (VidasJuego.cantidadVidas > 0)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    Time.timeScale = 1;
+                    Agacharse.ctime = 0.5f;
+                    Agacharse.deslizarsetime = 0;
+                    Avistado.enabled = false;
+                    AbrirPuertaNets.abriendoPuerta = false;
+                    Counter.customtiempo = 0;
+                }
+                else
+                {
+                    SceneManager.LoadScene("Derrota");
+                    Time.timeScale = 1;
+                    Agacharse.ctime = 0.5f;
+                    Agacharse.deslizarsetime = 0;
+                    Avistado.enabled = false;
+                    AbrirPuertaNets.abriendoPuerta = false;
+                    Counter.customtiempo = 0;
+                }
+                
             }
 
         }

@@ -26,6 +26,11 @@ TagManager:
   - logo
   - AbrirCaja
   - ApagarTorretas
+  - Vida1
+  - Vida2
+  - Vida3
+  - Vida4
+  - Vida5
   layers:
   - Default
   - TransparentFX
