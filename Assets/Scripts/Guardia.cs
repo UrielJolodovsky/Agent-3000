@@ -107,7 +107,7 @@ public class Guardia : MonoBehaviour {
                 Avistado.enabled = true;
                 Time.timeScale = 0;
             //controller.enabled = false;
-            visto = true;
+                visto = true;
                 if (Input.GetKeyDown(KeyCode.R))
                 {
 					//player.GetComponent<CharacterController>().enabled = true;

@@ -21,4 +21,14 @@ public class BalaTorreta : MonoBehaviour
     {
         transform.position += transform.forward * speed;
     }
+    public void OnCollisionEnter(Collision collider)
+    {
+        {
+            if (collider.gameObject.tag == "Player")
+            {
+                DispararTorreta.golpeado++;
+                Debug.Log("hit");
+            }
+        }
+    }
 }

@@ -20,8 +20,8 @@ public class Bala : MonoBehaviour
         
         transform.position += transform.forward * speed;
     }
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
+            Destroy(gameObject);
     }
 }

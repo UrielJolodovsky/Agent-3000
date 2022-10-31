@@ -24,6 +24,8 @@ TagManager:
   - necesitaTarjeta
   - presionaTecla
   - logo
+  - AbrirCaja
+  - ApagarTorretas
   layers:
   - Default
   - TransparentFX
