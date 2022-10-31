@@ -18,12 +18,12 @@ public class GuardiasMuertos : MonoBehaviour
         if (guardiasMuertos >=6)
         {
             SceneManager.LoadScene("Derrota");
+            guardiasMuertos = 0;
         }
         Scene scene = SceneManager.GetActiveScene();
-        if (scene.name == "Computer" || scene.name == "Carga1" || scene.name == "Carga2" || scene.name == "Final" || scene.name == "Ranking" || scene.name == "Derrota")
+        if (scene.name == "Final" || scene.name == "Derrota")
         {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            Destroy(gameObject);
         }
     }
 }
