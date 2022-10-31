@@ -42,6 +42,10 @@ public class AbrirPuertaNets : MonoBehaviour
         {
             gameObject.transform.position += new Vector3(0.08f, 0, 0f);
         }
+        if (Computador.activada)
+        {
+            abrirPuerta = false;
+        }
     }
     void OnTriggerStay(Collider other)
     {

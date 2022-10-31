@@ -519,6 +519,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 657030644}
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: infoJuego
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &557063701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,6 +575,7 @@ GameObject:
   m_Component:
   - component: {fileID: 657030643}
   - component: {fileID: 657030642}
+  - component: {fileID: 657030644}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -584,7 +596,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreInput: {fileID: 2012762024}
-  player: {fileID: 0}
 --- !u!4 &657030643
 Transform:
   m_ObjectHideFlags: 0
@@ -599,6 +610,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &657030644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657030641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3aa4dcf8b15d1d4ab20f6bedb0a5653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1012272796
 GameObject:
   m_ObjectHideFlags: 0

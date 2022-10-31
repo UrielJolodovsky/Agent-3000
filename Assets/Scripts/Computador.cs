@@ -26,10 +26,12 @@ public class Computador : MonoBehaviour
     [SerializeField] string contrasenia;
     public static bool Encontrado;
     [SerializeField] int cantidadIntentos = 0;
+    [SerializeField] public static bool activada;
 
     // Start is called before the first frame update
     void Start()
     {
+        activada = true;
         numRandom = RandomNumComputador.num;
         cuentas = new string[] { "345 + 749 - 321 x 2", "112 + 90 + 76 - 4 x 5", "230 + 89 + 87 + 53 x 3", "125 x 2 + 16", "545 + 367" };
        resultadosCuentas = new string[] { "452", "258", "565", "266", "912" };

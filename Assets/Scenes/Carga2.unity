@@ -589,7 +589,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Nivel 3
+          m_StringArgument: nivel 3 con cinematica
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1685812503
@@ -802,6 +802,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d0cc7b103646b4594ab91a8fab2c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  spawnpoint: {fileID: 0}
 --- !u!4 &1961843821
 Transform:
   m_ObjectHideFlags: 0
