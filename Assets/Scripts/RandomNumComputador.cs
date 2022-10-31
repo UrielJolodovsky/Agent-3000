@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RandomNumComputador : MonoBehaviour
 {
@@ -14,6 +15,10 @@ public class RandomNumComputador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Final")
+        {
+            Destroy(gameObject);
+        }
     }
 }

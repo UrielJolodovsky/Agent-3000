@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AbrirPuertaNets : MonoBehaviour
@@ -22,6 +23,11 @@ public class AbrirPuertaNets : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Final")
+        {
+            Destroy(gameObject);
+        }
         necesitaTarjeta = GameObject.FindGameObjectWithTag("necesitaTarjeta").GetComponent<Text>();
         presionaTecla = GameObject.FindGameObjectWithTag("presionaTecla").GetComponent<Text>();
         logo = GameObject.FindGameObjectWithTag("logo").GetComponent<RawImage>();

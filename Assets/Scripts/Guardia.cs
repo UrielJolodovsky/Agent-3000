@@ -121,6 +121,7 @@ public class Guardia : MonoBehaviour {
                     Avistado.enabled = false;
                     AbrirPuertaNets.abriendoPuerta = false;
                     Counter.customtiempo = 0;
+                    DispararTorreta.golpeado = 0;
 				}
         }
     }

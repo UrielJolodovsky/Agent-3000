@@ -35,6 +35,8 @@ public class DispararTorreta : MonoBehaviour
             Agacharse.deslizarsetime = 0;
             AbrirPuertaNets.abriendoPuerta = false;
             Counter.customtiempo = 0;
+            Debug.Log("moriste");
+            golpeado = 0;
         }
         
 
