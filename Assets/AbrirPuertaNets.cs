@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class AbrirPuertaNets : MonoBehaviour
 {
     [SerializeField] bool abrirPuerta;
-    [SerializeField] bool abriendoPuerta;
+    public static bool abriendoPuerta;
     [SerializeField] public Text necesitaTarjeta;
     [SerializeField] public Text presionaTecla;
     [SerializeField] public RawImage logo;
@@ -22,6 +22,9 @@ public class AbrirPuertaNets : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        necesitaTarjeta = GameObject.FindGameObjectWithTag("necesitaTarjeta").GetComponent<Text>();
+        presionaTecla = GameObject.FindGameObjectWithTag("presionaTecla").GetComponent<Text>();
+        logo = GameObject.FindGameObjectWithTag("logo").GetComponent<RawImage>();
         if (abrirPuerta && Input.GetKeyDown(KeyCode.E))
         {
             abriendoPuerta = true;

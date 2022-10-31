@@ -2349,6 +2349,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1429af1cad591d44085732ffdd498c51, type: 3}
+--- !u!1 &152795712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 0fb2d50911bbdda4aad85bde2db1dd56,
+    type: 3}
+  m_PrefabInstance: {fileID: 371553968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &152795716
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152795712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 0fb2d50911bbdda4aad85bde2db1dd56, type: 3}
+--- !u!45 &152795717
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152795712}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!4 &152899963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4008911935784259377, guid: 533793f0c569b6148832f7afcff74322,
@@ -4156,7 +4185,7 @@ MonoBehaviour:
   isCounting: 0
   puntosPerdidosNivel2: 0
   rounded: 0
-  Counter: {fileID: 569075101}
+  Counter1: {fileID: 0}
   cerrarpuerta: {fileID: 251524239}
   intentos: 0
 --- !u!1001 &226629271
@@ -8027,6 +8056,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EntrarPuerta
       objectReference: {fileID: 0}
+    - target: {fileID: 8362762316669046893, guid: d6938f9ede9e6da4d81b1cc2381071b6,
+        type: 3}
+      propertyPath: m_TagString
+      value: presionaTecla
+      objectReference: {fileID: 0}
     - target: {fileID: 8362762316669046895, guid: d6938f9ede9e6da4d81b1cc2381071b6,
         type: 3}
       propertyPath: m_Color.r
@@ -9728,6 +9762,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Counter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480291589593739637, guid: 1d2e03b84c043b84d9b34b95a5e752f4,
+        type: 3}
+      propertyPath: m_TagString
+      value: counter
       objectReference: {fileID: 0}
     - target: {fileID: 1480291589593739638, guid: 1d2e03b84c043b84d9b34b95a5e752f4,
         type: 3}
@@ -14455,6 +14494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Objetivo: {fileID: 748786136}
   ascensor: {fileID: 0}
+  animacion: 0
 --- !u!4 &898334151
 Transform:
   m_ObjectHideFlags: 0
@@ -14585,6 +14625,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AbrirAscensor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583898074891185567, guid: aa61b9c314db82642b84f07f817f8fad,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583898074891185567, guid: aa61b9c314db82642b84f07f817f8fad,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583898074891185567, guid: aa61b9c314db82642b84f07f817f8fad,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa61b9c314db82642b84f07f817f8fad, type: 3}
@@ -17922,7 +17977,7 @@ GameObject:
   - component: {fileID: 1083666211}
   m_Layer: 5
   m_Name: logo_img
-  m_TagString: Untagged
+  m_TagString: logo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21435,6 +21490,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1121683061}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1271426497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271426496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547eaa6643e801745977dbf14e2d7d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1271426500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21448,7 +21515,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abrirPuerta: 0
-  abriendoPuerta: 0
   necesitaTarjeta: {fileID: 717618767}
   presionaTecla: {fileID: 2076237873}
   logo: {fileID: 1083666211}
@@ -22233,6 +22299,64 @@ MonoBehaviour:
   jugador: {fileID: 0}
   player: {fileID: 0}
   Usar: {fileID: 1187578846}
+--- !u!1 &1356014930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1356014932}
+  - component: {fileID: 1356014931}
+  - component: {fileID: 1356014933}
+  m_Layer: 0
+  m_Name: '[COUNTER]'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1356014931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356014930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe73184102c61e41ade2628ecfa5ee7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rounded: 0
+  counter: {fileID: 569075101}
+--- !u!4 &1356014932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356014930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.892444, y: -0.22339043, z: 141.71303}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 122
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1356014933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356014930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 979d528616a005d4387496446ff43250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1360434414 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4008911935784259377, guid: 533793f0c569b6148832f7afcff74322,
@@ -28805,6 +28929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Necesita (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3388531203295601237, guid: 8421c8697a8d56247be93522b8ba7df3,
+        type: 3}
+      propertyPath: m_TagString
+      value: necesitaTarjeta
       objectReference: {fileID: 0}
     - target: {fileID: 3388531203295601239, guid: 8421c8697a8d56247be93522b8ba7df3,
         type: 3}

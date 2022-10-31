@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class VerificarContraseña : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class VerificarContraseña : MonoBehaviour
     [SerializeField] public bool isCounting;
     public int puntosPerdidosNivel2;
     [SerializeField] float rounded;
-    [SerializeField] Text Counter;
+    [SerializeField] Text Counter1;
     [SerializeField] public Text cerrarpuerta;
     [SerializeField] int intentos;
     // Start is called before the first frame update
@@ -40,18 +41,19 @@ public class VerificarContraseña : MonoBehaviour
         if (this.gameObject.tag == "AscensorAbierto" && Input.GetKeyDown(KeyCode.O) && estaAscensor)
         {
             this.GetComponent<Animation>().Play("CerrarPuerta");
-            isCounting = false;
-            puntosPerdidosNivel2 = Mathf.FloorToInt(customTime * 10f);
+            Counter.isCounting = false;
+            puntosPerdidosNivel2 = Mathf.FloorToInt(Counter.customtiempo * 10f);
             PuntosTotales.Puntos2 += puntosPerdidosNivel2;
             cerrarpuerta.enabled = false;
             Time.timeScale = 0;
+            SceneManager.LoadScene("Carga2");
         }
-        if (isCounting)
-        {
-            customTime += Time.deltaTime;
-            rounded = Mathf.Round(customTime * 100f) / 100f;
-            Counter.text = rounded.ToString();
-        }
+        //if (isCounting)
+        //{
+        //    customTime += Time.deltaTime;
+        //    rounded = Mathf.Round(customTime * 100f) / 100f;
+        //    Counter.text = rounded.ToString();
+        //}
         if (posibilidad && Input.GetKeyDown(KeyCode.E) && this.gameObject.tag == "Ascensor")
         {
             contrasenia.enabled = true;

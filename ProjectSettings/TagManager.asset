@@ -20,6 +20,10 @@ TagManager:
   - Minimapa
   - Minimapa2
   - camCaja
+  - counter
+  - necesitaTarjeta
+  - presionaTecla
+  - logo
   layers:
   - Default
   - TransparentFX

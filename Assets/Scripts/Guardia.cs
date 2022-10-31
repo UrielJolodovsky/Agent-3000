@@ -119,6 +119,8 @@ public class Guardia : MonoBehaviour {
                     Agacharse.ctime = 0.5f;
                     Agacharse.deslizarsetime = 0;
                     Avistado.enabled = false;
+                    AbrirPuertaNets.abriendoPuerta = false;
+                    Counter.customtiempo = 0;
 				}
         }
     }
