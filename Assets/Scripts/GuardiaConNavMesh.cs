@@ -79,7 +79,7 @@ public class GuardiaConNavMesh : MonoBehaviour {
             Debug.Log("colision");
             StopAllCoroutines();
             Chase = false;
-            GuardiasMuertos.guardiasMuertos++;
+            
         }
 		if (VerJugador()) 
 		{
@@ -152,6 +152,7 @@ public class GuardiaConNavMesh : MonoBehaviour {
         if (collision.gameObject.tag == "Bala")
 		{
             muerto = true;
+            GuardiasMuertos.guardiasMuertos++;
         }
     }
     void OnTriggerStay(Collider other)

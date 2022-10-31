@@ -87,7 +87,7 @@ public class Guardia : MonoBehaviour {
             //Debug.Log("colision");
             StopAllCoroutines();
             //agent.enabled = false;
-            GuardiasMuertos.guardiasMuertos++;
+            
         }
 		if (VerJugador()) 
 		{
@@ -207,6 +207,7 @@ public class Guardia : MonoBehaviour {
         if (collision.gameObject.tag == "Bala")
 		{
             muerto = true;
+            GuardiasMuertos.guardiasMuertos++;
         }
     }
     void OnTriggerEnter(Collider other)
