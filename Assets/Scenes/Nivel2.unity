@@ -14454,6 +14454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Objetivo: {fileID: 748786136}
+  ascensor: {fileID: 0}
 --- !u!4 &898334151
 Transform:
   m_ObjectHideFlags: 0
@@ -17516,7 +17517,7 @@ PrefabInstance:
     - target: {fileID: 6750065917269229472, guid: b12805fdbfeb31441af0f1e66c21d8ca,
         type: 3}
       propertyPath: m_TagString
-      value: AscensorAbierto
+      value: Ascensor
       objectReference: {fileID: 0}
     - target: {fileID: 6750065917269229480, guid: b12805fdbfeb31441af0f1e66c21d8ca,
         type: 3}
