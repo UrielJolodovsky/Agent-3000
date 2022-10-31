@@ -15,7 +15,7 @@ public class GuardiasMuertos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (guardiasMuertos >=10)
+        if (guardiasMuertos >=6)
         {
             SceneManager.LoadScene("Derrota");
         }
