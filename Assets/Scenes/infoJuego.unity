@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -646,7 +646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -39.7}
+  m_AnchoredPosition: {x: 2, y: -29.7}
   m_SizeDelta: {x: 426.54852, y: 257.172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1272369813
@@ -680,11 +680,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ano 23XX. la corporacion T.S.A.I ha dejado de usar a sus agentes humanos
+  m_Text: "ano 23XX. la corporacion T.S.A.I ha dejado de usar a sus agentes humanos
     para llevar a cabo sus tareas de seguridad debido al crecimiento de la industria
     robotica. vos, siendo el mejor ex-agente de la corporacion decidis vengarte de
     ellos atravesando su sede principal, el burj khalifa, y eliminando al CEO de la
-    compania, Tomas Specter.
+    compania, Tomas Specter. \nRecuerda: No puedes eliminar mas de 5 guardias. "
 --- !u!222 &1272369814
 CanvasRenderer:
   m_ObjectHideFlags: 0
