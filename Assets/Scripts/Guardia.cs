@@ -185,7 +185,6 @@ public class Guardia : MonoBehaviour {
 			yield return null;
            
 		}
-        this.GetComponent<AudioSource>().Play();
 	}
 
 	void OnDrawGizmos() {
