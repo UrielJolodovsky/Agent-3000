@@ -17,7 +17,7 @@ public class ChangeScene2 : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         player = GameObject.FindGameObjectWithTag("Player");
-        controller = player.GetComponent<CharacterController>();
+        //controller = player.GetComponent<CharacterController>();
         jugador = player.GetComponent<FirstPersonController>();
         counterScene++;
     }

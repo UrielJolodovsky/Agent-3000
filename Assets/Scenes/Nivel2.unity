@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4159,7 +4159,6 @@ MonoBehaviour:
   Counter: {fileID: 569075101}
   cerrarpuerta: {fileID: 251524239}
   intentos: 0
-  puntos: {fileID: 0}
 --- !u!1001 &226629271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11571,6 +11570,7 @@ GameObject:
   - component: {fileID: 692630452}
   - component: {fileID: 692630451}
   - component: {fileID: 692630450}
+  - component: {fileID: 692630454}
   m_Layer: 9
   m_Name: CameraCAJA (4)
   m_TagString: Untagged
@@ -11687,6 +11687,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &692630454
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692630448}
+  m_Enabled: 1
 --- !u!4 &695423227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5785958571984752843, guid: 1429af1cad591d44085732ffdd498c51,
@@ -11712,6 +11720,7 @@ GameObject:
   - component: {fileID: 700007167}
   - component: {fileID: 700007166}
   - component: {fileID: 700007165}
+  - component: {fileID: 700007169}
   m_Layer: 9
   m_Name: CameraCAJA (2)
   m_TagString: Untagged
@@ -11828,6 +11837,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &700007169
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700007163}
+  m_Enabled: 1
 --- !u!1001 &701596353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12777,6 +12794,7 @@ GameObject:
   - component: {fileID: 769328818}
   - component: {fileID: 769328817}
   - component: {fileID: 769328816}
+  - component: {fileID: 769328820}
   m_Layer: 9
   m_Name: CameraCAJA (3)
   m_TagString: Untagged
@@ -12893,6 +12911,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &769328820
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769328814}
+  m_Enabled: 1
 --- !u!1001 &777607255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19698,7 +19724,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6ed2dac05504089448c4b97d8d3fbabd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ea17cbdcbd25cf64a95c9c118add512b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -20491,6 +20517,7 @@ GameObject:
   - component: {fileID: 1228249426}
   - component: {fileID: 1228249425}
   - component: {fileID: 1228249424}
+  - component: {fileID: 1228249428}
   m_Layer: 9
   m_Name: CameraCAJA (6)
   m_TagString: Untagged
@@ -20607,6 +20634,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &1228249428
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228249422}
+  m_Enabled: 1
 --- !u!1001 &1234375804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27896,6 +27931,7 @@ GameObject:
   - component: {fileID: 1678632666}
   - component: {fileID: 1678632665}
   - component: {fileID: 1678632664}
+  - component: {fileID: 1678632668}
   m_Layer: 9
   m_Name: CameraCAJA (1)
   m_TagString: Untagged
@@ -28012,6 +28048,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &1678632668
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678632662}
+  m_Enabled: 1
 --- !u!4 &1679951808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9158397554870010917, guid: 752cb9490fb4c1644accc4ea395c35cb,
@@ -35701,6 +35745,7 @@ GameObject:
   - component: {fileID: 2146230359}
   - component: {fileID: 2146230358}
   - component: {fileID: 2146230357}
+  - component: {fileID: 2146230361}
   m_Layer: 9
   m_Name: CameraCAJA (5)
   m_TagString: Untagged
@@ -35817,6 +35862,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &2146230361
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146230355}
+  m_Enabled: 1
 --- !u!1001 &255734214410377048
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -30,7 +30,7 @@ public class Arma : MonoBehaviour
         {
             currReloadTime -= Time.deltaTime;
         }
-        if (Input.GetMouseButton(0) && currReloadTime <= 0 && scene.name != "Computer")
+        if (Input.GetMouseButton(0) && currReloadTime <= 0 && scene.name != "Computer" && scene.name != "Carga1" && scene.name != "Carga2" && scene.name != "Final" && scene.name != "Derrota" )
         {
             var b = Instantiate(bullet, bulletSpawn.position, bulletSpawn.rotation);
             b.tag = "Bala";
