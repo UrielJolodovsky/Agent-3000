@@ -30,6 +30,8 @@ public class VidasJuego : MonoBehaviour
         if (scene.name == "Final" || scene.name == "Derrota")
         {
             Destroy(gameObject);
+            cantidadVidas = 5;
+            GuardiasMuertos.guardiasMuertos = 0;
         }
         if (cantidadVidas == 0)
         {
