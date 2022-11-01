@@ -35,6 +35,7 @@ public class VidasJuego : MonoBehaviour
         {
             SceneManager.LoadScene("Derrota");
             cantidadVidas = 5;
+            GuardiasMuertos.guardiasMuertos = 0;
         }
         if (cantidadVidas == 5)
         {

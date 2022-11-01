@@ -19,6 +19,7 @@ public class GuardiasMuertos : MonoBehaviour
         {
             SceneManager.LoadScene("Derrota");
             guardiasMuertos = 0;
+            VidasJuego.cantidadVidas = 5;
         }
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "Final" || scene.name == "Derrota")
