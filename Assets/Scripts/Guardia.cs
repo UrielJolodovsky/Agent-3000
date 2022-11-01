@@ -35,10 +35,10 @@ public class Guardia : MonoBehaviour {
     [SerializeField] public CapsuleCollider collider2;
 
     [SerializeField] public bool muerto;
-    [SerializeField] public bool muerto1;
     [SerializeField] public static bool visto;
     //NavMeshAgent agent;
     public bool Chase;
+    [SerializeField] bool Sumado;
     [SerializeField] Transform targetTransform;
     [SerializeField] Coroutine caminito;
 
@@ -47,7 +47,6 @@ public class Guardia : MonoBehaviour {
         //agent = GetComponent<NavMeshAgent>();
         Chase = false;
         muerto = false;
-        muerto1 = false;
         Camino = transform.Find("Camino").transform;
         //Linterna = GameObject.Find("Linterna").GetComponent<Light>();
         Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
@@ -89,21 +88,11 @@ public class Guardia : MonoBehaviour {
             //Debug.Log("colision");
             StopAllCoroutines();
             //agent.enabled = false;
-            muerto1 = true;
-            muerto = false;
-            GuardiasMuertos.guardiasMuertos++;
-        }
-        if (muerto1)
-        {
-            //Destroy(gameObject);
-            Linterna.enabled = false;
-            muerte.SetActive(true);
-            robotCamina.SetActive(false);
-            collider2.enabled = false;
-            collider1.enabled = false;
-            //Debug.Log("colision");
-            StopAllCoroutines();
-            //agent.enabled = false;
+            if (!Sumado)
+            {
+                GuardiasMuertos.guardiasMuertos++;
+                Sumado = true;
+            }
         }
         if (VerJugador()) 
 		{
