@@ -32,6 +32,7 @@ TagManager:
   - Vida4
   - Vida5
   - GuardiasDeath
+  - PlayerCaja
   layers:
   - Default
   - TransparentFX

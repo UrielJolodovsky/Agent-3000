@@ -16,6 +16,7 @@ public class DispararTorreta : MonoBehaviour
     void Start()
     {
         ctime = 2;
+        Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
         Avistado.enabled = false;
     }
 
@@ -27,10 +28,11 @@ public class DispararTorreta : MonoBehaviour
         {
             // Dispara
             Debug.Log("Disparo");
+            this.GetComponent<AudioSource>().Play();
             Disparar();
             ctime = 5;
         }
-        if (golpeado >= 5)
+        if (golpeado >= 3)
         {
             Avistado.enabled = true;
             Time.timeScale = 0;

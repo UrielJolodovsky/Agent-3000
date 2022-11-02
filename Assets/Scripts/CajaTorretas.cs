@@ -30,6 +30,7 @@ public class CajaTorretas : MonoBehaviour
         {
             DispararTorreta.disparar = false;
             apagar.enabled = false;
+            this.GetComponent<AudioSource>().Play();
         }
     }
     void OnTriggerStay(Collider other)

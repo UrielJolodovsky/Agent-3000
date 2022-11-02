@@ -12,12 +12,12 @@ public class GuardiasMuertos : MonoBehaviour
     void Start()
     {
         guardiasMuertos = 0;
-        guardiasDeath = GameObject.FindGameObjectWithTag("GuardiasDeath").GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        guardiasDeath = GameObject.FindGameObjectWithTag("GuardiasDeath").GetComponent<Text>();
         guardiasDeath.text = guardiasMuertos.ToString();
         if (guardiasMuertos >=8)
         {

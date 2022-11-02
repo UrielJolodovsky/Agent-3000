@@ -108,7 +108,7 @@ public class Guardia : MonoBehaviour {
         Linterna.color = Color.LerpUnclamped(LinternaOriginal, Color.red, tiempoVisto / tiempoParaVer);
 		
         
-		if (tiempoVisto >= tiempoParaVer)
+		if (tiempoVisto >= tiempoParaVer && player.gameObject.tag == "Player")
         {
                 Avistado.enabled = true;
                 Time.timeScale = 0;

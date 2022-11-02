@@ -69,6 +69,7 @@ public class EntrarCaja : MonoBehaviour
                 interferencia3.enabled = true;
                 camCaja.SetActive(true);
                 Entrar.enabled = false;
+                jugador.gameObject.tag = "PlayerCaja";
             }
         }
     }

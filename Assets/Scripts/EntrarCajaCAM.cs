@@ -47,6 +47,7 @@ public class EntrarCajaCAM : MonoBehaviour
             controller.enabled = true;
             camJugador.SetActive(true);
             //Entrar.enabled = true;
+            jugador.gameObject.tag = "Player";
         }
         
         // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller
