@@ -8,6 +8,7 @@ public class JefeEncontrado : MonoBehaviour
     public Text Objetivo;
     [SerializeField] GameObject ascensor;
     public bool animacion;
+    public Text OBJAscensor;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class JefeEncontrado : MonoBehaviour
             ascensor.gameObject.tag = "AscensorAbierto";
             ascensor.GetComponent<Animation>().Play("AbrirPuerta");
             animacion = true;
+            OBJAscensor.enabled = true;
         }
     }
 }

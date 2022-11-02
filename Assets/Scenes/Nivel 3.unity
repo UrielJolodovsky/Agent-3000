@@ -17375,6 +17375,37 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6282637004687269726, guid: 71d2f895396e85948b077472a8084426,
+        type: 3}
+      propertyPath: m_Text
+      value: 'guardias eliminados: '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282637004687269726, guid: 71d2f895396e85948b077472a8084426,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282637004687269726, guid: 71d2f895396e85948b077472a8084426,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282637004687269726, guid: 71d2f895396e85948b077472a8084426,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282637004687269726, guid: 71d2f895396e85948b077472a8084426,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b64dda061a456344da2c3d3640f3c8e4,
+        type: 3}
+    - target: {fileID: 6282637004687269726, guid: 71d2f895396e85948b077472a8084426,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71d2f895396e85948b077472a8084426, type: 3}
 --- !u!224 &877238122 stripped
@@ -31669,6 +31700,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: counter_guardias
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190250164697297063, guid: bad0f7c9e0220304aa26bd34859841a6,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190250164697297063, guid: bad0f7c9e0220304aa26bd34859841a6,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190250164697297063, guid: bad0f7c9e0220304aa26bd34859841a6,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bad0f7c9e0220304aa26bd34859841a6, type: 3}

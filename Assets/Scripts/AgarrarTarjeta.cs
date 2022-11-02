@@ -14,6 +14,8 @@ public class AgarrarTarjeta : MonoBehaviour
     [SerializeField] GameObject[] cajas;
     [SerializeField] public UbicarTarjeta tarjeteando;
     [SerializeField] int num;
+    [SerializeField] Text ObjetivoAscensor;
+    [SerializeField] AudioSource Sonido;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,8 @@ public class AgarrarTarjeta : MonoBehaviour
         Objetivo.enabled = true;
         tarjetaPNG.enabled = false;
         posibilidad = false;
-
+        ObjetivoAscensor.enabled = false;
+        Sonido = tarjetaPNG.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,7 +39,12 @@ public class AgarrarTarjeta : MonoBehaviour
             tarjetaAgarrada = true;
             Objetivo.enabled = false;
             tarjetaPNG.enabled = true;
-            this.GetComponent<AudioSource>().Play();
+            ObjetivoAscensor.enabled = true;
+            
+        }
+        if (tarjetaPNG.enabled)
+        {
+            Sonido.Play();
         }
     }
     void OnTriggerStay(Collider other)//Collision colision)
