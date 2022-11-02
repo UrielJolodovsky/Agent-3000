@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -669,10 +669,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b64dda061a456344da2c3d3640f3c8e4, type: 3}
-    m_FontSize: 20
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -684,7 +684,8 @@ MonoBehaviour:
     para llevar a cabo sus tareas de seguridad debido al crecimiento de la industria
     robotica. vos, siendo el mejor ex-agente de la corporacion decidis vengarte de
     ellos atravesando su sede principal, el burj khalifa, y eliminando al CEO de la
-    compania, Tomas Specter. \nRecuerda: No puedes eliminar mas de 5 guardias. "
+    compania, Tomas Specter. \nRecuerda: No puedes eliminar mas de 7 guardias.\nRecuerda:
+    En la parte superior izquierda vas a encontrar tu objectivo en cada nivel "
 --- !u!222 &1272369814
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -31,6 +31,7 @@ TagManager:
   - Vida3
   - Vida4
   - Vida5
+  - GuardiasDeath
   layers:
   - Default
   - TransparentFX
