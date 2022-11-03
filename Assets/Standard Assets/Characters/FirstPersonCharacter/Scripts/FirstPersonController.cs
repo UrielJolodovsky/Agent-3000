@@ -4,7 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
 using UnityEngine.SceneManagement;
-using UnityEditor.Android;
+//using UnityEditor.Android;
 
 
 #pragma warning disable 618, 649

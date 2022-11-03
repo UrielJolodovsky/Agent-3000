@@ -10,6 +10,8 @@ public class AgarrarLlave : MonoBehaviour
     [SerializeField] GameObject llave;
     [SerializeField] public Text agarrarLlave;
     [SerializeField] public RawImage logo;
+    [SerializeField] public Text OBJLlave;
+    [SerializeField] public Text OBJAscensor;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class AgarrarLlave : MonoBehaviour
        // llave = GameObject.FindObjectOfType<AgarrarLlave>().gameObject;
         agarrarLlave.enabled = false;
         logo.enabled = false;
+        OBJLlave.enabled = true;
     }
 
     // Update is called once per frame
@@ -29,6 +32,8 @@ public class AgarrarLlave : MonoBehaviour
             gameObject.SetActive(false);
             agarrarLlave.enabled = false;
             logo.enabled = true;
+            OBJLlave.enabled = false;
+            OBJAscensor.enabled = true;
         }
     }
     void OnTriggerStay(Collider other)

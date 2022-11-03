@@ -9,6 +9,7 @@ public class JefeEncontrado : MonoBehaviour
     [SerializeField] GameObject ascensor;
     public bool animacion;
     public Text OBJAscensor;
+    public Text OBJLlave;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class JefeEncontrado : MonoBehaviour
             ascensor.GetComponent<Animation>().Play("AbrirPuerta");
             animacion = true;
             OBJAscensor.enabled = true;
+            OBJLlave.enabled = false;
         }
     }
 }

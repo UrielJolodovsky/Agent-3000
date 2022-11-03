@@ -11,6 +11,7 @@ public class AbrirPuertaNets : MonoBehaviour
     [SerializeField] public Text necesitaTarjeta;
     [SerializeField] public Text presionaTecla;
     [SerializeField] public RawImage logo;
+    public bool puertaAbierta;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,7 @@ public class AbrirPuertaNets : MonoBehaviour
             this.GetComponent<AudioSource>().Play();
             presionaTecla.enabled = false;
             logo.enabled = false;
+            puertaAbierta = true;
         }
         if (abriendoPuerta)
         {
