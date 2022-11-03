@@ -33,6 +33,7 @@ TagManager:
   - Vida5
   - GuardiasDeath
   - PlayerCaja
+  - FondoAvistado
   layers:
   - Default
   - TransparentFX
