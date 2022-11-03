@@ -35,7 +35,7 @@ public class DispararTorreta : MonoBehaviour
             Disparar();
             ctime = 5;
         }
-        if (golpeado >= 3)
+        if (golpeado >= 5)
         {
             fondoavistado.enabled = true;
             Avistado.enabled = true;
