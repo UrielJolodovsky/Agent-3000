@@ -42,6 +42,7 @@ public class Guardia : MonoBehaviour {
     [SerializeField] Transform targetTransform;
     [SerializeField] Coroutine caminito;
 
+    [SerializeField] RawImage fondoavistado;
     void Start() {
 
         //agent = GetComponent<NavMeshAgent>();
@@ -60,6 +61,8 @@ public class Guardia : MonoBehaviour {
         collider1 = GetComponent<BoxCollider>();
         collider2 = GetComponent<CapsuleCollider>();
         targetTransform = player.GetComponent<Transform>();
+        fondoavistado = GameObject.FindGameObjectWithTag("FondoAvistado").GetComponent<RawImage>();
+        fondoavistado.enabled = false;
 
 
         Vector3[] Puntos = new Vector3[Camino.childCount];
@@ -110,6 +113,7 @@ public class Guardia : MonoBehaviour {
         
 		if (tiempoVisto >= tiempoParaVer && player.gameObject.tag == "Player")
         {
+                fondoavistado.enabled = true;
                 Avistado.enabled = true;
                 Time.timeScale = 0;
             //controller.enabled = false;
@@ -128,6 +132,7 @@ public class Guardia : MonoBehaviour {
                     Agacharse.ctime = 0.5f;
                     Agacharse.deslizarsetime = 0;
                     Avistado.enabled = false;
+                    fondoavistado.enabled = false;
                     AbrirPuertaNets.abriendoPuerta = false;
                     Counter.customtiempo = 0;
                     DispararTorreta.golpeado = 0;
@@ -139,6 +144,7 @@ public class Guardia : MonoBehaviour {
                     Agacharse.ctime = 0.5f;
                     Agacharse.deslizarsetime = 0;
                     Avistado.enabled = false;
+                    fondoavistado.enabled = false;
                     AbrirPuertaNets.abriendoPuerta = false;
                     Counter.customtiempo = 0;
                     DispararTorreta.golpeado = 0;

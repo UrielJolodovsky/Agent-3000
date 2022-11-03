@@ -12,12 +12,15 @@ public class DispararTorreta : MonoBehaviour
     [SerializeField] float ctime;
     public static int golpeado = 0;
     [SerializeField] Text Avistado;
+    [SerializeField] RawImage fondoavistado;
     // Start is called before the first frame update
     void Start()
     {
         ctime = 2;
         Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
         Avistado.enabled = false;
+        fondoavistado = GameObject.FindGameObjectWithTag("FondoAvistado").GetComponent<RawImage>();
+        fondoavistado.enabled = false;
     }
 
     // Update is called once per frame
@@ -34,6 +37,7 @@ public class DispararTorreta : MonoBehaviour
         }
         if (golpeado >= 3)
         {
+            fondoavistado.enabled = true;
             Avistado.enabled = true;
             Time.timeScale = 0;
             if (Input.GetKeyDown(KeyCode.R))
@@ -50,6 +54,7 @@ public class DispararTorreta : MonoBehaviour
                     Debug.Log("moriste");
                     golpeado = 0;
                     Avistado.enabled = false;
+                    fondoavistado.enabled = false;
                 }
                 else
                 {
@@ -62,6 +67,7 @@ public class DispararTorreta : MonoBehaviour
                     Debug.Log("moriste");
                     golpeado = 0;
                     Avistado.enabled = false;
+                    fondoavistado.enabled = false;
                 }
                 
             }

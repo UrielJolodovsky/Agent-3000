@@ -14,6 +14,7 @@ public class Laser : MonoBehaviour
     [SerializeField] string QueHacer = "Subir";
     [SerializeField] public static bool visto;
     [SerializeField] public Text Avistado;
+    [SerializeField] RawImage fondoavistado;
     [SerializeField] GameObject player;
     public bool activado = false;
 
@@ -24,6 +25,8 @@ public class Laser : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         Avistado = GameObject.FindGameObjectWithTag("Avistado").GetComponent<Text>();
         spawnpoint = GameObject.FindGameObjectWithTag("SpawnPlayer");
+        fondoavistado = GameObject.FindGameObjectWithTag("FondoAvistado").GetComponent<RawImage>();
+        fondoavistado.enabled = false;
     }
 
     // Update is called once per frame
@@ -48,6 +51,7 @@ public class Laser : MonoBehaviour
         }
         if (activado)
         {
+            fondoavistado.enabled = true;
             Avistado.enabled = true;
             Time.timeScale = 0;
             //controller.enabled = false;
@@ -66,6 +70,7 @@ public class Laser : MonoBehaviour
                     Agacharse.ctime = 0.5f;
                     Agacharse.deslizarsetime = 0;
                     Avistado.enabled = false;
+                    fondoavistado.enabled = false;
                     AbrirPuertaNets.abriendoPuerta = false;
                     Counter.customtiempo = 0;
                 }
@@ -76,6 +81,7 @@ public class Laser : MonoBehaviour
                     Agacharse.ctime = 0.5f;
                     Agacharse.deslizarsetime = 0;
                     Avistado.enabled = false;
+                    fondoavistado.enabled = false;
                     AbrirPuertaNets.abriendoPuerta = false;
                     Counter.customtiempo = 0;
                 }
