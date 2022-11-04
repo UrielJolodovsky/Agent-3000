@@ -685,7 +685,8 @@ MonoBehaviour:
     robotica. vos, siendo el mejor ex-agente de la corporacion decidis vengarte de
     ellos atravesando su sede principal, el burj khalifa, y eliminando al CEO de la
     compania, Tomas Specter. \nRecuerda: No puedes eliminar mas de 7 guardias.\nRecuerda:
-    En la parte superior izquierda vas a encontrar tu objectivo en cada nivel "
+    En la parte superior izquierda vas a encontrar tu objetivo en cada nivel y tienes
+    5 vidas"
 --- !u!222 &1272369814
 CanvasRenderer:
   m_ObjectHideFlags: 0
