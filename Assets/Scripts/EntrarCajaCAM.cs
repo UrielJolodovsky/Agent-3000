@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class EntrarCajaCAM : MonoBehaviour
 {
     public GameObject jugador;
+    public GameObject jugador2;
     public FirstPersonController jugadorController;
     public CharacterController controller;
     public GameObject caja;
@@ -24,7 +25,8 @@ public class EntrarCajaCAM : MonoBehaviour
     {
         jugadorController = jugador.GetComponent<FirstPersonController>();
         Salir.enabled = false;
-        jugador = GameObject.FindGameObjectWithTag("Player");
+        jugador = GameObject.FindWithTag("Player");
+        jugador2 = GameObject.FindWithTag("Player");
         CharacterController controller = jugador.GetComponent<CharacterController>();
         gameObject.SetActive(false);
     }
@@ -38,6 +40,8 @@ public class EntrarCajaCAM : MonoBehaviour
         }
          if (camCaja.gameObject.activeInHierarchy && Input.GetKeyDown(KeyCode.Q))
         {
+            jugador.gameObject.tag = "Player";
+            jugador2.gameObject.tag = "Player";
             Salir.enabled = false;
             interferencia.enabled = false;
             interferencia2.enabled = false;
@@ -47,7 +51,7 @@ public class EntrarCajaCAM : MonoBehaviour
             controller.enabled = true;
             camJugador.SetActive(true);
             //Entrar.enabled = true;
-            jugador.gameObject.tag = "Player";
+            
         }
         
         // 1. mover el reigidbody 2. desactivar solo lascolisiones del charactercpntroller 3. ontrigger exit vuelvaelcharacter controller
