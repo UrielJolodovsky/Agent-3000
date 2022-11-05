@@ -684,7 +684,8 @@ MonoBehaviour:
     para llevar a cabo sus tareas de seguridad debido al crecimiento de la industria
     robotica. vos, siendo el mejor ex-agente de la corporacion decidis vengarte de
     ellos atravesando su sede principal, el burj khalifa, y eliminando al CEO de la
-    compania, Tomas Specter. \nRecuerda: No puedes eliminar mas de 7 guardias.\nRecuerda:
+    compania, quien despues de enormes modificaciones en su cuerpo, se ha convertido
+    en un tsai-borg. \nRecuerda: No puedes eliminar mas de 7 guardias.\nRecuerda:
     En la parte superior izquierda vas a encontrar tu objetivo en cada nivel y tienes
     5 vidas"
 --- !u!222 &1272369814
@@ -729,8 +730,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000024438, y: 18.74}
-  m_SizeDelta: {x: 458.7896, y: 195.74457}
+  m_AnchoredPosition: {x: 0.0000024438, y: 13.4}
+  m_SizeDelta: {x: 458.7896, y: 206.52142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1347359819
 MonoBehaviour:
