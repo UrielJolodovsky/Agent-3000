@@ -2773,7 +2773,7 @@ PrefabInstance:
     - target: {fileID: 2545086740655856816, guid: 59d3b7ba301af1845a8865bf53f833f1,
         type: 3}
       propertyPath: m_Text
-      value: presiona M para agarrar
+      value: presiona Q para agarrar
       objectReference: {fileID: 0}
     - target: {fileID: 2545086740655856816, guid: 59d3b7ba301af1845a8865bf53f833f1,
         type: 3}

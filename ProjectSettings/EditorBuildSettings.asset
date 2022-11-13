@@ -6,44 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: 49de36f830e123b458b33a78cc8358d4
-  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: a8a5df5eaf75d5d469820cc9eb343622
   - enabled: 1
-    path: Assets/Scenes/SandBox.unity
-    guid: 54bcb8d108c1178459616cec68d0823f
-  - enabled: 1
-    path: Assets/Scenes/Computer.unity
-    guid: 2c61e955fcf322947b56bd412c4b570f
-  - enabled: 1
-    path: Assets/Scenes/Nivel 1.unity
-    guid: 60441aebb46fd0247895afaf8a33c2ea
-  - enabled: 1
-    path: Assets/Scenes/Carga1.unity
-    guid: e133ff07e986bf84b997ff0425395eb7
-  - enabled: 1
-    path: Assets/Scenes/Nivel2.unity
-    guid: fea0d8ad9c4a4ae409db2a37d3d5ac90
-  - enabled: 1
-    path: Assets/Scenes/Nivel 3.unity
-    guid: 18d2396486a64ba4eb30d90857d85e47
-  - enabled: 1
-    path: Assets/Scenes/Final.unity
-    guid: a97fd5e9cad46874a97c3e3cc7498f51
-  - enabled: 1
-    path: Assets/Scenes/Ranking.unity
-    guid: 9e0949696aa25104081121c75c31267c
-  - enabled: 1
-    path: Assets/Scenes/Carga2.unity
-    guid: c9b433d864bb6084ea1c560cef22caa6
-  - enabled: 1
-    path: Assets/Scenes/Pantalla controles.unity
-    guid: 61783c048fe1f284986a7689d5a9df1b
-  - enabled: 1
-    path: Assets/Scenes/Derrota.unity
-    guid: ef30d09e872512640bdd619613043ad2
+    path: Assets/Scenes/Intro.unity
+    guid: 49de36f830e123b458b33a78cc8358d4
   - enabled: 1
     path: Assets/Scenes/infoJuego.unity
     guid: ac4498581665a194184ebb1c09b422f9
@@ -51,12 +18,45 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel 1 cinematica.unity
     guid: ee10f9d3a902e584db3f148a5b41dfcf
   - enabled: 1
+    path: Assets/Scenes/Nivel 1.unity
+    guid: 60441aebb46fd0247895afaf8a33c2ea
+  - enabled: 1
+    path: Assets/Scenes/Carga1.unity
+    guid: e133ff07e986bf84b997ff0425395eb7
+  - enabled: 1
     path: Assets/Scenes/Nivel 2 cinematica.unity
     guid: 6cf1c6dbff9938947a0045872e8eac15
   - enabled: 1
+    path: Assets/Scenes/Nivel2.unity
+    guid: fea0d8ad9c4a4ae409db2a37d3d5ac90
+  - enabled: 1
+    path: Assets/Scenes/Carga2.unity
+    guid: c9b433d864bb6084ea1c560cef22caa6
+  - enabled: 1
     path: Assets/Scenes/nivel 3 con cinematica.unity
     guid: 762b8b15cc00fca45bdeec9ce03e4a22
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3.unity
+    guid: 18d2396486a64ba4eb30d90857d85e47
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: a97fd5e9cad46874a97c3e3cc7498f51
   - enabled: 0
     path: 
-    guid: 9b76d0c891dded44597003be2cd362e2
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/SandBox.unity
+    guid: 54bcb8d108c1178459616cec68d0823f
+  - enabled: 1
+    path: Assets/Scenes/Computer.unity
+    guid: 2c61e955fcf322947b56bd412c4b570f
+  - enabled: 1
+    path: Assets/Scenes/Pantalla controles.unity
+    guid: 61783c048fe1f284986a7689d5a9df1b
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: ef30d09e872512640bdd619613043ad2
+  - enabled: 1
+    path: Assets/Scenes/Ranking.unity
+    guid: 9e0949696aa25104081121c75c31267c
   m_configObjects: {}

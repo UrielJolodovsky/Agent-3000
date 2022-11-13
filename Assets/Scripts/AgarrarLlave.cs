@@ -9,7 +9,7 @@ public class AgarrarLlave : MonoBehaviour
     [SerializeField] public static bool tarjetaAgarrada;
     [SerializeField] GameObject llave;
     [SerializeField] public Text agarrarLlave;
-    [SerializeField] public RawImage logo;
+    [SerializeField] public GameObject logo;
     [SerializeField] public Text OBJLlave;
     [SerializeField] public Text OBJAscensor;
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class AgarrarLlave : MonoBehaviour
         posibilidad = false;
        // llave = GameObject.FindObjectOfType<AgarrarLlave>().gameObject;
         agarrarLlave.enabled = false;
-        logo.enabled = false;
+        logo.SetActive(false);
         OBJLlave.enabled = true;
     }
 
@@ -31,7 +31,7 @@ public class AgarrarLlave : MonoBehaviour
             tarjetaAgarrada = true;
             gameObject.SetActive(false);
             agarrarLlave.enabled = false;
-            logo.enabled = true;
+            logo.SetActive(true);
             OBJLlave.enabled = false;
             OBJAscensor.enabled = true;
         }

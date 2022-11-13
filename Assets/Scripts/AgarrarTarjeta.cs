@@ -32,7 +32,7 @@ public class AgarrarTarjeta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (posibilidad && Input.GetKeyDown(KeyCode.M) && cajas[num].gameObject.tag == "CajaAbierta")
+        if (posibilidad && Input.GetKeyDown(KeyCode.Q) && cajas[num].gameObject.tag == "CajaAbierta")
         {
             TeclaTarjeta.enabled = false;
             tarjeta.SetActive(false);
